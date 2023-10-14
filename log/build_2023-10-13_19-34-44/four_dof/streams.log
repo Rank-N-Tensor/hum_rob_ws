@@ -1,0 +1,29 @@
+[0.083s] Invoking command in '/home/adi/hum_rob_ws/build/four_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/four_dof -- -j16 -l16
+[0.144s] Invoked command in '/home/adi/hum_rob_ws/build/four_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/four_dof -- -j16 -l16
+[0.211s] Invoking command in '/home/adi/hum_rob_ws/build/four_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/four_dof
+[0.218s] -- Install configuration: ""
+[0.218s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/{PROJECT_NAME}//urdf
+[0.218s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/{PROJECT_NAME}//urdf/draft.urdf
+[0.218s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/{PROJECT_NAME}//launch
+[0.219s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/{PROJECT_NAME}//launch/urdf_viz.launch.py
+[0.219s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/{PROJECT_NAME}//meshes
+[0.219s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/{PROJECT_NAME}//meshes/placeholder.txt
+[0.219s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/{PROJECT_NAME}//meshes/body_for_Sym.stl
+[0.219s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/{PROJECT_NAME}//rviz
+[0.219s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/{PROJECT_NAME}//rviz/placeholder.txt
+[0.219s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/package_run_dependencies/four_dof
+[0.220s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/parent_prefix_path/four_dof
+[0.220s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/ament_prefix_path.sh
+[0.220s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/ament_prefix_path.dsv
+[0.220s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/path.sh
+[0.220s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/path.dsv
+[0.220s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.bash
+[0.220s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.sh
+[0.221s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.zsh
+[0.221s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.dsv
+[0.222s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.dsv
+[0.222s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/packages/four_dof
+[0.222s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/cmake/four_dofConfig.cmake
+[0.223s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/cmake/four_dofConfig-version.cmake
+[0.223s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.xml
+[0.224s] Invoked command in '/home/adi/hum_rob_ws/build/four_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/four_dof

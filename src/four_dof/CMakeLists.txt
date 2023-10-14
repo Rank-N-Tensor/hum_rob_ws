@@ -23,14 +23,15 @@ if(BUILD_TESTING)
 endif()
 
 
-
-install(DIRECTORY
-urdf
-launch
-meshes
-rviz
-DESTINATION share/{PROJECT_NAME}/
-
+install(
+  DIRECTORY
+    urdf
+    rviz
+    launch
+    meshes
+  DESTINATION
+    share/${PROJECT_NAME}/
 )
+
 
 ament_package()

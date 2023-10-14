@@ -1,0 +1,21 @@
+<robot name="four_dof">
+
+    <!--base link-->
+    <link name="base_link">
+        <visual>
+
+            <geometry>
+                <mesh filename="package://four_dof/meshes/body_for_Sym.stl" scale="1.0"/>
+            </geometry>
+
+        </visual>
+
+        <collision>
+            <mesh filename="package://four_dof/meshes/body_for_Sym.stl" scale="1.0"/>
+        </collision>
+
+    </link>
+
+
+
+</robot>
