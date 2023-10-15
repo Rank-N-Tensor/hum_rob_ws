@@ -1,5 +1,29 @@
 <robot name="four_dof">
 
+    <material name="red">
+        <color rgba="1.0 0.0 0.0 1"/>
+    </material>
+
+    <material name="green_light">
+        <color rgba="0.0 1.0 0.0 1"/>
+    </material>
+
+    <material name="green_dark">
+        <color rgba="0.0 0.5 0.0 1"/>
+    </material>
+
+    <material name="blue">
+        <color rgba="0.0 0.0 1.0 1"/>
+    </material>
+
+    <material name="yellow">
+        <color rgba="1.0 1.0 0.0 1"/>
+    </material>
+
+    <material name="magenta">
+        <color rgba="1.0 0.0 1.0 1"/>
+    </material>
+
 
     <link name="base_link">
     </link>
@@ -25,6 +49,7 @@
             <geometry>
                 <mesh filename="package://four_dof/meshes/left_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
             </geometry>
+            <material name="green_dark"/>
         </visual>
 
         <collision>
@@ -35,24 +60,90 @@
     </link>
 
 
-    <!--link name="right_front_thigh">
+    <link name="right_front_thigh">
         <visual>
             <geometry>
                 <mesh filename="package://four_dof/meshes/right_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
             </geometry>
+            <material name="green_dark"/>
         </visual>
         <collision>
             <geometry>
                 <mesh filename="package://four_dof/meshes/right_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
-    </link-->
+    </link>
 
+    <link name="left_front_knee">
+        <visual>
+            <geometry>
+                <mesh filename="package://four_dof/meshes/left_front_knee_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="yellow"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://four_dof/meshes/left_front_knee_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <link name="right_front_knee">
+        <visual>
+            <geometry>
+                <mesh filename="package://four_dof/meshes/right_front_knee_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="yellow"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://four_dof/meshes/right_front_knee_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <link name="left_foot">
+
+        <visual>
+            <geometry>
+                <mesh filename="package://four_dof/meshes/left_foot.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="magenta"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://four_dof/meshes/left_foot.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+
+    </link>
+
+    <link name="right_foot">
+
+        <visual>
+            <geometry>
+                <mesh filename="package://four_dof/meshes/right_foot.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="magenta"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://four_dof/meshes/right_foot.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+
+    </link>
 
     <joint name="base_to_body" type="fixed">
         <parent link="base_link"/>
         <child link="body"/>
-        <origin xyz="0 0 0" rpy="1.57 0 0 "/>
+        <origin xyz="0.0 0.0 0" rpy="1.57 0 0 "/>
     </joint>
 
     <joint name="body_to_left_thigh" type="revolute">
@@ -62,4 +153,45 @@
         <axis xyz="0.0 0.0 1"/>
         <limit effort="1000.0" lower="-1.57" upper="1.57" velocity="0.5"/>
     </joint>
+
+    <joint name="body_to_right_thigh" type="revolute">
+        <parent link="body"/>
+        <child link="right_front_thigh"/>
+        <origin xyz="0.035 0.0165 -0.05125" rpy="0 0 0"/>
+        <axis xyz="0.0 0.0 1"/>
+        <limit effort="1000.0" lower="-1.57" upper="1.57" velocity="0.5"/>
+    </joint>
+
+    <joint name="left_thigh_to_knee" type="revolute">
+        <parent link="left_front_thigh"/>
+        <child link="left_front_knee"/>
+        <origin xyz="0.0 -0.1335 0.01835" rpy="0 0 0"/>
+        <axis xyz="0.0 0.0 1"/>
+        <limit effort="0" lower="-1.57" upper="1.57" velocity="0"/>
+    </joint>
+
+    <joint name="right_thigh_to_knee" type="revolute">
+        <parent link="right_front_thigh"/>
+        <child link="right_front_knee"/>
+        <origin xyz="0.0 -0.1335 0.01835" rpy="0 0 0"/>
+        <axis xyz="0.0 0.0 1"/>
+        <limit effort="0" lower="-1.57" upper="1.57" velocity="0" />
+    </joint>
+
+    <joint name="left_knee_to_foot" type="revolute">
+        <origin xyz="0.0 -0.110041 0.0" rpy="0.0 0.0 -1.57"/>
+        <parent link="left_front_knee"/>
+        <child link="left_foot"/>
+        <axis xyz="0.0 0.0 1.0"/>
+        <limit effort="0.0" lower="1.57" upper="1.57" velocity="0.0"/>
+    </joint>
+
+    <joint name="right_knee_to_foot" type="revolute">
+        <origin xyz="0.0 -0.110041 0.0" rpy="0.0 0.0 -1.57"/>
+        <parent link="right_front_knee"/>
+        <child link="right_foot"/>
+        <axis xyz="0.0 0.0 1.0"/>
+        <limit effort="0.0" lower="1.57" upper="1.57" velocity="0.0"/>
+    </joint>
+
 </robot>

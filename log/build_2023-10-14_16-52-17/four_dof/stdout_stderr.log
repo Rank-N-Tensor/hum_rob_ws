@@ -1,0 +1,26 @@
+-- Install configuration: ""
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//urdf
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//urdf/draft.urdf
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//rviz
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//rviz/placeholder.txt
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//launch
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//launch/urdf_viz.launch.py
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes
+-- Installing: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/left_front_thigh_link.stl
+-- Installing: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/right_front_thigh_link.stl
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/body_for_Sym.stl
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/package_run_dependencies/four_dof
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/parent_prefix_path/four_dof
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/ament_prefix_path.sh
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/path.sh
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/path.dsv
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.bash
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.sh
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.zsh
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.dsv
+-- Installing: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.dsv
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/packages/four_dof
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/cmake/four_dofConfig.cmake
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/cmake/four_dofConfig-version.cmake
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.xml
