@@ -29,15 +29,20 @@
     </link>
 
     <link name="body">
+        <inertial>
+            <origin xyz= "0.02973 0.04568 0 " rpy = "0 0 0" />
+            <mass value="1.1161"/>
+            <inertia ixx="0.001939" ixy="-0.000057687491" ixz="0.00000002363" iyy=" 0.001749" iyz="0.000000528114" izz="0.001259"/>
+        </inertial>
         <visual>
             <geometry>
-                <mesh filename="package://four_dof/meshes/body_for_Sym.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://four_dof/meshes/draft1/body_for_Sym.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://four_dof/meshes/body_for_Sym.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://four_dof/meshes/draft1/body_for_Sym.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
 
@@ -45,96 +50,116 @@
 
     <!--left thigh-->
     <link name="left_front_thigh">
+
+        <!--inertial>
+            <mass value="0.030"/>
+        </inertial-->
+
         <visual>
             <geometry>
-                <mesh filename="package://four_dof/meshes/left_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://four_dof/meshes/draft1/left_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="green_dark"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://four_dof/meshes/left_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://four_dof/meshes/draft1/left_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
 
 
     <link name="right_front_thigh">
+        <!--inertial>
+            <mass value="0.030"/>
+        </inertial-->
+
         <visual>
             <geometry>
-                <mesh filename="package://four_dof/meshes/right_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://four_dof/meshes/draft1/right_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="green_dark"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://four_dof/meshes/right_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://four_dof/meshes/draft1/right_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
 
     <link name="left_front_knee">
+        <!--inertial>
+            <mass value="0.015"/>
+    </inertial-->
         <visual>
             <geometry>
-                <mesh filename="package://four_dof/meshes/left_front_knee_link.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://four_dof/meshes/draft1/left_front_knee_link.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="yellow"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://four_dof/meshes/left_front_knee_link.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://four_dof/meshes/draft1/left_front_knee_link.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
 
 
     <link name="right_front_knee">
+        <!--inertial>
+            <mass value="0.015"/>
+</inertial-->
         <visual>
             <geometry>
-                <mesh filename="package://four_dof/meshes/right_front_knee_link.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://four_dof/meshes/draft1/right_front_knee_link.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="yellow"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://four_dof/meshes/right_front_knee_link.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://four_dof/meshes/draft1/right_front_knee_link.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
 
 
     <link name="left_foot">
-
+        <!--inertial>
+            <mass value="0.010"/>
+</inertial-->
         <visual>
             <geometry>
-                <mesh filename="package://four_dof/meshes/left_foot.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://four_dof/meshes/draft1/left_foot.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="magenta"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://four_dof/meshes/left_foot.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://four_dof/meshes/draft1/left_foot.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
 
     </link>
 
     <link name="right_foot">
+        <!--inertial>
+            <mass value="0.010"/>
+        </inertial-->
 
         <visual>
             <geometry>
-                <mesh filename="package://four_dof/meshes/right_foot.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://four_dof/meshes/draft1/right_foot.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="magenta"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://four_dof/meshes/right_foot.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://four_dof/meshes/draft1/right_foot.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
 

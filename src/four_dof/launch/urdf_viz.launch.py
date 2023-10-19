@@ -6,7 +6,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
 
-    urdf_file="draft.urdf"
+    urdf_file="draft2.urdf"
     package_description="four_dof"
     print("Fetching URDF ==>")
 
