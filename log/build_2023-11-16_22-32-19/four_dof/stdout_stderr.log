@@ -1,0 +1,71 @@
+[35m[1mConsolidate compiler generated dependencies of target joint_state_pub_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/joint_state_pub_node.dir/src/joint_publisher.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/adi/hum_rob_ws/src/four_dof/src/joint_publisher.cpp:1[m[K:
+[01m[K/home/adi/hum_rob_ws/src/four_dof/src/joint_publisher.cpp:[m[K In member function ‘[01m[Kvoid Joint_State_Pub::joint_state_callback()[m[K’:
+[01m[K/home/adi/hum_rob_ws/src/four_dof/src/joint_publisher.cpp:58:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Krclcpp::Time[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   58 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"publishing joint pos at %d"[m[K, [32m[Kthis->now()[m[K);
+      |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~[m[K
+      |                                                                            [32m[K|[m[K
+      |                                                                            [32m[Krclcpp::Time[m[K
+[01m[K/home/adi/hum_rob_ws/src/four_dof/src/joint_publisher.cpp:58:63:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   58 |     RCLCPP_INFO(this->get_logger(), "publishing joint pos at [01;36m[K%d[m[K", this->now());
+      |                                                              [01;36m[K~^[m[K
+      |                                                               [01;36m[K|[m[K
+      |                                                               [01;36m[Kint[m[K
+[100%] [32m[1mLinking CXX executable joint_state_pub_node[0m
+[100%] Built target joint_state_pub_node
+-- Install configuration: ""
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/urdf
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/urdf/draft2.urdf
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/urdf/draft.urdf
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/rviz
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/rviz/placeholder.txt
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/rviz/modified_4_dof.rviz
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/launch
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/launch/urdf_viz.launch.py
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/launch/spawn.launch.py
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/launch/empty_world.launch.py
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft1
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft1/right_front_knee_link.stl
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft1/right_front_thigh_link.stl
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft1/left_foot.stl
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft1/left_front_knee_link.stl
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft1/body_for_Sym.stl
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft1/right_foot.stl
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2/right_front_knee_link.stl
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2/left_front_thigh_link.stl
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2/right_front_thigh_link.stl
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2/left_foot.stl
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2/left_front_knee_link.stl
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2/body_for_Sym.stl
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2/right_foot.stl
+-- Installing: /home/adi/hum_rob_ws/install/four_dof/lib/four_dof/joint_state_pub_node
+-- Set runtime path of "/home/adi/hum_rob_ws/install/four_dof/lib/four_dof/joint_state_pub_node" to ""
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/package_run_dependencies/four_dof
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/parent_prefix_path/four_dof
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/ament_prefix_path.sh
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/path.sh
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/path.dsv
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.bash
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.sh
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.zsh
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.dsv
+-- Installing: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.dsv
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/packages/four_dof
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/cmake/four_dofConfig.cmake
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/cmake/four_dofConfig-version.cmake
+-- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.xml

@@ -1,0 +1,4 @@
+[0.000000] (-) TimerEvent: {}
+[0.000580] (-) JobUnselected: {'identifier': 'four_dof'}
+[0.000685] (-) JobUnselected: {'identifier': 'rhea_description'}
+[0.000992] (-) EventReactorShutdown: {}

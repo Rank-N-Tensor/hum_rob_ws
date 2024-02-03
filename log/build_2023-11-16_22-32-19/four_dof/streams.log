@@ -1,0 +1,75 @@
+[0.088s] Invoking command in '/home/adi/hum_rob_ws/build/four_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/four_dof -- -j16 -l16
+[0.185s] [35m[1mConsolidate compiler generated dependencies of target joint_state_pub_node[0m
+[0.208s] [ 50%] [32mBuilding CXX object CMakeFiles/joint_state_pub_node.dir/src/joint_publisher.cpp.o[0m
+[2.112s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.112s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.113s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.113s]                  from [01m[K/home/adi/hum_rob_ws/src/four_dof/src/joint_publisher.cpp:1[m[K:
+[2.113s] [01m[K/home/adi/hum_rob_ws/src/four_dof/src/joint_publisher.cpp:[m[K In member function ‘[01m[Kvoid Joint_State_Pub::joint_state_callback()[m[K’:
+[2.113s] [01m[K/home/adi/hum_rob_ws/src/four_dof/src/joint_publisher.cpp:58:37:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 5 has type ‘[01m[Krclcpp::Time[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[2.113s]    58 |     RCLCPP_INFO(this->get_logger(), [01;35m[K"publishing joint pos at %d"[m[K, [32m[Kthis->now()[m[K);
+[2.113s]       |                                     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K  [32m[K~~~~~~~~~~~[m[K
+[2.114s]       |                                                                            [32m[K|[m[K
+[2.114s]       |                                                                            [32m[Krclcpp::Time[m[K
+[2.114s] [01m[K/home/adi/hum_rob_ws/src/four_dof/src/joint_publisher.cpp:58:63:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[2.114s]    58 |     RCLCPP_INFO(this->get_logger(), "publishing joint pos at [01;36m[K%d[m[K", this->now());
+[2.114s]       |                                                              [01;36m[K~^[m[K
+[2.114s]       |                                                               [01;36m[K|[m[K
+[2.114s]       |                                                               [01;36m[Kint[m[K
+[3.728s] [100%] [32m[1mLinking CXX executable joint_state_pub_node[0m
+[3.956s] [100%] Built target joint_state_pub_node
+[3.974s] Invoked command in '/home/adi/hum_rob_ws/build/four_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/four_dof -- -j16 -l16
+[4.059s] Invoking command in '/home/adi/hum_rob_ws/build/four_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/four_dof
+[4.075s] -- Install configuration: ""
+[4.075s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/urdf
+[4.076s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/urdf/draft2.urdf
+[4.076s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/urdf/draft.urdf
+[4.076s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/rviz
+[4.076s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/rviz/placeholder.txt
+[4.076s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/rviz/modified_4_dof.rviz
+[4.076s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/launch
+[4.077s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/launch/urdf_viz.launch.py
+[4.077s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/launch/spawn.launch.py
+[4.077s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/launch/empty_world.launch.py
+[4.077s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes
+[4.077s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft1
+[4.077s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft1/right_front_knee_link.stl
+[4.077s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft1/right_front_thigh_link.stl
+[4.077s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft1/left_foot.stl
+[4.077s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft1/left_front_knee_link.stl
+[4.078s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft1/body_for_Sym.stl
+[4.078s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft1/right_foot.stl
+[4.078s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2
+[4.078s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2/right_front_knee_link.stl
+[4.078s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2/left_front_thigh_link.stl
+[4.078s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2/right_front_thigh_link.stl
+[4.078s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2/left_foot.stl
+[4.078s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2/left_front_knee_link.stl
+[4.078s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2/body_for_Sym.stl
+[4.079s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/meshes/draft2/right_foot.stl
+[4.079s] -- Installing: /home/adi/hum_rob_ws/install/four_dof/lib/four_dof/joint_state_pub_node
+[4.080s] -- Set runtime path of "/home/adi/hum_rob_ws/install/four_dof/lib/four_dof/joint_state_pub_node" to ""
+[4.080s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/package_run_dependencies/four_dof
+[4.080s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/parent_prefix_path/four_dof
+[4.080s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/ament_prefix_path.sh
+[4.081s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/ament_prefix_path.dsv
+[4.081s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/path.sh
+[4.081s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/path.dsv
+[4.081s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.bash
+[4.081s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.sh
+[4.081s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.zsh
+[4.082s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.dsv
+[4.082s] -- Installing: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.dsv
+[4.082s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/packages/four_dof
+[4.082s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/cmake/four_dofConfig.cmake
+[4.082s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/cmake/four_dofConfig-version.cmake
+[4.082s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.xml
+[4.086s] Invoked command in '/home/adi/hum_rob_ws/build/four_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/four_dof

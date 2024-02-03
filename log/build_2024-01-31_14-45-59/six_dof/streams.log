@@ -1,0 +1,32 @@
+[0.089s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16
+[0.153s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16
+[0.211s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/six_dof
+[0.219s] -- Install configuration: ""
+[0.219s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf
+[0.220s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf/6dof.urdf
+[0.220s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//launch
+[0.220s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//launch/urdf_vis.launch.py
+[0.220s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes
+[0.220s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/leftfoot.stl
+[0.220s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/RightThighURDF.stl
+[0.220s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/leftknee.stl
+[0.221s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightfoot.stl
+[0.221s] -- Installing: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightknee.stl
+[0.236s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/LeftThighForURDF.stl
+[0.236s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/Chassis.stl
+[0.237s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/package_run_dependencies/six_dof
+[0.237s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/parent_prefix_path/six_dof
+[0.237s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/ament_prefix_path.sh
+[0.237s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/ament_prefix_path.dsv
+[0.237s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/path.sh
+[0.237s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/path.dsv
+[0.237s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.bash
+[0.238s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.sh
+[0.238s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.zsh
+[0.238s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.dsv
+[0.238s] -- Installing: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/package.dsv
+[0.238s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/packages/six_dof
+[0.238s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/cmake/six_dofConfig.cmake
+[0.238s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/cmake/six_dofConfig-version.cmake
+[0.239s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/package.xml
+[0.240s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/six_dof

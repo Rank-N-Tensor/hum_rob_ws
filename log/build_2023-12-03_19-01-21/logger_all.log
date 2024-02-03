@@ -1,0 +1,203 @@
+[1.556s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.556s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fea2a4f0eb0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fea2a4f00d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fea2a4f00d0>>)
+[1.627s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.627s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.627s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.627s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.627s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.627s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.627s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/adi/hum_rob_ws'
+[1.628s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.628s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.628s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.628s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.628s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.628s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.628s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.628s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.628s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.647s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.648s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.649s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof) by extensions ['ignore', 'ignore_ament_install']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof) by extension 'ignore'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof) by extension 'ignore_ament_install'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof) by extensions ['colcon_pkg']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof) by extension 'colcon_pkg'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof) by extensions ['colcon_meta']
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof) by extension 'colcon_meta'
+[1.650s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof) by extensions ['ros']
+[1.651s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof) by extension 'ros'
+[1.653s] DEBUG:colcon.colcon_core.package_identification:Package 'src/four_dof' with type 'ros.ament_cmake' and name 'four_dof'
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof_bringup) by extensions ['ignore', 'ignore_ament_install']
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof_bringup) by extension 'ignore'
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof_bringup) by extension 'ignore_ament_install'
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof_bringup) by extensions ['colcon_pkg']
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof_bringup) by extension 'colcon_pkg'
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof_bringup) by extensions ['colcon_meta']
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof_bringup) by extension 'colcon_meta'
+[1.653s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof_bringup) by extensions ['ros']
+[1.654s] Level 1:colcon.colcon_core.package_identification:_identify(src/four_dof_bringup) by extension 'ros'
+[1.654s] DEBUG:colcon.colcon_core.package_identification:Package 'src/four_dof_bringup' with type 'ros.ament_cmake' and name 'four_dof_bringup'
+[1.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.654s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.655s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.792s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.792s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.838s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/adi/hum_rob_ws/install
+[1.864s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 381 installed packages in /opt/ros/humble
+[1.866s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.990s] Level 5:colcon.colcon_core.verb:set package 'four_dof' build argument 'cmake_args' from command line to 'None'
+[1.990s] Level 5:colcon.colcon_core.verb:set package 'four_dof' build argument 'cmake_target' from command line to 'None'
+[1.990s] Level 5:colcon.colcon_core.verb:set package 'four_dof' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.990s] Level 5:colcon.colcon_core.verb:set package 'four_dof' build argument 'cmake_clean_cache' from command line to 'False'
+[1.990s] Level 5:colcon.colcon_core.verb:set package 'four_dof' build argument 'cmake_clean_first' from command line to 'False'
+[1.990s] Level 5:colcon.colcon_core.verb:set package 'four_dof' build argument 'cmake_force_configure' from command line to 'False'
+[1.990s] Level 5:colcon.colcon_core.verb:set package 'four_dof' build argument 'ament_cmake_args' from command line to 'None'
+[1.990s] Level 5:colcon.colcon_core.verb:set package 'four_dof' build argument 'catkin_cmake_args' from command line to 'None'
+[1.990s] Level 5:colcon.colcon_core.verb:set package 'four_dof' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.990s] DEBUG:colcon.colcon_core.verb:Building package 'four_dof' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adi/hum_rob_ws/build/four_dof', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adi/hum_rob_ws/install/four_dof', 'merge_install': False, 'path': '/home/adi/hum_rob_ws/src/four_dof', 'symlink_install': False, 'test_result_base': None}
+[2.012s] Level 5:colcon.colcon_core.verb:set package 'four_dof_bringup' build argument 'cmake_args' from command line to 'None'
+[2.012s] Level 5:colcon.colcon_core.verb:set package 'four_dof_bringup' build argument 'cmake_target' from command line to 'None'
+[2.012s] Level 5:colcon.colcon_core.verb:set package 'four_dof_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.012s] Level 5:colcon.colcon_core.verb:set package 'four_dof_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[2.012s] Level 5:colcon.colcon_core.verb:set package 'four_dof_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[2.012s] Level 5:colcon.colcon_core.verb:set package 'four_dof_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[2.012s] Level 5:colcon.colcon_core.verb:set package 'four_dof_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[2.012s] Level 5:colcon.colcon_core.verb:set package 'four_dof_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[2.012s] Level 5:colcon.colcon_core.verb:set package 'four_dof_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.012s] DEBUG:colcon.colcon_core.verb:Building package 'four_dof_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adi/hum_rob_ws/build/four_dof_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adi/hum_rob_ws/install/four_dof_bringup', 'merge_install': False, 'path': '/home/adi/hum_rob_ws/src/four_dof_bringup', 'symlink_install': False, 'test_result_base': None}
+[2.034s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.058s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.058s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/adi/hum_rob_ws/src/four_dof' with build type 'ament_cmake'
+[2.059s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/adi/hum_rob_ws/src/four_dof'
+[2.084s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.084s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.084s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.161s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/adi/hum_rob_ws/src/four_dof_bringup' with build type 'ament_cmake'
+[2.162s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/adi/hum_rob_ws/src/four_dof_bringup'
+[2.187s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.187s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.270s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adi/hum_rob_ws/build/four_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adi/hum_rob_ws/install/pin_tut:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/four_dof -- -j16 -l16
+[2.276s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adi/hum_rob_ws/build/four_dof_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adi/hum_rob_ws/install/pin_tut:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/four_dof_bringup -- -j16 -l16
+[2.337s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adi/hum_rob_ws/build/four_dof_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adi/hum_rob_ws/install/pin_tut:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/four_dof_bringup -- -j16 -l16
+[2.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adi/hum_rob_ws/build/four_dof_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adi/hum_rob_ws/install/pin_tut:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/four_dof_bringup
+[2.388s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adi/hum_rob_ws/build/four_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adi/hum_rob_ws/install/pin_tut:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/four_dof -- -j16 -l16
+[2.398s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(four_dof_bringup)
+[2.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adi/hum_rob_ws/build/four_dof_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adi/hum_rob_ws/install/pin_tut:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/four_dof_bringup
+[2.428s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof_bringup' for CMake module files
+[2.428s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof_bringup' for CMake config files
+[2.429s] Level 1:colcon.colcon_core.shell:create_environment_hook('four_dof_bringup', 'cmake_prefix_path')
+[2.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/hook/cmake_prefix_path.ps1'
+[2.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/hook/cmake_prefix_path.dsv'
+[2.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/hook/cmake_prefix_path.sh'
+[2.454s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof_bringup/bin'
+[2.454s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof_bringup/lib/pkgconfig/four_dof_bringup.pc'
+[2.454s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof_bringup/lib/python3.10/site-packages'
+[2.455s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof_bringup/bin'
+[2.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/package.ps1'
+[2.477s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/package.dsv'
+[2.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/package.sh'
+[2.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/package.bash'
+[2.479s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/package.zsh'
+[2.479s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adi/hum_rob_ws/install/four_dof_bringup/share/colcon-core/packages/four_dof_bringup)
+[2.484s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adi/hum_rob_ws/build/four_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adi/hum_rob_ws/install/pin_tut:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/four_dof
+[2.498s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(four_dof)
+[2.499s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adi/hum_rob_ws/build/four_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adi/hum_rob_ws/install/pin_tut:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/four_dof
+[2.521s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof' for CMake module files
+[2.522s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof' for CMake config files
+[2.522s] Level 1:colcon.colcon_core.shell:create_environment_hook('four_dof', 'cmake_prefix_path')
+[2.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/hook/cmake_prefix_path.ps1'
+[2.544s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/hook/cmake_prefix_path.dsv'
+[2.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/hook/cmake_prefix_path.sh'
+[2.545s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof/lib'
+[2.545s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof/bin'
+[2.545s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof/lib/pkgconfig/four_dof.pc'
+[2.546s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof/lib/python3.10/site-packages'
+[2.546s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof/bin'
+[2.569s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.ps1'
+[2.570s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.dsv'
+[2.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.sh'
+[2.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.bash'
+[2.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.zsh'
+[2.572s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adi/hum_rob_ws/install/four_dof/share/colcon-core/packages/four_dof)
+[2.596s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(four_dof_bringup)
+[2.619s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof_bringup' for CMake module files
+[2.620s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof_bringup' for CMake config files
+[2.620s] Level 1:colcon.colcon_core.shell:create_environment_hook('four_dof_bringup', 'cmake_prefix_path')
+[2.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/hook/cmake_prefix_path.ps1'
+[2.643s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/hook/cmake_prefix_path.dsv'
+[2.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/hook/cmake_prefix_path.sh'
+[2.644s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof_bringup/bin'
+[2.644s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof_bringup/lib/pkgconfig/four_dof_bringup.pc'
+[2.644s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof_bringup/lib/python3.10/site-packages'
+[2.644s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof_bringup/bin'
+[2.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/package.ps1'
+[2.668s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/package.dsv'
+[2.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/package.sh'
+[2.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/package.bash'
+[2.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof_bringup/share/four_dof_bringup/package.zsh'
+[2.669s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adi/hum_rob_ws/install/four_dof_bringup/share/colcon-core/packages/four_dof_bringup)
+[2.693s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(four_dof)
+[2.716s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof' for CMake module files
+[2.716s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof' for CMake config files
+[2.716s] Level 1:colcon.colcon_core.shell:create_environment_hook('four_dof', 'cmake_prefix_path')
+[2.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/hook/cmake_prefix_path.ps1'
+[2.740s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/hook/cmake_prefix_path.dsv'
+[2.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/hook/cmake_prefix_path.sh'
+[2.741s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof/lib'
+[2.741s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof/bin'
+[2.741s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof/lib/pkgconfig/four_dof.pc'
+[2.742s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof/lib/python3.10/site-packages'
+[2.742s] Level 1:colcon.colcon_core.environment:checking '/home/adi/hum_rob_ws/install/four_dof/bin'
+[2.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.ps1'
+[2.765s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.dsv'
+[2.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.sh'
+[2.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.bash'
+[2.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.zsh'
+[2.768s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adi/hum_rob_ws/install/four_dof/share/colcon-core/packages/four_dof)
+[2.768s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.769s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.769s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.769s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.794s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.794s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.794s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.808s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.835s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adi/hum_rob_ws/install/local_setup.ps1'
+[2.836s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/adi/hum_rob_ws/install/_local_setup_util_ps1.py'
+[2.838s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adi/hum_rob_ws/install/setup.ps1'
+[2.860s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adi/hum_rob_ws/install/local_setup.sh'
+[2.861s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/adi/hum_rob_ws/install/_local_setup_util_sh.py'
+[2.861s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adi/hum_rob_ws/install/setup.sh'
+[2.884s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adi/hum_rob_ws/install/local_setup.bash'
+[2.884s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adi/hum_rob_ws/install/setup.bash'
+[2.907s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adi/hum_rob_ws/install/local_setup.zsh'
+[2.907s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adi/hum_rob_ws/install/setup.zsh'

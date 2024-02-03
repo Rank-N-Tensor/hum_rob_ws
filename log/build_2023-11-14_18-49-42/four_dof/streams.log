@@ -1,0 +1,125 @@
+[0.082s] Invoking command in '/home/adi/hum_rob_ws/build/four_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/four_dof -- -j16 -l16
+[0.122s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.421s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.446s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.448s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.453s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.463s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.476s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.576s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[0.618s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.619s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.755s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.863s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[0.864s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[0.912s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[0.955s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[0.957s] -- Looking for ignition-math6 -- found version 6.15.0
+[0.962s] -- Searching for dependencies of ignition-math6
+[0.964s] -- Looking for OGRE...
+[0.971s] -- Found Ogre Ghadamon (1.9.0)
+[0.972s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[0.979s] -- Looking for OGRE_Paging...
+[0.979s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[0.979s] -- Looking for OGRE_Terrain...
+[0.979s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[0.979s] -- Looking for OGRE_Property...
+[0.980s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[0.980s] -- Looking for OGRE_RTShaderSystem...
+[0.980s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[0.980s] -- Looking for OGRE_Volume...
+[0.980s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[0.980s] -- Looking for OGRE_Overlay...
+[0.980s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.090s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.091s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.091s] -- Searching for dependencies of ignition-transport8
+[1.114s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.128s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.136s] -- Checking for module 'libzmq >= 4'
+[1.171s] --   Found libzmq , version 4.3.4
+[1.265s] -- Checking for module 'uuid'
+[1.300s] --   Found uuid, version 2.37.2
+[1.397s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.398s] -- Searching for dependencies of ignition-msgs5
+[1.455s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.466s] -- Checking for module 'tinyxml2'
+[1.502s] --   Found tinyxml2, version 9.0.0
+[1.594s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.595s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.597s] -- Searching for dependencies of ignition-common3
+[1.597s] -- Looking for dlfcn.h - found
+[1.597s] -- Looking for libdl - found
+[1.621s] -- Searching for <ignition-common3> component [graphics]
+[1.622s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.624s] -- Searching for dependencies of ignition-common3-graphics
+[1.624s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.627s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.628s] -- Searching for dependencies of ignition-fuel_tools4
+[1.702s] -- Checking for module 'jsoncpp'
+[1.732s] --   Found jsoncpp, version 1.9.5
+[1.830s] -- Checking for module 'libzip'
+[1.869s] --   Found libzip, version 1.7.3
+[1.970s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.971s] -- Looking for ignition-math6 -- found version 6.15.0
+[1.972s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.977s] -- Gazebo version: 11.10
+[1.994s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.066s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.186s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.186s] -- Configured cppcheck include dirs: 
+[2.186s] -- Configured cppcheck exclude dirs and/or files: 
+[2.187s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.187s] -- Added test 'lint_cmake' to check CMake code style
+[2.188s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.190s] -- Added test 'uncrustify' to check C / C++ code style
+[2.190s] -- Configured uncrustify additional arguments: 
+[2.190s] -- Added test 'xmllint' to check XML markup files
+[2.191s] -- Configuring done
+[2.198s] -- Generating done
+[2.200s] -- Build files have been written to: /home/adi/hum_rob_ws/build/four_dof
+[2.235s] Invoked command in '/home/adi/hum_rob_ws/build/four_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/four_dof -- -j16 -l16
+[2.281s] Invoking command in '/home/adi/hum_rob_ws/build/four_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/four_dof
+[2.288s] -- Install configuration: ""
+[2.289s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//urdf
+[2.289s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//urdf/draft2.urdf
+[2.289s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//urdf/draft.urdf
+[2.289s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//rviz
+[2.289s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//rviz/placeholder.txt
+[2.290s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//rviz/modified_4_dof.rviz
+[2.290s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//launch
+[2.290s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//launch/urdf_viz.launch.py
+[2.290s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//launch/spawn.launch.py
+[2.290s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//launch/empty_world.launch.py
+[2.290s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes
+[2.291s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft1
+[2.291s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft1/right_front_knee_link.stl
+[2.291s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft1/right_front_thigh_link.stl
+[2.291s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft1/left_foot.stl
+[2.291s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft1/left_front_knee_link.stl
+[2.291s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft1/body_for_Sym.stl
+[2.292s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft1/right_foot.stl
+[2.292s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2
+[2.292s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2/right_front_knee_link.stl
+[2.292s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2/left_front_thigh_link.stl
+[2.293s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2/right_front_thigh_link.stl
+[2.293s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2/left_foot.stl
+[2.294s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2/left_front_knee_link.stl
+[2.294s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2/body_for_Sym.stl
+[2.295s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2/right_foot.stl
+[2.295s] -- Installing: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/package_run_dependencies/four_dof
+[2.296s] -- Installing: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/parent_prefix_path/four_dof
+[2.297s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/ament_prefix_path.sh
+[2.297s] -- Installing: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/ament_prefix_path.dsv
+[2.297s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/path.sh
+[2.298s] -- Installing: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/path.dsv
+[2.298s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.bash
+[2.299s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.sh
+[2.300s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.zsh
+[2.302s] -- Installing: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.dsv
+[2.302s] -- Installing: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.dsv
+[2.302s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/packages/four_dof
+[2.303s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/cmake/four_dofConfig.cmake
+[2.305s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/cmake/four_dofConfig-version.cmake
+[2.306s] -- Installing: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.xml
+[2.306s] Invoked command in '/home/adi/hum_rob_ws/build/four_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/four_dof

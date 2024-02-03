@@ -1,0 +1,124 @@
+[0.000000] (-) TimerEvent: {}
+[0.000377] (four_dof) JobQueued: {'identifier': 'four_dof', 'dependencies': OrderedDict()}
+[0.000505] (four_dof) JobStarted: {'identifier': 'four_dof'}
+[0.078775] (four_dof) JobProgress: {'identifier': 'four_dof', 'progress': 'cmake'}
+[0.079454] (four_dof) JobProgress: {'identifier': 'four_dof', 'progress': 'build'}
+[0.080006] (four_dof) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/adi/hum_rob_ws/build/four_dof', '--', '-j16', '-l16'], 'cwd': '/home/adi/hum_rob_ws/build/four_dof', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adi'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/home/adi/Dev/Pangolin/build:/home/adi/Dev/Pangolin/build:/usr/local/lib'), ('HOME', '/home/adi'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.84.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1657'), ('SYSTEMD_EXEC_PID', '1986'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '23958'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/adi/hum_rob_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'adi'), ('JOURNAL_STREAM', '8:34169'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'adi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/home/adi/anaconda3/condabin:/opt/ros/humble/bin:/home/adi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Memory:@/tmp/.ICE-unix/1962,unix/Memory:/tmp/.ICE-unix/1962'), ('INVOCATION_ID', '6350b86e116142369c62fd9afb19146e'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2a4d3446f3.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '30'), ('AMENT_PREFIX_PATH', '/home/adi/hum_rob_ws/install/four_dof:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/adi/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/adi/hum_rob_ws/build/four_dof'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/adi/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/adi/hum_rob_ws/install/four_dof:/opt/ros/humble')]), 'shell': False}
+[0.099179] (-) TimerEvent: {}
+[0.107476] (four_dof) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199288] (-) TimerEvent: {}
+[0.299840] (-) TimerEvent: {}
+[0.400249] (-) TimerEvent: {}
+[0.432105] (four_dof) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[0.493863] (four_dof) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.499469] (four_dof) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.500356] (-) TimerEvent: {}
+[0.505967] (four_dof) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.516142] (four_dof) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.529596] (four_dof) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.600498] (-) TimerEvent: {}
+[0.630505] (four_dof) StdoutLine: {'line': b'-- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.670657] (four_dof) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.671711] (four_dof) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700637] (-) TimerEvent: {}
+[0.801009] (-) TimerEvent: {}
+[0.808670] (four_dof) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.901145] (-) TimerEvent: {}
+[0.921481] (four_dof) StdoutLine: {'line': b'-- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)\n'}
+[0.921968] (four_dof) StdoutLine: {'line': b'-- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[0.961203] (four_dof) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[0.996743] (four_dof) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[0.997696] (four_dof) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[1.001567] (four_dof) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.001816] (-) TimerEvent: {}
+[1.002400] (four_dof) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.012177] (four_dof) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.012576] (four_dof) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.020362] (four_dof) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.020684] (four_dof) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.020999] (four_dof) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.021178] (four_dof) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.021358] (four_dof) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.021538] (four_dof) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.021686] (four_dof) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.021817] (four_dof) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.021932] (four_dof) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.022042] (four_dof) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.022169] (four_dof) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.022280] (four_dof) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.101989] (-) TimerEvent: {}
+[1.120099] (four_dof) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[1.120590] (four_dof) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[1.120799] (four_dof) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[1.147203] (four_dof) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[1.161539] (four_dof) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[1.171366] (four_dof) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[1.202150] (-) TimerEvent: {}
+[1.205991] (four_dof) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[1.302320] (-) TimerEvent: {}
+[1.319998] (four_dof) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[1.357669] (four_dof) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[1.402476] (-) TimerEvent: {}
+[1.444048] (four_dof) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.444528] (four_dof) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[1.494740] (four_dof) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[1.502602] (-) TimerEvent: {}
+[1.505082] (four_dof) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[1.536673] (four_dof) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[1.602725] (-) TimerEvent: {}
+[1.613576] (four_dof) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.613930] (four_dof) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.614220] (four_dof) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[1.614439] (four_dof) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[1.614599] (four_dof) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[1.629585] (four_dof) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[1.629945] (four_dof) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[1.630331] (four_dof) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[1.630628] (four_dof) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[1.631415] (four_dof) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[1.631765] (four_dof) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[1.702867] (-) TimerEvent: {}
+[1.710396] (four_dof) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.738975] (four_dof) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.803052] (-) TimerEvent: {}
+[1.816103] (four_dof) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.846997] (four_dof) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.903191] (-) TimerEvent: {}
+[1.926465] (four_dof) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.927324] (four_dof) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.0\n'}
+[1.928221] (four_dof) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.930558] (four_dof) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[1.941462] (four_dof) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.003332] (-) TimerEvent: {}
+[2.041781] (four_dof) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.103493] (-) TimerEvent: {}
+[2.165835] (four_dof) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.166070] (four_dof) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.166196] (four_dof) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.166455] (four_dof) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.166899] (four_dof) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.167295] (four_dof) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.168958] (four_dof) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.169090] (four_dof) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.169385] (four_dof) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.170091] (four_dof) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.175573] (four_dof) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:28 (add_executable):\n'}
+[2.175897] (four_dof) StderrLine: {'line': b'  Cannot find source file:\n'}
+[2.176054] (four_dof) StderrLine: {'line': b'\n'}
+[2.176172] (four_dof) StderrLine: {'line': b'    src/joint_state_publisher.cpp\n'}
+[2.176286] (four_dof) StderrLine: {'line': b'\n'}
+[2.176400] (four_dof) StderrLine: {'line': b'  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h\n'}
+[2.176528] (four_dof) StderrLine: {'line': b'  .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc\n'}
+[2.176648] (four_dof) StderrLine: {'line': b'\n'}
+[2.176766] (four_dof) StderrLine: {'line': b'\x1b[0m\n'}
+[2.176952] (four_dof) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:28 (add_executable):\n'}
+[2.177070] (four_dof) StderrLine: {'line': b'  No SOURCES given to target: joint_state_pub_node\n'}
+[2.177184] (four_dof) StderrLine: {'line': b'\n'}
+[2.177298] (four_dof) StderrLine: {'line': b'\x1b[0m\n'}
+[2.177438] (four_dof) StderrLine: {'line': b'\x1b[0mCMake Generate step failed.  Build files cannot be regenerated correctly.\x1b[0m\n'}
+[2.185392] (four_dof) StderrLine: {'line': b'gmake: *** [Makefile:226: cmake_check_build_system] Error 1\n'}
+[2.191282] (four_dof) CommandEnded: {'returncode': 2}
+[2.203608] (-) TimerEvent: {}
+[2.304092] (-) TimerEvent: {}
+[2.318293] (four_dof) JobEnded: {'identifier': 'four_dof', 'rc': 2}
+[2.319434] (-) EventReactorShutdown: {}

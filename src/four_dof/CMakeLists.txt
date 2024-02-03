@@ -9,6 +9,9 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(xacro REQUIRED)
+find_package(gazebo_ros REQUIRED)
+find_package (sensor_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -22,6 +25,9 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+add_executable(joint_state_pub_node src/joint_publisher.cpp)
+ament_target_dependencies(joint_state_pub_node rclcpp sensor_msgs)
+
 
 install(
   DIRECTORY
@@ -31,6 +37,12 @@ install(
     meshes
   DESTINATION
     share/${PROJECT_NAME}/
+)
+
+install(TARGETS
+  joint_state_pub_node
+  DESTINATION 
+    lib/${PROJECT_NAME}
 )
 
 

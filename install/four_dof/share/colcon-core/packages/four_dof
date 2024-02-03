@@ -1,1 +1,1 @@
-geometry_msgs:rclcpp
+gazebo_ros:geometry_msgs:rclcpp:sensor_msgs:xacro

@@ -1,0 +1,68 @@
+<robot name="6dof">
+
+    <link name="base_link">
+    </link>
+
+    <link name="body">
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/Chassis.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+    </link>
+    <!--
+    <link name="left thigh">
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/LeftThighForUrdf.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <link name="right thigh">
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/RightThighForUrdf.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <link name="left shin">
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/leftknee.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <link name="right shin">
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/rightknee.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <link name="left foot">
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/leftfoot.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <link name="right foot">
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/rightfoot.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+    </link>
+    <-->
+    <joint name="base" type="fixed">
+        <parent link="base_link"/>
+        <child link="body"/>
+        <origin xyz="0 0 0" rpy="1.57 0 0"/>
+    </joint>
+
+</robot>

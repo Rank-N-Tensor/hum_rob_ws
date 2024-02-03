@@ -1,0 +1,38 @@
+[0.091s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16
+[0.175s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16
+[0.211s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/six_dof
+[0.227s] -- Install configuration: ""
+[0.227s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf
+[0.227s] -- Installing: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf/6dof.urdf
+[0.227s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//launch
+[0.228s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//launch/urdf_vis.launch.py
+[0.228s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes
+[0.228s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/leftfoot.stl
+[0.228s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightthighv5.stl
+[0.228s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightfoot.stl
+[0.228s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightthighv6.stl
+[0.228s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightshinv3.stl
+[0.229s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/leftshin.stl
+[0.229s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightthighv3.stl
+[0.229s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/Chassis.stl
+[0.229s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightshinv4.stl
+[0.229s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/chassisv2.stl
+[0.229s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/leftthighv3.stl
+[0.229s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/leftthighv4.stl
+[0.230s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightthighv4.stl
+[0.230s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/package_run_dependencies/six_dof
+[0.230s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/parent_prefix_path/six_dof
+[0.230s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/ament_prefix_path.sh
+[0.230s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/ament_prefix_path.dsv
+[0.230s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/path.sh
+[0.230s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/path.dsv
+[0.230s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.bash
+[0.231s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.sh
+[0.231s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.zsh
+[0.231s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.dsv
+[0.231s] -- Installing: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/package.dsv
+[0.231s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/packages/six_dof
+[0.231s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/cmake/six_dofConfig.cmake
+[0.231s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/cmake/six_dofConfig-version.cmake
+[0.231s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/package.xml
+[0.233s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/six_dof

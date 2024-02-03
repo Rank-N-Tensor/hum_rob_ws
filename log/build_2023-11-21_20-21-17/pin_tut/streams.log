@@ -1,0 +1,22 @@
+[1.402s] Invoking command in '/home/adi/hum_rob_ws/src/pin_tut': PYTHONPATH=/home/adi/hum_rob_ws/build/pin_tut/prefix_override:/home/adi/hum_rob_ws/install/pin_tut/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pin_tut build --build-base /home/adi/hum_rob_ws/build/pin_tut/build install --record /home/adi/hum_rob_ws/build/pin_tut/install.log --single-version-externally-managed
+[1.873s] running egg_info
+[1.874s] writing ../../build/pin_tut/pin_tut.egg-info/PKG-INFO
+[1.874s] writing dependency_links to ../../build/pin_tut/pin_tut.egg-info/dependency_links.txt
+[1.874s] writing entry points to ../../build/pin_tut/pin_tut.egg-info/entry_points.txt
+[1.874s] writing requirements to ../../build/pin_tut/pin_tut.egg-info/requires.txt
+[1.875s] writing top-level names to ../../build/pin_tut/pin_tut.egg-info/top_level.txt
+[1.878s] reading manifest file '../../build/pin_tut/pin_tut.egg-info/SOURCES.txt'
+[1.879s] writing manifest file '../../build/pin_tut/pin_tut.egg-info/SOURCES.txt'
+[1.879s] running build
+[1.879s] running build_py
+[1.879s] running install
+[1.880s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.880s]   warnings.warn(
+[1.880s] running install_lib
+[1.882s] running install_data
+[1.883s] running install_egg_info
+[1.884s] removing '/home/adi/hum_rob_ws/install/pin_tut/lib/python3.10/site-packages/pin_tut-0.0.0-py3.10.egg-info' (and everything under it)
+[1.885s] Copying ../../build/pin_tut/pin_tut.egg-info to /home/adi/hum_rob_ws/install/pin_tut/lib/python3.10/site-packages/pin_tut-0.0.0-py3.10.egg-info
+[1.886s] running install_scripts
+[1.914s] writing list of installed files to '/home/adi/hum_rob_ws/build/pin_tut/install.log'
+[1.953s] Invoked command in '/home/adi/hum_rob_ws/src/pin_tut' returned '0': PYTHONPATH=/home/adi/hum_rob_ws/build/pin_tut/prefix_override:/home/adi/hum_rob_ws/install/pin_tut/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/pin_tut build --build-base /home/adi/hum_rob_ws/build/pin_tut/build install --record /home/adi/hum_rob_ws/build/pin_tut/install.log --single-version-externally-managed

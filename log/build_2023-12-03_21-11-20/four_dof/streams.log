@@ -1,0 +1,51 @@
+[0.177s] Invoking command in '/home/adi/hum_rob_ws/build/four_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adi/hum_rob_ws/install/pin_tut:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/four_dof -- -j16 -l16
+[0.253s] [100%] Built target joint_state_pub_node
+[0.277s] Invoked command in '/home/adi/hum_rob_ws/build/four_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adi/hum_rob_ws/install/pin_tut:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/four_dof -- -j16 -l16
+[0.361s] Invoking command in '/home/adi/hum_rob_ws/build/four_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adi/hum_rob_ws/install/pin_tut:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/four_dof
+[0.376s] -- Install configuration: ""
+[0.376s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//urdf
+[0.376s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//urdf/materials.xacro
+[0.376s] -- Installing: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//urdf/urdf.xacro
+[0.376s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//urdf/draft2.urdf
+[0.377s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//urdf/rrbot.xacro
+[0.377s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//urdf/rrbot.gazebo
+[0.377s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//rviz
+[0.377s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//rviz/placeholder.txt
+[0.377s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//rviz/modified_4_dof.rviz
+[0.377s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//launch
+[0.377s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//launch/urdf_viz.launch.py
+[0.377s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//launch/spawn.launch.py
+[0.377s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//launch/empty_world.launch.py
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft1
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft1/right_front_knee_link.stl
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft1/right_front_thigh_link.stl
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft1/left_foot.stl
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft1/left_front_knee_link.stl
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft1/body_for_Sym.stl
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft1/right_foot.stl
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2/right_front_knee_link.stl
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2/left_front_thigh_link.stl
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2/right_front_thigh_link.stl
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2/left_foot.stl
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2/left_front_knee_link.stl
+[0.378s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2/body_for_Sym.stl
+[0.379s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof//meshes/draft2/right_foot.stl
+[0.379s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/lib/four_dof/joint_state_pub_node
+[0.379s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/package_run_dependencies/four_dof
+[0.379s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/parent_prefix_path/four_dof
+[0.379s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/ament_prefix_path.sh
+[0.379s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/ament_prefix_path.dsv
+[0.379s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/path.sh
+[0.379s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/environment/path.dsv
+[0.379s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.bash
+[0.379s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.sh
+[0.379s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.zsh
+[0.380s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/local_setup.dsv
+[0.380s] -- Installing: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.dsv
+[0.380s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/ament_index/resource_index/packages/four_dof
+[0.380s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/cmake/four_dofConfig.cmake
+[0.380s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/cmake/four_dofConfig-version.cmake
+[0.380s] -- Up-to-date: /home/adi/hum_rob_ws/install/four_dof/share/four_dof/package.xml
+[0.384s] Invoked command in '/home/adi/hum_rob_ws/build/four_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/adi/hum_rob_ws/install/pin_tut:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/four_dof

@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<robot name="four_dof"
+    xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+
+
+    <link name="base_link">
+    </link>
+
+
+    <link name="body">
+        <inertial>
+            <origin xyz= "0.02973 0.04568 0 " rpy = "0 0 0" />
+            <!--mass value="1.1161"/-->
+            <mass value="1.1161"/>
+            <inertia ixx="1.9388" ixy="-0.057687491" ixz="0.00002363" iyy="1.7493" iyz="0.000528114" izz="1.2587"/>
+        </inertial>
+        <visual>
+            <geometry>
+                <mesh filename="file://$(find four_dof)/meshes/draft2/body_for_Sym.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find four_dof)/meshes/draft2/body_for_Sym.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+
+    </link>
+
+
+
+    <gazebo reference="body">
+
+        <mu>0.2</mu>        <!-- Friction coefficient -->
+        <mu2>0.2</mu2>        <!-- Secondary friction coefficient -->
+        <material>Gazebo/Orange</material>
+    </gazebo>
+
+    <!--left thigh-->
+    <link name="left_front_thigh">
+
+        <inertial>
+            <mass value="0.030"/>
+            <inertia ixx="0.11851" ixy="-0.000071553" ixz="0.000012929" iyy="0.011844023" iyz="-0.000083774" izz="0.11251"/>
+        </inertial>
+
+        <visual>
+            <geometry>
+                <mesh filename="file://$(find four_dof)/meshes/draft2/left_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <!--material name="green_dark"/-->
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find four_dof)/meshes/draft2/left_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <gazebo reference="left_front_thigh">
+
+        <mu>0.2</mu>        <!-- Friction coefficient -->
+        <mu2>0.2</mu2>        <!-- Secondary friction coefficient -->
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
+    <link name="right_front_thigh">
+        <inertial>
+            <mass value="0.030"/>
+            <inertia ixx="0.11851" ixy="-0.000071553" ixz="-0.000012929" iyy="0.011844023" iyz="0.000083774" izz="0.11251"/>
+        </inertial>
+
+        <visual>
+            <geometry>
+                <mesh filename="file://$(find four_dof)/meshes/draft2/right_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <!--material name="green_dark"/-->
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find four_dof)/meshes/draft2/right_front_thigh_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <gazebo reference="right_front_thigh">
+
+
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
+
+    <link name="left_front_knee">
+        <inertial>
+            <mass value="0.015"/>
+            <inertia ixx="0.033234919" ixy="-0.00000077" ixz="-0.000000111" iyy="0.000557729" iyz="-0.00028742" izz="0.033649906"/>
+
+        </inertial>
+        <visual>
+            <geometry>
+                <mesh filename="file://$(find four_dof)/meshes/draft2/left_front_knee_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <!--material name="yellow"/-->
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find four_dof)/meshes/draft2/left_front_knee_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <gazebo reference="left_front_knee">
+
+        <mu>0.2</mu>        <!-- Friction coefficient -->
+        <mu2>0.2</mu2>        <!-- Secondary friction coefficient -->
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+
+    <link name="right_front_knee">
+        <inertial>
+            <mass value="0.015"/>
+            <inertia ixx="0.034226714" ixy="-0.000001853" ixz="0.000000174" iyy="0.000587234" iyz="0.000406211" izz="0.03464269"/>
+
+
+        </inertial>
+        <visual>
+            <geometry>
+                <mesh filename="file://$(find four_dof)/meshes/draft2/right_front_knee_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <!--material name="yellow"/-->
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find four_dof)/meshes/draft2/right_front_knee_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <gazebo reference="right_front_knee">
+
+        <mu>0.2</mu>        <!-- Friction coefficient -->
+        <mu2>0.2</mu2>        <!-- Secondary friction coefficient -->
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+
+    <link name="left_foot">
+        <inertial>
+            <mass value="0.010"/>
+            <inertia ixx="0.000779056" ixy="-0.000062667" ixz="-0.000000038827" iyy="0.004965846" iyz="-0.000000078182" izz="0.005390635"/>
+
+        </inertial>
+        <visual>
+            <geometry>
+                <mesh filename="file://$(find four_dof)/meshes/draft2/left_foot.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <!--material name="magenta"/-->
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find four_dof)/meshes/draft2/left_foot.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+
+        <gazebo reference="left_foot">
+
+            <mu>0.2</mu>            <!-- Friction coefficient -->
+            <mu2>0.2</mu2>            <!-- Secondary friction coefficient -->
+            <material>Gazebo/Black</material>
+        </gazebo>
+
+    </link>
+
+    <link name="right_foot">
+        <inertial>
+            <mass value="0.010"/>
+            <inertia ixx="0.000779056" ixy="-0.000062667" ixz="0.000000038838" iyy="0.004965846" iyz="0.000000078115" izz="0.005390635"/>
+
+        </inertial>
+
+        <visual>
+            <geometry>
+                <mesh filename="file://$(find four_dof)/meshes/draft2/right_foot.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <!--material name="magenta"/-->
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="file://$(find four_dof)/meshes/draft2/right_foot.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+
+        <gazebo reference="right_foot">
+            <material>Gazebo/Black</material>
+            <mu>0.2</mu>            <!-- Friction coefficient -->
+            <mu2>0.2</mu2>            <!-- Secondary friction coefficient -->
+        </gazebo>
+    </link>
+
+    <joint name="base_to_body" type="fixed">
+        <parent link="base_link"/>
+        <child link="body"/>
+        <origin xyz="0.0 0.0 0" rpy="1.57 0 0 "/>
+    </joint>
+
+    <joint name="body_to_left_thigh" type="revolute">
+        <parent link="body"/>
+        <child link="left_front_thigh"/>
+        <origin xyz="0.035 0.009408 -0.05025" rpy="0 0 0"/>
+        <axis xyz="0.0 0.0 1"/>
+        <limit effort="35.0" lower="-0.26" upper="0.52" velocity="0.1"/>
+        <dynamics damping="2.0" friction="40.0"/>
+    </joint>
+
+    <joint name="body_to_right_thigh" type="revolute">
+        <parent link="body"/>
+        <child link="right_front_thigh"/>
+        <origin xyz="0.035 0.009408 -0.05025" rpy="0 0 0"/>
+        <axis xyz="0.0 0.0 1"/>
+        <limit effort="35.0" lower="-0.26" upper="0.52" velocity="0.1"/>
+        <dynamics damping="2.0" friction="40.0"/>
+    </joint>
+
+    <joint name="left_thigh_to_knee" type="revolute">
+        <parent link="left_front_thigh"/>
+        <child link="left_front_knee"/>
+        <origin xyz="0.0 -0.134 0.01435" rpy="0 0 0"/>
+        <axis xyz="0.0 0.0 1"/>
+        <limit effort="35" lower="-0.52" upper="0.52" velocity="0.1"/>
+        <dynamics damping="2.0" friction="20.0"/>
+    </joint>
+
+    <joint name="right_thigh_to_knee" type="revolute">
+        <parent link="right_front_thigh"/>
+        <child link="right_front_knee"/>
+        <origin xyz="0.0 -0.134 0.01435" rpy="0 0 0"/>
+        <axis xyz="0.0 0.0 1"/>
+        <limit effort="35" lower="-0.52" upper="0.52" velocity="0.1" />
+        <dynamics damping="2.0" friction="20.0"/>
+    </joint>
+
+    <joint name="left_knee_to_foot" type="revolute">
+
+        <parent link="left_front_knee"/>
+        <child link="left_foot"/>
+        <origin xyz="0.0 -0.110041 0.0" rpy="0.0 0.0 0"/>
+        <axis xyz="0.0 0.0 1.0"/>
+        <limit effort="35" lower="-0.3" upper="0.3" velocity="0"/>
+        <dynamics damping="2.0" friction="20.0"/>
+    </joint>
+
+    <joint name="right_knee_to_foot" type="revolute">
+
+        <parent link="right_front_knee"/>
+        <child link="right_foot"/>
+        <origin xyz="0.0 -0.110041 0.0" rpy="0.0 0.0 0"/>
+        <axis xyz="0.0 0.0 1.0"/>
+        <limit effort="35" lower="-0.3" upper="0.3" velocity="0"/>
+        <dynamics damping="2.0" friction="20.0"/>
+    </joint>
+
+    <ros2_control name="FourDofSystem" type="system">
+
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+
+        <joint name="body_to_left_thigh">
+            <command_interface name="position">
+                <param name="min">-0.26</param>
+                <param name="max">0.52</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+
+        <joint name="body_to_right_thigh">
+            <command_interface name="position">
+                <param name="min">-0.26</param>
+                <param name="max">0.52</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+
+        <joint name="left_thigh_to_knee">
+            <command_interface name="position">
+                <param name="min">-0.52</param>
+                <param name="max">0.52</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+
+        <joint name="right_thigh_to_knee">
+            <command_interface name="position">
+                <param name="min">-0.52</param>
+                <param name="max">0.52</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+    </ros2_control>
+
+    <!--Gazebo's ros2_control plugin -->
+    <gazebo>
+        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+            <robot_sim_type>gazebo_ros2_control/GazeboSystem</robot_sim_type>
+            <robot_param>robot_description</robot_param>
+            <robot_param_node>robot_state_publisher</robot_param_node>
+            <parameters>$(find four_dof_bringup)/config/controller_configuration.yaml</parameters>
+        </plugin>
+    </gazebo>
+
+
+</robot>

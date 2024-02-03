@@ -26,18 +26,18 @@ def generate_launch_description():
         ],
         output="screen"
     )
-    """
+    
     # RVIZ Configuration
     rviz_config_dir = os.path.join(
-        get_package_share_directory(package_description), "rviz", "default.rviz"
+        get_package_share_directory(package_description), "rviz", "modified_4_dof.rviz"
     )
-    """
+    
     rviz2_node = Node(
         package="rviz2",
         executable="rviz2",
         name="rviz2_node",
         parameters=[{"use_sim_time": True}],
-        # arguments=(["-d", rviz_config_dir]),
+         arguments=(["-d", rviz_config_dir]),
     )
 
     #LaunchDescription obj

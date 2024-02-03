@@ -1,1 +1,1 @@
-geometry_msgs;rclcpp;ament_lint_auto;ament_lint_common
+geometry_msgs;rclcpp;xacro;gazebo_ros;sensor_msgs;ament_lint_auto;ament_lint_common
