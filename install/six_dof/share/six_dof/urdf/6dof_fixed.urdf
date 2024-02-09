@@ -4,7 +4,6 @@
     <link name="left_thigh">
 
 
-
         <visual>
             <geometry>
                 <mesh filename="package://six_dof/meshes/leftthighfixedv1.stl" scale="0.001 0.001 0.001"/>
@@ -21,6 +20,8 @@
 
 
     <link name="left_shin">
+
+
         <visual>
             <geometry>
                 <mesh filename="package://six_dof/meshes/rightshinv3.stl" scale="0.001 0.001 0.001"/>
@@ -82,6 +83,8 @@
     </link>
 
     <link name="right_shin">
+
+
         <visual>
             <geometry>
                 <mesh filename="package://six_dof/meshes/rightshinv4.stl" scale="0.01 0.01 0.01"/>
