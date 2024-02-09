@@ -8,6 +8,7 @@ Panels:
         - /Status1
         - /RobotModel1
         - /RobotModel1/Description Topic1
+        - /RobotModel1/Links1
         - /TF1
         - /TF1/Frames1
       Splitter Ratio: 0.5
@@ -64,7 +65,7 @@ Visualization Manager:
         Value: /robot_description
       Enabled: true
       Links:
-        All Links Enabled: true
+        All Links Enabled: false
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
@@ -73,36 +74,32 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        intermediate_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
+          Value: false
         left_foot:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_shin:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         left_thigh:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_foot:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_shin:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+          Value: false
         right_thigh:
           Alpha: 1
           Show Axes: false
@@ -123,8 +120,6 @@ Visualization Manager:
         All Enabled: false
         body:
           Value: false
-        intermediate_link:
-          Value: true
         left_foot:
           Value: false
         left_shin:
@@ -146,12 +141,11 @@ Visualization Manager:
         right_foot:
           right_shin:
             right_thigh:
-              intermediate_link:
-                body:
-                  left_thigh:
-                    left_shin:
-                      left_foot:
-                        {}
+              body:
+                left_thigh:
+                  left_shin:
+                    left_foot:
+                      {}
       Update Interval: 0
       Value: true
   Enabled: true
@@ -215,10 +209,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: -0.18460145592689514
+      Pitch: 0.05039854720234871
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 4.71042013168335
+      Yaw: 4.9454216957092285
     Saved: ~
 Window Geometry:
   Displays:
