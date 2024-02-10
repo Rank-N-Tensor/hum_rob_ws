@@ -68,6 +68,8 @@
 
     <link name='intermediate_link'/>
 
+    <link name="intermediate_link_2"/>
+
     <link name="right_thigh">
         <visual>
             <geometry>
@@ -148,14 +150,14 @@
 
     <joint name="body_left_thigh_lateral" type="revolute">
         <parent link="body"/>
-        <child link="left_thigh"/>
+        <child link="intermediate_link_2"/>
         <origin xyz="0.100 0 0" rpy="0 3.14 0"/>
         <axis  xyz = " 0 0 1"/>
         <limit effort="35.0" lower="-0.15" upper="0.15" velocity="0.1"/>
     </joint>
 
     <joint name="body_left_thigh" type="revolute">
-        <parent link="body"/>
+        <parent link="intermediate_link_2"/>
         <child link="left_thigh"/>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <axis  xyz = " 1 0 0"/>
