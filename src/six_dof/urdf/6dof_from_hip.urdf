@@ -74,13 +74,13 @@
     <link name="right_thigh">
         <visual>
             <geometry>
-                <mesh filename="package://six_dof/meshes/rightthighfixedv1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://six_dof/meshes/rightthighfixedv2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://six_dof/meshes/rightthighfixedv1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://six_dof/meshes/rightthighfixedv2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -90,13 +90,13 @@
 
         <visual>
             <geometry>
-                <mesh filename="package://six_dof/meshes/rightshinv4.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="package://six_dof/meshes/rightshinfixedv2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://six_dof/meshes/rightshinv4.stl" scale="0.01 0.01 0.01"/>
+                <mesh filename="package://six_dof/meshes/rightshinfixedv2.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -120,7 +120,7 @@
         <parent link="right_shin"/>
         <child link="right_foot"/>
 
-        <origin xyz="-0.004 0.0 0.0" rpy="-1.57 0 0"/>
+        <origin xyz="-0.02 -0.130 0.0" rpy="-1.57 0 0"/>
         <axis  xyz = " 1 0 0"/>
         <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
     </joint>
@@ -128,7 +128,7 @@
     <joint name="right_thigh_shin" type="revolute">
         <parent link="right_thigh"/>
         <child link="right_shin"/>
-        <origin xyz="-0.0125 -0.130 0" rpy="0 0 0"/>
+        <origin xyz="0.0025 -0.160 0" rpy="0 0 0"/>
         <axis  xyz = " 1 0 0"/>
         <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
     </joint>
@@ -136,9 +136,9 @@
     <joint name="right_body_thigh" type="revolute">
         <parent link="intermediate_link"/>
         <child link="right_thigh"/>
-        <origin xyz="0.041 -0.160 0" rpy="0 0 0"/>
+        <origin xyz="0.041 0 0" rpy="0 0 0"/>
         <axis  xyz = " 1 0 0"/>
-        <limit effort="35.0" lower="-0.78" upper="1.57" velocity="0.1"/>
+        <limit effort="35.0" lower="-1.57" upper="0.78" velocity="0.1"/>
     </joint>
 
     <joint name="right_body_thigh_lateral" type="revolute">
@@ -182,7 +182,7 @@
     <joint name="left_shin_foot" type="revolute">
         <parent link="left_shin"/>
         <child link="left_foot"/>
-        <origin xyz="-0.022 -0.130 0" rpy="-1.57 3.14 0"/>
+        <origin xyz="-0.027 -0.130 0" rpy="-1.57 3.14 0"/>
         <axis  xyz = " 1 0 0"/>
         <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
     </joint>
