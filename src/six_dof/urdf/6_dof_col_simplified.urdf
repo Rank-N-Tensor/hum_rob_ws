@@ -1,0 +1,184 @@
+<robot name="6dof">
+
+
+    <link name="left_thigh">
+
+
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/leftthighfixedv1.stl" scale="0.001 0.001 0.001"/>
+                <!--leftthighv5-->
+            </geometry>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/leftthighfixedv1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <link name="left_shin">
+
+
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/rightshinv3.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/rightshinv3.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+
+    <link name="left_foot">
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/leftfootfixed.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/leftfootfixed.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <link name="body">
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/chassisv2.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/chassisv2.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name='intermediate_link'/>
+
+    <link name="intermediate_link_2"/>
+
+    <link name="right_thigh">
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/rightthighfixedv1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/rightthighfixedv1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="right_shin">
+
+
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/rightshinv4.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/rightshinv4.stl" scale="0.01 0.01 0.01"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="right_foot">
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/leftfootfixed.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/leftfootfixed.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <joint name="right_foot_shin" type="revolute">
+        <parent link="right_foot"/>
+        <child link="right_shin"/>
+        <!-- <origin xyz="0.005 0.025 0.0265" rpy="1.57 0 0"/> -->
+        <origin xyz="0.004 0.0 0.0" rpy="1.57 0 0"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+    </joint>
+
+    <joint name="right_shin_thigh" type="revolute">
+        <parent link="right_shin"/>
+        <child link="right_thigh"/>
+        <origin xyz="0.0125 0.130 0" rpy="0 0 0"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+    </joint>
+
+    <joint name="right_thigh_body" type="revolute">
+        <parent link="right_thigh"/>
+        <child link="intermediate_link"/>
+        <origin xyz="-0.041 0.160 0" rpy="0 0 0"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.78" upper="1.57" velocity="0.1"/>
+    </joint>
+
+    <joint name="right_thigh_body_lateral" type="revolute">
+        <parent link="intermediate_link"/>
+        <child link="body"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis  xyz = " 0 0 1"/>
+        <limit effort="35.0" lower="-0.26" upper="0.26" velocity="0.1"/>
+    </joint>
+
+    <joint name="body_left_thigh_lateral" type="revolute">
+        <parent link="body"/>
+        <child link="intermediate_link_2"/>
+        <origin xyz="0.100 0 0" rpy="0 3.14 0"/>
+        <axis  xyz = " 0 0 1"/>
+        <limit effort="35.0" lower="-0.26" upper="0.26" velocity="0.1"/>
+    </joint>
+
+    <joint name="body_left_thigh" type="revolute">
+        <parent link="intermediate_link_2"/>
+        <child link="left_thigh"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.78" upper="1.57" velocity="0.1"/>
+    </joint>
+
+    <joint name="left_thigh_shin" type="revolute">
+        <parent link="left_thigh"/>
+        <child link="left_shin"/>
+        <origin xyz="0.005 -0.160 0" rpy="0 0 0"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+    </joint>
+
+    <joint name="left_shin_foot" type="revolute">
+        <parent link="left_shin"/>
+        <child link="left_foot"/>
+        <origin xyz="-0.022 -0.130 0" rpy="-1.57 3.14 0"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+    </joint>
+
+
+</robot>
