@@ -10,5 +10,6 @@
     "editor.formatOnSave": true,
     "files.associations": {
         "chrono": "cpp"
-    }
+    },
+    "ros.distro": "humble"
 }
