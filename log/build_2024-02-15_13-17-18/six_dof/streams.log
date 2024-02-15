@@ -1,0 +1,59 @@
+[0.074s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16
+[0.104s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.354s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.466s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.499s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.501s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.508s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.520s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.536s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.592s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.594s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.741s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.885s] -- Found rclpy: 3.3.11 (/opt/ros/humble/share/rclpy/cmake)
+[0.886s] -- pinocchio FOUND. pinocchio at /opt/ros/humble/lib/x86_64-linux-gnu/libpinocchio.so
+[0.886s] -- boost_filesystem FOUND. boost_filesystem at /lib/x86_64-linux-gnu/libboost_filesystem.so
+[0.887s] -- boost_serialization FOUND. boost_serialization at /lib/x86_64-linux-gnu/libboost_serialization.so
+[0.887s] -- boost_system FOUND. boost_system at /lib/x86_64-linux-gnu/libboost_system.so
+[0.896s] -- Found Boost: /usr/include (found version "1.74.0") found components: filesystem serialization system 
+[0.897s] -- eigenpy FOUND. eigenpy at /opt/ros/humble/lib/x86_64-linux-gnu/libeigenpy.so
+[1.477s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter Development.Module NumPy 
+[1.478s] -- PythonLibraryDirs: 
+[1.478s] -- PythonLibVersionString: 3.10.12
+[1.541s] -- Python site lib: lib/python3.10/dist-packages
+[1.541s] -- Python include dirs: /usr/include/python3.10
+[1.690s] -- Checking for NumPy
+[1.829s] --   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include
+[1.978s] --   NUMPY_VERSION=1.21.5
+[1.978s] -- NumPy include dir: /usr/lib/python3/dist-packages/numpy/core/include
+[1.988s] [33mCMake Warning at /usr/share/cmake-3.22/Modules/FindBoost.cmake:2201 (message):
+[1.988s]   No header defined for python310; skipping header check (note: header-only
+[1.988s]   libraries have no designated component)
+[1.988s] Call Stack (most recent call first):
+[1.988s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/boost.cmake:144 (find_package)
+[1.988s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/eigenpyConfig.cmake:149 (SEARCH_FOR_BOOST_PYTHON)
+[1.989s]   /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)
+[1.989s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:160 (find_dependency)
+[1.989s]   CMakeLists.txt:12 (find_package)
+[1.989s] 
+[1.989s] [0m
+[1.990s] -- Found Boost: /usr/include (found version "1.74.0") found components: python310 
+[1.990s] -- Boost_PYTHON_LIBRARY: /usr/lib/x86_64-linux-gnu/libboost_python310.so
+[2.369s] -- Default C++ standard: 201703
+[2.369s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[2.369s] -- CMAKE_CXX_STANDARD was not set: automatically set to currently defined standard 17
+[2.370s] -- hpp-fcl FOUND. hpp-fcl at /opt/ros/humble/lib/x86_64-linux-gnu/libhpp-fcl.so
+[2.375s] -- Found Boost: /usr/include (found version "1.74.0") found components: chrono serialization 
+[2.377s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[2.378s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[2.378s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.469s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[2.469s]   ament_target_dependencies() the first argument must be a valid target name
+[2.469s] Call Stack (most recent call first):
+[2.469s]   CMakeLists.txt:29 (ament_target_dependencies)
+[2.469s] 
+[2.469s] [0m
+[2.469s] -- Configuring incomplete, errors occurred!
+[2.470s] See also "/home/adi/hum_rob_ws/build/six_dof/CMakeFiles/CMakeOutput.log".
+[2.476s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[2.481s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16

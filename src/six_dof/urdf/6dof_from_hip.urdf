@@ -165,7 +165,7 @@
         <parent link="right_shin"/>
         <child link="right_foot"/>
 
-        <origin xyz="-0.02 -0.130 0.0" rpy="-1.57 -1.57 0"/>
+        <origin xyz="-0.02 -0.130 0.0" rpy="0 0 0"/>
         <axis  xyz = " 1 0 0"/>
         <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
     </joint>
@@ -227,7 +227,7 @@
     <joint name="left_shin_foot" type="revolute">
         <parent link="left_shin"/>
         <child link="left_foot"/>
-        <origin xyz="-0.027 -0.130 0" rpy="-1.57 1.57 0"/>
+        <origin xyz="-0.027 -0.130 0" rpy="0 0 0"/>
         <axis  xyz = " 1 0 0"/>
         <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
     </joint>
