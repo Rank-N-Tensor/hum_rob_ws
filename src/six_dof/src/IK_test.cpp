@@ -1,9 +1,9 @@
 #include "pinocchio/fwd.hpp"
-#include "pinocchio/parsers/urdf.hpp"
+#include "pinocchio/algorithm/geometry.hpp"
 #include "pinocchio/algorithm/jacobian.hpp"
 #include "pinocchio/algorithm/joint-configuration.hpp"
 #include "pinocchio/algorithm/kinematics.hpp"
-#include "pinocchio/algorithm/geometry.hpp"
+#include "pinocchio/parsers/urdf.hpp"
 #include "pinocchio/spatial/explog.hpp"
 
 #include <cmath>
@@ -14,7 +14,7 @@ using namespace pinocchio;
 
 double rad2deg(double radians) { return radians * (180.0 / M_PI); }
 
-int main(int argc, char *argv[]) {
+int main() {
 
   // mesh_dir
   const std::string mesh_dir = "src/six_dof/meshes";
@@ -36,10 +36,11 @@ int main(int argc, char *argv[]) {
 
   // Geometry data
   Data data(model);
-  GeometryData collision_data(collision_model);
-  GeometryData visual_data(visual_model);
 
   collision_model.addAllCollisionPairs();
+  GeometryData collision_data(collision_model);
+
+  GeometryData visual_data(visual_model);
 
   // neutral_config
   Eigen::VectorXd q = pinocchio::neutral(model);
@@ -66,12 +67,13 @@ int main(int argc, char *argv[]) {
 
   // LOOP
   for (int i = 0;; i++) {
+    std::cout<<i<<std::endl;
     pinocchio::forwardKinematics(model, data, q);
     const pinocchio::SE3 iMd = data.oMi[JOINT_ID].actInv(oMdes);
     err = pinocchio::log6(iMd).toVector(); // in joint frame
     if (err.norm() < eps) {
       success = true;
-      break;
+      
     }
     if (i >= IT_MAX) {
       success = false;
@@ -88,31 +90,28 @@ int main(int argc, char *argv[]) {
     v.noalias() = -J.transpose() * JJt.ldlt().solve(err);
     q = pinocchio::integrate(model, q, v * DT);
 
-
-    // collision modeling
-    updateGeometryPlacements(model,data,collision_model,collision_data,q);
-    bool collision_detected= computeCollisions(model,data,collision_model,collision_data,q,false);
     
 
-    if (!(i % 10))
-      std::cout << i << ": error = " << err.transpose() << std::endl;
+    // // collision modeling
+     updateGeometryPlacements(model, data, collision_model, collision_data, q);
+     bool is_collision =
+         computeCollisions(model, data, collision_model, collision_data, q,true);
+    //std::cout << "collision status= " << is_collision << std::endl;
+
+    std::cout<<"normalized error is: "<<err.norm()<<std::endl;
+
+    if (success) {
+      std::cout << "Convergence achieved!" << std::endl;
+      // convert to deg
+      for (int i = 0; i < q.size(); i++) {
+        q[i] = rad2deg(q[i]);
+      }
+      std::cout << "\n result in deg is:" << q.transpose() << "\n";
+      break;
+    } 
+    else{
+      std::cout<<"no convergence"<<std::endl;
+    }
   }
-
-  if (success) {
-    std::cout << "Convergence achieved!" << std::endl;
-  } else {
-    std::cout << "\nWarning: the iterative algorithm has not reached "
-                 "convergence to the desired precision"
-              << std::endl;
-  }
-
-  std::cout << "\nresult: " << q.transpose() << std::endl;
-  std::cout << "\nfinal error: " << err.transpose() << std::endl;
-
-  // convert to deg
-  for (int i = 0; i < q.size(); i++) {
-    q[i] = rad2deg(q[i]);
-  }
-
-  std::cout << "\n result in deg is:" << q.transpose() << "\n";
+  
 }

@@ -1,0 +1,364 @@
+[0.000000] (-) TimerEvent: {}
+[0.000421] (-) JobUnselected: {'identifier': 'four_dof'}
+[0.000503] (-) JobUnselected: {'identifier': 'four_dof_bringup'}
+[0.000712] (six_dof) JobQueued: {'identifier': 'six_dof', 'dependencies': OrderedDict()}
+[0.000752] (six_dof) JobStarted: {'identifier': 'six_dof'}
+[0.099078] (-) TimerEvent: {}
+[0.145202] (six_dof) JobProgress: {'identifier': 'six_dof', 'progress': 'cmake'}
+[0.146113] (six_dof) JobProgress: {'identifier': 'six_dof', 'progress': 'build'}
+[0.147048] (six_dof) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/adi/hum_rob_ws/build/six_dof', '--', '-j16', '-l16'], 'cwd': '/home/adi/hum_rob_ws/build/six_dof', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adi'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64::/usr/local/lib'), ('HOME', '/home/adi'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1651'), ('SYSTEMD_EXEC_PID', '1976'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2627'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/adi/hum_rob_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'adi'), ('JOURNAL_STREAM', '8:25569'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'adi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda/bin:/home/adi/anaconda3/condabin:/home/adi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Memory:@/tmp/.ICE-unix/1957,unix/Memory:/tmp/.ICE-unix/1957'), ('INVOCATION_ID', '37cd5f2e92c841c194eeeae66c1c07c4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3b17749a21.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '99'), ('AMENT_PREFIX_PATH', '/home/adi/hum_rob_ws/install/six_dof:/home/adi/hum_rob_ws/install/four_dof_bringup:/home/adi/hum_rob_ws/install/four_dof:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/adi/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/adi/hum_rob_ws/build/six_dof'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/adi/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/adi/hum_rob_ws/install/six_dof:/home/adi/hum_rob_ws/install/four_dof_bringup:/home/adi/hum_rob_ws/install/four_dof:/opt/ros/humble')]), 'shell': False}
+[0.199218] (-) TimerEvent: {}
+[0.267882] (six_dof) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_node\x1b[0m\n'}
+[0.299379] (-) TimerEvent: {}
+[0.369603] (six_dof) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/test_node.dir/src/IK_test.cpp.o\x1b[0m\n'}
+[0.399540] (-) TimerEvent: {}
+[0.500224] (-) TimerEvent: {}
+[0.600924] (-) TimerEvent: {}
+[0.701638] (-) TimerEvent: {}
+[0.802039] (-) TimerEvent: {}
+[0.902472] (-) TimerEvent: {}
+[1.002878] (-) TimerEvent: {}
+[1.103309] (-) TimerEvent: {}
+[1.203757] (-) TimerEvent: {}
+[1.304202] (-) TimerEvent: {}
+[1.404669] (-) TimerEvent: {}
+[1.505107] (-) TimerEvent: {}
+[1.605745] (-) TimerEvent: {}
+[1.706172] (-) TimerEvent: {}
+[1.806602] (-) TimerEvent: {}
+[1.907038] (-) TimerEvent: {}
+[2.007446] (-) TimerEvent: {}
+[2.107856] (-) TimerEvent: {}
+[2.208289] (-) TimerEvent: {}
+[2.308644] (-) TimerEvent: {}
+[2.409009] (-) TimerEvent: {}
+[2.509371] (-) TimerEvent: {}
+[2.609756] (-) TimerEvent: {}
+[2.710195] (-) TimerEvent: {}
+[2.810633] (-) TimerEvent: {}
+[2.911070] (-) TimerEvent: {}
+[3.011511] (-) TimerEvent: {}
+[3.111948] (-) TimerEvent: {}
+[3.212397] (-) TimerEvent: {}
+[3.312840] (-) TimerEvent: {}
+[3.413504] (-) TimerEvent: {}
+[3.513937] (-) TimerEvent: {}
+[3.614378] (-) TimerEvent: {}
+[3.714824] (-) TimerEvent: {}
+[3.815266] (-) TimerEvent: {}
+[3.915704] (-) TimerEvent: {}
+[4.016145] (-) TimerEvent: {}
+[4.116587] (-) TimerEvent: {}
+[4.217036] (-) TimerEvent: {}
+[4.317509] (-) TimerEvent: {}
+[4.417949] (-) TimerEvent: {}
+[4.518393] (-) TimerEvent: {}
+[4.618836] (-) TimerEvent: {}
+[4.719285] (-) TimerEvent: {}
+[4.819722] (-) TimerEvent: {}
+[4.920174] (-) TimerEvent: {}
+[5.020621] (-) TimerEvent: {}
+[5.121062] (-) TimerEvent: {}
+[5.221505] (-) TimerEvent: {}
+[5.321954] (-) TimerEvent: {}
+[5.422400] (-) TimerEvent: {}
+[5.522831] (-) TimerEvent: {}
+[5.623276] (-) TimerEvent: {}
+[5.723887] (-) TimerEvent: {}
+[5.824302] (-) TimerEvent: {}
+[5.924719] (-) TimerEvent: {}
+[6.025120] (-) TimerEvent: {}
+[6.125511] (-) TimerEvent: {}
+[6.225891] (-) TimerEvent: {}
+[6.326265] (-) TimerEvent: {}
+[6.426636] (-) TimerEvent: {}
+[6.527004] (-) TimerEvent: {}
+[6.627372] (-) TimerEvent: {}
+[6.727740] (-) TimerEvent: {}
+[6.828113] (-) TimerEvent: {}
+[6.928485] (-) TimerEvent: {}
+[7.028852] (-) TimerEvent: {}
+[7.129219] (-) TimerEvent: {}
+[7.229589] (-) TimerEvent: {}
+[7.329965] (-) TimerEvent: {}
+[7.430332] (-) TimerEvent: {}
+[7.530699] (-) TimerEvent: {}
+[7.631068] (-) TimerEvent: {}
+[7.731439] (-) TimerEvent: {}
+[7.831805] (-) TimerEvent: {}
+[7.932175] (-) TimerEvent: {}
+[8.032543] (-) TimerEvent: {}
+[8.132914] (-) TimerEvent: {}
+[8.233269] (-) TimerEvent: {}
+[8.333671] (-) TimerEvent: {}
+[8.434035] (-) TimerEvent: {}
+[8.534398] (-) TimerEvent: {}
+[8.634756] (-) TimerEvent: {}
+[8.735123] (-) TimerEvent: {}
+[8.835481] (-) TimerEvent: {}
+[8.935850] (-) TimerEvent: {}
+[9.036213] (-) TimerEvent: {}
+[9.136583] (-) TimerEvent: {}
+[9.236950] (-) TimerEvent: {}
+[9.337319] (-) TimerEvent: {}
+[9.437687] (-) TimerEvent: {}
+[9.538024] (-) TimerEvent: {}
+[9.638361] (-) TimerEvent: {}
+[9.738722] (-) TimerEvent: {}
+[9.839089] (-) TimerEvent: {}
+[9.939460] (-) TimerEvent: {}
+[10.039827] (-) TimerEvent: {}
+[10.140194] (-) TimerEvent: {}
+[10.240555] (-) TimerEvent: {}
+[10.340925] (-) TimerEvent: {}
+[10.441297] (-) TimerEvent: {}
+[10.541663] (-) TimerEvent: {}
+[10.642002] (-) TimerEvent: {}
+[10.742369] (-) TimerEvent: {}
+[10.842710] (-) TimerEvent: {}
+[10.943064] (-) TimerEvent: {}
+[11.043433] (-) TimerEvent: {}
+[11.143792] (-) TimerEvent: {}
+[11.244159] (-) TimerEvent: {}
+[11.344536] (-) TimerEvent: {}
+[11.444910] (-) TimerEvent: {}
+[11.545282] (-) TimerEvent: {}
+[11.645669] (-) TimerEvent: {}
+[11.746031] (-) TimerEvent: {}
+[11.846377] (-) TimerEvent: {}
+[11.946745] (-) TimerEvent: {}
+[12.047101] (-) TimerEvent: {}
+[12.147461] (-) TimerEvent: {}
+[12.247824] (-) TimerEvent: {}
+[12.348714] (-) TimerEvent: {}
+[12.449084] (-) TimerEvent: {}
+[12.549502] (-) TimerEvent: {}
+[12.649860] (-) TimerEvent: {}
+[12.750219] (-) TimerEvent: {}
+[12.850581] (-) TimerEvent: {}
+[12.950949] (-) TimerEvent: {}
+[13.051314] (-) TimerEvent: {}
+[13.151684] (-) TimerEvent: {}
+[13.252052] (-) TimerEvent: {}
+[13.352418] (-) TimerEvent: {}
+[13.452782] (-) TimerEvent: {}
+[13.553147] (-) TimerEvent: {}
+[13.653512] (-) TimerEvent: {}
+[13.753873] (-) TimerEvent: {}
+[13.854213] (-) TimerEvent: {}
+[13.954553] (-) TimerEvent: {}
+[14.054884] (-) TimerEvent: {}
+[14.155246] (-) TimerEvent: {}
+[14.255600] (-) TimerEvent: {}
+[14.356136] (-) TimerEvent: {}
+[14.456478] (-) TimerEvent: {}
+[14.556804] (-) TimerEvent: {}
+[14.657136] (-) TimerEvent: {}
+[14.757498] (-) TimerEvent: {}
+[14.857855] (-) TimerEvent: {}
+[14.958219] (-) TimerEvent: {}
+[15.058550] (-) TimerEvent: {}
+[15.158912] (-) TimerEvent: {}
+[15.259280] (-) TimerEvent: {}
+[15.359648] (-) TimerEvent: {}
+[15.460014] (-) TimerEvent: {}
+[15.560368] (-) TimerEvent: {}
+[15.660736] (-) TimerEvent: {}
+[15.761108] (-) TimerEvent: {}
+[15.861502] (-) TimerEvent: {}
+[15.961866] (-) TimerEvent: {}
+[16.062204] (-) TimerEvent: {}
+[16.162571] (-) TimerEvent: {}
+[16.262935] (-) TimerEvent: {}
+[16.363308] (-) TimerEvent: {}
+[16.463684] (-) TimerEvent: {}
+[16.564051] (-) TimerEvent: {}
+[16.664390] (-) TimerEvent: {}
+[16.764769] (-) TimerEvent: {}
+[16.865137] (-) TimerEvent: {}
+[16.965512] (-) TimerEvent: {}
+[17.065851] (-) TimerEvent: {}
+[17.166216] (-) TimerEvent: {}
+[17.266578] (-) TimerEvent: {}
+[17.366946] (-) TimerEvent: {}
+[17.467316] (-) TimerEvent: {}
+[17.567679] (-) TimerEvent: {}
+[17.668049] (-) TimerEvent: {}
+[17.768420] (-) TimerEvent: {}
+[17.868783] (-) TimerEvent: {}
+[17.969160] (-) TimerEvent: {}
+[18.069768] (-) TimerEvent: {}
+[18.170129] (-) TimerEvent: {}
+[18.270484] (-) TimerEvent: {}
+[18.370850] (-) TimerEvent: {}
+[18.471182] (-) TimerEvent: {}
+[18.571545] (-) TimerEvent: {}
+[18.671898] (-) TimerEvent: {}
+[18.772284] (-) TimerEvent: {}
+[18.872664] (-) TimerEvent: {}
+[18.973038] (-) TimerEvent: {}
+[19.073655] (-) TimerEvent: {}
+[19.174022] (-) TimerEvent: {}
+[19.274390] (-) TimerEvent: {}
+[19.374762] (-) TimerEvent: {}
+[19.475130] (-) TimerEvent: {}
+[19.575491] (-) TimerEvent: {}
+[19.675864] (-) TimerEvent: {}
+[19.776234] (-) TimerEvent: {}
+[19.876603] (-) TimerEvent: {}
+[19.976979] (-) TimerEvent: {}
+[20.077348] (-) TimerEvent: {}
+[20.177740] (-) TimerEvent: {}
+[20.278110] (-) TimerEvent: {}
+[20.378492] (-) TimerEvent: {}
+[20.478865] (-) TimerEvent: {}
+[20.579234] (-) TimerEvent: {}
+[20.679622] (-) TimerEvent: {}
+[20.779991] (-) TimerEvent: {}
+[20.880307] (-) TimerEvent: {}
+[20.980607] (-) TimerEvent: {}
+[21.080906] (-) TimerEvent: {}
+[21.181203] (-) TimerEvent: {}
+[21.281498] (-) TimerEvent: {}
+[21.381783] (-) TimerEvent: {}
+[21.482077] (-) TimerEvent: {}
+[21.582374] (-) TimerEvent: {}
+[21.682677] (-) TimerEvent: {}
+[21.782971] (-) TimerEvent: {}
+[21.883271] (-) TimerEvent: {}
+[21.983561] (-) TimerEvent: {}
+[22.083864] (-) TimerEvent: {}
+[22.184154] (-) TimerEvent: {}
+[22.284452] (-) TimerEvent: {}
+[22.384748] (-) TimerEvent: {}
+[22.485043] (-) TimerEvent: {}
+[22.585334] (-) TimerEvent: {}
+[22.685650] (-) TimerEvent: {}
+[22.785935] (-) TimerEvent: {}
+[22.886223] (-) TimerEvent: {}
+[22.986509] (-) TimerEvent: {}
+[23.086805] (-) TimerEvent: {}
+[23.187092] (-) TimerEvent: {}
+[23.287380] (-) TimerEvent: {}
+[23.387673] (-) TimerEvent: {}
+[23.487974] (-) TimerEvent: {}
+[23.588272] (-) TimerEvent: {}
+[23.688563] (-) TimerEvent: {}
+[23.788851] (-) TimerEvent: {}
+[23.889150] (-) TimerEvent: {}
+[23.989468] (-) TimerEvent: {}
+[24.089767] (-) TimerEvent: {}
+[24.190067] (-) TimerEvent: {}
+[24.290361] (-) TimerEvent: {}
+[24.390645] (-) TimerEvent: {}
+[24.490949] (-) TimerEvent: {}
+[24.591232] (-) TimerEvent: {}
+[24.691524] (-) TimerEvent: {}
+[24.791812] (-) TimerEvent: {}
+[24.892102] (-) TimerEvent: {}
+[24.992394] (-) TimerEvent: {}
+[25.092723] (-) TimerEvent: {}
+[25.193081] (-) TimerEvent: {}
+[25.293458] (-) TimerEvent: {}
+[25.393814] (-) TimerEvent: {}
+[25.494146] (-) TimerEvent: {}
+[25.594471] (-) TimerEvent: {}
+[25.694838] (-) TimerEvent: {}
+[25.795199] (-) TimerEvent: {}
+[25.895557] (-) TimerEvent: {}
+[25.995914] (-) TimerEvent: {}
+[26.096297] (-) TimerEvent: {}
+[26.196664] (-) TimerEvent: {}
+[26.297024] (-) TimerEvent: {}
+[26.397388] (-) TimerEvent: {}
+[26.497735] (-) TimerEvent: {}
+[26.598070] (-) TimerEvent: {}
+[26.698426] (-) TimerEvent: {}
+[26.798781] (-) TimerEvent: {}
+[26.899136] (-) TimerEvent: {}
+[26.999476] (-) TimerEvent: {}
+[27.099810] (-) TimerEvent: {}
+[27.200195] (-) TimerEvent: {}
+[27.300631] (-) TimerEvent: {}
+[27.401065] (-) TimerEvent: {}
+[27.501521] (-) TimerEvent: {}
+[27.601939] (-) TimerEvent: {}
+[27.702379] (-) TimerEvent: {}
+[27.802811] (-) TimerEvent: {}
+[27.903249] (-) TimerEvent: {}
+[28.003682] (-) TimerEvent: {}
+[28.104117] (-) TimerEvent: {}
+[28.204547] (-) TimerEvent: {}
+[28.304987] (-) TimerEvent: {}
+[28.405442] (-) TimerEvent: {}
+[28.505889] (-) TimerEvent: {}
+[28.548214] (six_dof) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_node\x1b[0m\n'}
+[28.606032] (-) TimerEvent: {}
+[28.706467] (-) TimerEvent: {}
+[28.806934] (-) TimerEvent: {}
+[28.907377] (-) TimerEvent: {}
+[29.007973] (-) TimerEvent: {}
+[29.108408] (-) TimerEvent: {}
+[29.208744] (-) TimerEvent: {}
+[29.309170] (-) TimerEvent: {}
+[29.409544] (-) TimerEvent: {}
+[29.510336] (-) TimerEvent: {}
+[29.610740] (-) TimerEvent: {}
+[29.654404] (six_dof) StdoutLine: {'line': b'[100%] Built target test_node\n'}
+[29.670545] (six_dof) CommandEnded: {'returncode': 0}
+[29.710860] (-) TimerEvent: {}
+[29.718237] (six_dof) JobProgress: {'identifier': 'six_dof', 'progress': 'install'}
+[29.728505] (six_dof) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/adi/hum_rob_ws/build/six_dof'], 'cwd': '/home/adi/hum_rob_ws/build/six_dof', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adi'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64::/usr/local/lib'), ('HOME', '/home/adi'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1651'), ('SYSTEMD_EXEC_PID', '1976'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2627'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/adi/hum_rob_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'adi'), ('JOURNAL_STREAM', '8:25569'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'adi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda/bin:/home/adi/anaconda3/condabin:/home/adi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Memory:@/tmp/.ICE-unix/1957,unix/Memory:/tmp/.ICE-unix/1957'), ('INVOCATION_ID', '37cd5f2e92c841c194eeeae66c1c07c4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3b17749a21.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '99'), ('AMENT_PREFIX_PATH', '/home/adi/hum_rob_ws/install/six_dof:/home/adi/hum_rob_ws/install/four_dof_bringup:/home/adi/hum_rob_ws/install/four_dof:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/adi/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/adi/hum_rob_ws/build/six_dof'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/adi/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/adi/hum_rob_ws/install/six_dof:/home/adi/hum_rob_ws/install/four_dof_bringup:/home/adi/hum_rob_ws/install/four_dof:/opt/ros/humble')]), 'shell': False}
+[29.737273] (six_dof) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[29.737651] (six_dof) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[29.738116] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf/6_dof_col_simplified.urdf\n'}
+[29.738362] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf/6dof_from_foot.urdf\n'}
+[29.738640] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf/6dof_from_hip.urdf\n'}
+[29.738930] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf/6dof_test.urdf\n'}
+[29.739160] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//rviz/six_dof.rviz\n'}
+[29.739470] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//rviz/six_dof_fixed.rviz\n'}
+[29.739693] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//launch/urdf_vis.launch.py\n'}
+[29.739872] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/chassisv2.stl\n'}
+[29.740068] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/foot_fixedv2.stl\n'}
+[29.740248] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/footfixedv3.stl\n'}
+[29.740451] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/leftfootfixed.stl\n'}
+[29.740766] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/leftthighfixedv1.stl\n'}
+[29.741049] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightshinfixedv2.stl\n'}
+[29.741304] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightshinv3.stl\n'}
+[29.741632] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightthighfixedv2.stl\n'}
+[29.741949] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/Chassis.stl\n'}
+[29.742230] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftfoot.stl\n'}
+[29.742512] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftshin.stl\n'}
+[29.742820] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftthighv3.stl\n'}
+[29.743040] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftthighv4.stl\n'}
+[29.743258] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftthighv5.stl\n'}
+[29.743478] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftthighv6.stl\n'}
+[29.743697] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightfoot.stl\n'}
+[29.743917] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightshinv4.stl\n'}
+[29.744134] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighfixedv1.stl\n'}
+[29.744379] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv3.stl\n'}
+[29.744596] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv4.stl\n'}
+[29.744815] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv5.stl\n'}
+[29.745032] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv7.stl\n'}
+[29.745273] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv8.stl\n'}
+[29.745525] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/lib/six_dof//test_node\n'}
+[29.745767] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/package_run_dependencies/six_dof\n'}
+[29.745989] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/parent_prefix_path/six_dof\n'}
+[29.746207] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/ament_prefix_path.sh\n'}
+[29.746430] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/ament_prefix_path.dsv\n'}
+[29.746647] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/path.sh\n'}
+[29.746864] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/path.dsv\n'}
+[29.747121] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.bash\n'}
+[29.747342] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.sh\n'}
+[29.747559] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.zsh\n'}
+[29.747785] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.dsv\n'}
+[29.748012] (six_dof) StdoutLine: {'line': b'-- Symlinking: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/package.dsv\n'}
+[29.764511] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/packages/six_dof\n'}
+[29.764910] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/cmake/six_dofConfig.cmake\n'}
+[29.765209] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/cmake/six_dofConfig-version.cmake\n'}
+[29.765570] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/package.xml\n'}
+[29.767597] (six_dof) CommandEnded: {'returncode': 0}
+[29.811019] (-) TimerEvent: {}
+[29.911438] (-) TimerEvent: {}
+[29.962449] (six_dof) JobEnded: {'identifier': 'six_dof', 'rc': 0}
+[29.963197] (-) EventReactorShutdown: {}

@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target test_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/test_node.dir/src/IK_test.cpp.o[0m
+[100%] [32m[1mLinking CXX executable test_node[0m
+[100%] Built target test_node
+-- Install configuration: ""
+-- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf
+-- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//rviz
+-- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//launch
+-- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes
+-- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused
+-- Installing: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/package.dsv

@@ -1,0 +1,475 @@
+[0.000000] (-) TimerEvent: {}
+[0.000856] (-) JobUnselected: {'identifier': 'four_dof'}
+[0.000967] (-) JobUnselected: {'identifier': 'four_dof_bringup'}
+[0.001047] (six_dof) JobQueued: {'identifier': 'six_dof', 'dependencies': OrderedDict()}
+[0.001169] (six_dof) JobStarted: {'identifier': 'six_dof'}
+[0.099385] (-) TimerEvent: {}
+[0.138901] (six_dof) JobProgress: {'identifier': 'six_dof', 'progress': 'cmake'}
+[0.139844] (six_dof) JobProgress: {'identifier': 'six_dof', 'progress': 'build'}
+[0.140803] (six_dof) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/adi/hum_rob_ws/build/six_dof', '--', '-j16', '-l16'], 'cwd': '/home/adi/hum_rob_ws/build/six_dof', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adi'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64::/usr/local/lib'), ('HOME', '/home/adi'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1651'), ('SYSTEMD_EXEC_PID', '1976'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2627'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/adi/hum_rob_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'adi'), ('JOURNAL_STREAM', '8:25569'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'adi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda/bin:/home/adi/anaconda3/condabin:/home/adi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Memory:@/tmp/.ICE-unix/1957,unix/Memory:/tmp/.ICE-unix/1957'), ('INVOCATION_ID', '37cd5f2e92c841c194eeeae66c1c07c4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3b17749a21.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '99'), ('AMENT_PREFIX_PATH', '/home/adi/hum_rob_ws/install/six_dof:/home/adi/hum_rob_ws/install/four_dof_bringup:/home/adi/hum_rob_ws/install/four_dof:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/adi/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/adi/hum_rob_ws/build/six_dof'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/adi/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/adi/hum_rob_ws/install/six_dof:/home/adi/hum_rob_ws/install/four_dof_bringup:/home/adi/hum_rob_ws/install/four_dof:/opt/ros/humble')]), 'shell': False}
+[0.192885] (six_dof) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199540] (-) TimerEvent: {}
+[0.300167] (-) TimerEvent: {}
+[0.400611] (-) TimerEvent: {}
+[0.501035] (-) TimerEvent: {}
+[0.529227] (six_dof) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.601146] (-) TimerEvent: {}
+[0.631546] (six_dof) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.648926] (six_dof) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.701321] (-) TimerEvent: {}
+[0.723233] (six_dof) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.729182] (six_dof) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.738889] (six_dof) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.754365] (six_dof) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.777039] (six_dof) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.801458] (-) TimerEvent: {}
+[0.859617] (six_dof) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.861847] (six_dof) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.901635] (-) TimerEvent: {}
+[1.002137] (-) TimerEvent: {}
+[1.080851] (six_dof) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.102262] (-) TimerEvent: {}
+[1.202606] (-) TimerEvent: {}
+[1.301886] (six_dof) StdoutLine: {'line': b'-- Found rclpy: 3.3.11 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.302753] (-) TimerEvent: {}
+[1.303048] (six_dof) StdoutLine: {'line': b'-- pinocchio FOUND. pinocchio at /opt/ros/humble/lib/x86_64-linux-gnu/libpinocchio.so\n'}
+[1.303695] (six_dof) StdoutLine: {'line': b'-- boost_filesystem FOUND. boost_filesystem at /lib/x86_64-linux-gnu/libboost_filesystem.so\n'}
+[1.304295] (six_dof) StdoutLine: {'line': b'-- boost_serialization FOUND. boost_serialization at /lib/x86_64-linux-gnu/libboost_serialization.so\n'}
+[1.304959] (six_dof) StdoutLine: {'line': b'-- boost_system FOUND. boost_system at /lib/x86_64-linux-gnu/libboost_system.so\n'}
+[1.316246] (six_dof) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.74.0") found components: filesystem serialization system \n'}
+[1.317762] (six_dof) StdoutLine: {'line': b'-- eigenpy FOUND. eigenpy at /opt/ros/humble/lib/x86_64-linux-gnu/libeigenpy.so\n'}
+[1.402881] (-) TimerEvent: {}
+[1.503261] (-) TimerEvent: {}
+[1.603693] (-) TimerEvent: {}
+[1.704124] (-) TimerEvent: {}
+[1.804845] (-) TimerEvent: {}
+[1.905270] (-) TimerEvent: {}
+[2.005684] (-) TimerEvent: {}
+[2.083188] (six_dof) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter Development.Module NumPy \n'}
+[2.084599] (six_dof) StdoutLine: {'line': b'-- PythonLibraryDirs: \n'}
+[2.084869] (six_dof) StdoutLine: {'line': b'-- PythonLibVersionString: 3.10.12\n'}
+[2.105823] (-) TimerEvent: {}
+[2.198673] (six_dof) StdoutLine: {'line': b'-- Python site lib: lib/python3.10/dist-packages\n'}
+[2.198985] (six_dof) StdoutLine: {'line': b'-- Python include dirs: /usr/include/python3.10\n'}
+[2.205970] (-) TimerEvent: {}
+[2.306413] (-) TimerEvent: {}
+[2.404273] (six_dof) StdoutLine: {'line': b'-- Checking for NumPy\n'}
+[2.406547] (-) TimerEvent: {}
+[2.507174] (-) TimerEvent: {}
+[2.607795] (six_dof) StdoutLine: {'line': b'--   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include\n'}
+[2.608100] (-) TimerEvent: {}
+[2.708475] (-) TimerEvent: {}
+[2.795746] (six_dof) StdoutLine: {'line': b'--   NUMPY_VERSION=1.21.5\n'}
+[2.796066] (six_dof) StdoutLine: {'line': b'-- NumPy include dir: /usr/lib/python3/dist-packages/numpy/core/include\n'}
+[2.807338] (six_dof) StderrLine: {'line': b'\x1b[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindBoost.cmake:2201 (message):\n'}
+[2.807669] (six_dof) StderrLine: {'line': b'  No header defined for python310; skipping header check (note: header-only\n'}
+[2.807838] (six_dof) StderrLine: {'line': b'  libraries have no designated component)\n'}
+[2.807995] (six_dof) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.808148] (six_dof) StderrLine: {'line': b'  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/boost.cmake:144 (find_package)\n'}
+[2.808303] (six_dof) StderrLine: {'line': b'  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/eigenpyConfig.cmake:149 (SEARCH_FOR_BOOST_PYTHON)\n'}
+[2.808497] (-) TimerEvent: {}
+[2.808681] (six_dof) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)\n'}
+[2.808938] (six_dof) StderrLine: {'line': b'  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:160 (find_dependency)\n'}
+[2.809094] (six_dof) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[2.809248] (six_dof) StderrLine: {'line': b'\n'}
+[2.809410] (six_dof) StderrLine: {'line': b'\x1b[0m\n'}
+[2.809573] (six_dof) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.74.0") found components: python310 \n'}
+[2.809806] (six_dof) StdoutLine: {'line': b'-- Boost_PYTHON_LIBRARY: /usr/lib/x86_64-linux-gnu/libboost_python310.so\n'}
+[2.908655] (-) TimerEvent: {}
+[3.009063] (-) TimerEvent: {}
+[3.109512] (-) TimerEvent: {}
+[3.209944] (-) TimerEvent: {}
+[3.305418] (six_dof) StdoutLine: {'line': b'-- Default C++ standard: 201703\n'}
+[3.305871] (six_dof) StdoutLine: {'line': b'-- C++ standard sufficient: Minimal required 11, currently defined: 17\n'}
+[3.306074] (six_dof) StdoutLine: {'line': b'-- CMAKE_CXX_STANDARD was not set: automatically set to currently defined standard 17\n'}
+[3.308135] (six_dof) StdoutLine: {'line': b'-- hpp-fcl FOUND. hpp-fcl at /opt/ros/humble/lib/x86_64-linux-gnu/libhpp-fcl.so\n'}
+[3.310105] (-) TimerEvent: {}
+[3.324511] (six_dof) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.74.0") found components: chrono serialization \n'}
+[3.328458] (six_dof) StdoutLine: {'line': b'-- C++ standard sufficient: Minimal required 11, currently defined: 17\n'}
+[3.329929] (six_dof) StdoutLine: {'line': b'-- C++ standard sufficient: Minimal required 11, currently defined: 17\n'}
+[3.330253] (six_dof) StdoutLine: {'line': b'-- Pinocchio found at: /opt/ros/humble/include\n'}
+[3.331729] (six_dof) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.410273] (-) TimerEvent: {}
+[3.510675] (-) TimerEvent: {}
+[3.512555] (six_dof) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.512872] (six_dof) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[3.513012] (six_dof) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.514351] (six_dof) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.516557] (six_dof) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.518233] (six_dof) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.525169] (six_dof) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.525449] (six_dof) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.526778] (six_dof) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.529445] (six_dof) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.556952] (six_dof) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:41 (add_executable):\n'}
+[3.557209] (six_dof) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target test_node because\n'}
+[3.557328] (six_dof) StderrLine: {'line': b'  files in some directories may conflict with libraries in implicit\n'}
+[3.557449] (six_dof) StderrLine: {'line': b'  directories:\n'}
+[3.557568] (six_dof) StderrLine: {'line': b'\n'}
+[3.557684] (six_dof) StderrLine: {'line': b'    runtime library [liburdfdom_sensor.so.3.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[3.557802] (six_dof) StderrLine: {'line': b'      /opt/ros/humble/lib/x86_64-linux-gnu\n'}
+[3.557947] (six_dof) StderrLine: {'line': b'    runtime library [liburdfdom_model_state.so.3.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[3.558172] (six_dof) StderrLine: {'line': b'      /opt/ros/humble/lib/x86_64-linux-gnu\n'}
+[3.558391] (six_dof) StderrLine: {'line': b'    runtime library [liburdfdom_model.so.3.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[3.558612] (six_dof) StderrLine: {'line': b'      /opt/ros/humble/lib/x86_64-linux-gnu\n'}
+[3.558831] (six_dof) StderrLine: {'line': b'    runtime library [liburdfdom_world.so.3.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[3.558972] (six_dof) StderrLine: {'line': b'      /opt/ros/humble/lib/x86_64-linux-gnu\n'}
+[3.559087] (six_dof) StderrLine: {'line': b'\n'}
+[3.559203] (six_dof) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[3.559319] (six_dof) StderrLine: {'line': b'\n'}
+[3.559433] (six_dof) StderrLine: {'line': b'\x1b[0m\n'}
+[3.560723] (six_dof) StdoutLine: {'line': b'-- Generating done\n'}
+[3.563532] (six_dof) StdoutLine: {'line': b'-- Build files have been written to: /home/adi/hum_rob_ws/build/six_dof\n'}
+[3.610797] (-) TimerEvent: {}
+[3.611321] (six_dof) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_node\x1b[0m\n'}
+[3.691607] (six_dof) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/test_node.dir/src/IK_test.cpp.o\x1b[0m\n'}
+[3.711146] (-) TimerEvent: {}
+[3.811573] (-) TimerEvent: {}
+[3.912007] (-) TimerEvent: {}
+[4.012639] (-) TimerEvent: {}
+[4.113067] (-) TimerEvent: {}
+[4.213448] (-) TimerEvent: {}
+[4.313777] (-) TimerEvent: {}
+[4.414217] (-) TimerEvent: {}
+[4.514630] (-) TimerEvent: {}
+[4.615014] (-) TimerEvent: {}
+[4.715443] (-) TimerEvent: {}
+[4.815844] (-) TimerEvent: {}
+[4.916283] (-) TimerEvent: {}
+[5.016745] (-) TimerEvent: {}
+[5.117154] (-) TimerEvent: {}
+[5.217561] (-) TimerEvent: {}
+[5.318036] (-) TimerEvent: {}
+[5.418476] (-) TimerEvent: {}
+[5.518919] (-) TimerEvent: {}
+[5.619368] (-) TimerEvent: {}
+[5.719811] (-) TimerEvent: {}
+[5.820270] (-) TimerEvent: {}
+[5.920751] (-) TimerEvent: {}
+[6.021194] (-) TimerEvent: {}
+[6.121627] (-) TimerEvent: {}
+[6.222061] (-) TimerEvent: {}
+[6.322497] (-) TimerEvent: {}
+[6.422923] (-) TimerEvent: {}
+[6.523361] (-) TimerEvent: {}
+[6.623807] (-) TimerEvent: {}
+[6.724212] (-) TimerEvent: {}
+[6.824649] (-) TimerEvent: {}
+[6.925042] (-) TimerEvent: {}
+[7.025452] (-) TimerEvent: {}
+[7.125885] (-) TimerEvent: {}
+[7.226301] (-) TimerEvent: {}
+[7.326707] (-) TimerEvent: {}
+[7.427103] (-) TimerEvent: {}
+[7.527495] (-) TimerEvent: {}
+[7.627877] (-) TimerEvent: {}
+[7.728259] (-) TimerEvent: {}
+[7.828634] (-) TimerEvent: {}
+[7.928995] (-) TimerEvent: {}
+[8.029357] (-) TimerEvent: {}
+[8.129719] (-) TimerEvent: {}
+[8.230079] (-) TimerEvent: {}
+[8.330452] (-) TimerEvent: {}
+[8.430820] (-) TimerEvent: {}
+[8.531191] (-) TimerEvent: {}
+[8.631565] (-) TimerEvent: {}
+[8.732211] (-) TimerEvent: {}
+[8.832605] (-) TimerEvent: {}
+[8.932938] (-) TimerEvent: {}
+[9.033304] (-) TimerEvent: {}
+[9.133690] (-) TimerEvent: {}
+[9.225323] (six_dof) StderrLine: {'line': b'\x1b[01m\x1b[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.225647] (six_dof) StderrLine: {'line': b'\x1b[01m\x1b[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:95:11:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kis_collision\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[9.225828] (six_dof) StderrLine: {'line': b'   95 |      bool \x1b[01;35m\x1b[Kis_collision\x1b[m\x1b[K =\n'}
+[9.225986] (six_dof) StderrLine: {'line': b'      |           \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.233822] (-) TimerEvent: {}
+[9.334206] (-) TimerEvent: {}
+[9.434634] (-) TimerEvent: {}
+[9.535075] (-) TimerEvent: {}
+[9.635509] (-) TimerEvent: {}
+[9.735945] (-) TimerEvent: {}
+[9.836378] (-) TimerEvent: {}
+[9.936813] (-) TimerEvent: {}
+[10.037227] (-) TimerEvent: {}
+[10.137696] (-) TimerEvent: {}
+[10.238131] (-) TimerEvent: {}
+[10.338564] (-) TimerEvent: {}
+[10.438985] (-) TimerEvent: {}
+[10.539423] (-) TimerEvent: {}
+[10.639851] (-) TimerEvent: {}
+[10.740283] (-) TimerEvent: {}
+[10.840741] (-) TimerEvent: {}
+[10.941147] (-) TimerEvent: {}
+[11.041583] (-) TimerEvent: {}
+[11.142015] (-) TimerEvent: {}
+[11.242451] (-) TimerEvent: {}
+[11.342885] (-) TimerEvent: {}
+[11.443283] (-) TimerEvent: {}
+[11.543718] (-) TimerEvent: {}
+[11.644141] (-) TimerEvent: {}
+[11.744575] (-) TimerEvent: {}
+[11.845009] (-) TimerEvent: {}
+[11.945420] (-) TimerEvent: {}
+[12.045853] (-) TimerEvent: {}
+[12.146279] (-) TimerEvent: {}
+[12.246715] (-) TimerEvent: {}
+[12.347151] (-) TimerEvent: {}
+[12.447580] (-) TimerEvent: {}
+[12.548017] (-) TimerEvent: {}
+[12.648487] (-) TimerEvent: {}
+[12.748923] (-) TimerEvent: {}
+[12.849357] (-) TimerEvent: {}
+[12.949788] (-) TimerEvent: {}
+[13.050215] (-) TimerEvent: {}
+[13.150648] (-) TimerEvent: {}
+[13.251070] (-) TimerEvent: {}
+[13.351500] (-) TimerEvent: {}
+[13.451930] (-) TimerEvent: {}
+[13.552352] (-) TimerEvent: {}
+[13.652807] (-) TimerEvent: {}
+[13.753217] (-) TimerEvent: {}
+[13.853646] (-) TimerEvent: {}
+[13.954077] (-) TimerEvent: {}
+[14.054508] (-) TimerEvent: {}
+[14.154943] (-) TimerEvent: {}
+[14.255357] (-) TimerEvent: {}
+[14.355731] (-) TimerEvent: {}
+[14.456101] (-) TimerEvent: {}
+[14.556496] (-) TimerEvent: {}
+[14.656859] (-) TimerEvent: {}
+[14.757223] (-) TimerEvent: {}
+[14.857591] (-) TimerEvent: {}
+[14.957954] (-) TimerEvent: {}
+[15.058316] (-) TimerEvent: {}
+[15.158682] (-) TimerEvent: {}
+[15.259047] (-) TimerEvent: {}
+[15.359416] (-) TimerEvent: {}
+[15.459788] (-) TimerEvent: {}
+[15.560154] (-) TimerEvent: {}
+[15.660516] (-) TimerEvent: {}
+[15.760878] (-) TimerEvent: {}
+[15.861260] (-) TimerEvent: {}
+[15.961632] (-) TimerEvent: {}
+[16.062011] (-) TimerEvent: {}
+[16.162378] (-) TimerEvent: {}
+[16.262744] (-) TimerEvent: {}
+[16.363112] (-) TimerEvent: {}
+[16.463474] (-) TimerEvent: {}
+[16.563845] (-) TimerEvent: {}
+[16.664210] (-) TimerEvent: {}
+[16.764532] (-) TimerEvent: {}
+[16.864896] (-) TimerEvent: {}
+[16.965257] (-) TimerEvent: {}
+[17.065623] (-) TimerEvent: {}
+[17.166002] (-) TimerEvent: {}
+[17.266433] (-) TimerEvent: {}
+[17.366867] (-) TimerEvent: {}
+[17.467299] (-) TimerEvent: {}
+[17.567732] (-) TimerEvent: {}
+[17.668159] (-) TimerEvent: {}
+[17.768634] (-) TimerEvent: {}
+[17.869051] (-) TimerEvent: {}
+[17.969487] (-) TimerEvent: {}
+[18.069919] (-) TimerEvent: {}
+[18.170354] (-) TimerEvent: {}
+[18.270780] (-) TimerEvent: {}
+[18.371208] (-) TimerEvent: {}
+[18.471645] (-) TimerEvent: {}
+[18.572064] (-) TimerEvent: {}
+[18.672519] (-) TimerEvent: {}
+[18.772957] (-) TimerEvent: {}
+[18.873361] (-) TimerEvent: {}
+[18.973795] (-) TimerEvent: {}
+[19.074204] (-) TimerEvent: {}
+[19.174637] (-) TimerEvent: {}
+[19.275041] (-) TimerEvent: {}
+[19.375474] (-) TimerEvent: {}
+[19.475890] (-) TimerEvent: {}
+[19.576327] (-) TimerEvent: {}
+[19.676792] (-) TimerEvent: {}
+[19.777226] (-) TimerEvent: {}
+[19.877656] (-) TimerEvent: {}
+[19.978097] (-) TimerEvent: {}
+[20.078521] (-) TimerEvent: {}
+[20.178953] (-) TimerEvent: {}
+[20.279377] (-) TimerEvent: {}
+[20.379797] (-) TimerEvent: {}
+[20.480236] (-) TimerEvent: {}
+[20.580693] (-) TimerEvent: {}
+[20.681127] (-) TimerEvent: {}
+[20.781560] (-) TimerEvent: {}
+[20.881990] (-) TimerEvent: {}
+[20.982421] (-) TimerEvent: {}
+[21.082920] (-) TimerEvent: {}
+[21.183363] (-) TimerEvent: {}
+[21.283801] (-) TimerEvent: {}
+[21.384211] (-) TimerEvent: {}
+[21.484667] (-) TimerEvent: {}
+[21.585080] (-) TimerEvent: {}
+[21.685510] (-) TimerEvent: {}
+[21.785941] (-) TimerEvent: {}
+[21.886371] (-) TimerEvent: {}
+[21.986800] (-) TimerEvent: {}
+[22.087235] (-) TimerEvent: {}
+[22.187665] (-) TimerEvent: {}
+[22.288101] (-) TimerEvent: {}
+[22.388535] (-) TimerEvent: {}
+[22.489175] (-) TimerEvent: {}
+[22.589632] (-) TimerEvent: {}
+[22.690126] (-) TimerEvent: {}
+[22.790562] (-) TimerEvent: {}
+[22.890992] (-) TimerEvent: {}
+[22.991403] (-) TimerEvent: {}
+[23.091780] (-) TimerEvent: {}
+[23.192188] (-) TimerEvent: {}
+[23.292616] (-) TimerEvent: {}
+[23.393013] (-) TimerEvent: {}
+[23.493402] (-) TimerEvent: {}
+[23.593796] (-) TimerEvent: {}
+[23.694185] (-) TimerEvent: {}
+[23.794574] (-) TimerEvent: {}
+[23.894969] (-) TimerEvent: {}
+[23.995355] (-) TimerEvent: {}
+[24.095742] (-) TimerEvent: {}
+[24.196144] (-) TimerEvent: {}
+[24.296597] (-) TimerEvent: {}
+[24.396961] (-) TimerEvent: {}
+[24.497354] (-) TimerEvent: {}
+[24.597747] (-) TimerEvent: {}
+[24.698138] (-) TimerEvent: {}
+[24.798496] (-) TimerEvent: {}
+[24.898859] (-) TimerEvent: {}
+[24.999271] (-) TimerEvent: {}
+[25.099755] (-) TimerEvent: {}
+[25.200226] (-) TimerEvent: {}
+[25.301085] (-) TimerEvent: {}
+[25.401560] (-) TimerEvent: {}
+[25.502031] (-) TimerEvent: {}
+[25.602473] (-) TimerEvent: {}
+[25.702958] (-) TimerEvent: {}
+[25.803432] (-) TimerEvent: {}
+[25.903905] (-) TimerEvent: {}
+[26.004379] (-) TimerEvent: {}
+[26.104851] (-) TimerEvent: {}
+[26.205300] (-) TimerEvent: {}
+[26.305786] (-) TimerEvent: {}
+[26.406260] (-) TimerEvent: {}
+[26.506733] (-) TimerEvent: {}
+[26.607207] (-) TimerEvent: {}
+[26.707645] (-) TimerEvent: {}
+[26.808093] (-) TimerEvent: {}
+[26.908499] (-) TimerEvent: {}
+[27.008935] (-) TimerEvent: {}
+[27.109362] (-) TimerEvent: {}
+[27.209782] (-) TimerEvent: {}
+[27.310211] (-) TimerEvent: {}
+[27.410648] (-) TimerEvent: {}
+[27.511048] (-) TimerEvent: {}
+[27.611380] (-) TimerEvent: {}
+[27.711801] (-) TimerEvent: {}
+[27.812234] (-) TimerEvent: {}
+[27.912683] (-) TimerEvent: {}
+[28.013109] (-) TimerEvent: {}
+[28.113533] (-) TimerEvent: {}
+[28.213960] (-) TimerEvent: {}
+[28.314390] (-) TimerEvent: {}
+[28.414821] (-) TimerEvent: {}
+[28.515246] (-) TimerEvent: {}
+[28.615682] (-) TimerEvent: {}
+[28.716162] (-) TimerEvent: {}
+[28.816625] (-) TimerEvent: {}
+[28.917053] (-) TimerEvent: {}
+[29.017474] (-) TimerEvent: {}
+[29.117926] (-) TimerEvent: {}
+[29.218352] (-) TimerEvent: {}
+[29.318778] (-) TimerEvent: {}
+[29.419206] (-) TimerEvent: {}
+[29.519634] (-) TimerEvent: {}
+[29.620054] (-) TimerEvent: {}
+[29.720509] (-) TimerEvent: {}
+[29.820933] (-) TimerEvent: {}
+[29.921346] (-) TimerEvent: {}
+[30.021715] (-) TimerEvent: {}
+[30.122084] (-) TimerEvent: {}
+[30.222449] (-) TimerEvent: {}
+[30.322823] (-) TimerEvent: {}
+[30.423196] (-) TimerEvent: {}
+[30.523571] (-) TimerEvent: {}
+[30.623975] (-) TimerEvent: {}
+[30.724395] (-) TimerEvent: {}
+[30.824819] (-) TimerEvent: {}
+[30.925215] (-) TimerEvent: {}
+[31.025576] (-) TimerEvent: {}
+[31.125940] (-) TimerEvent: {}
+[31.218643] (six_dof) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_node\x1b[0m\n'}
+[31.226083] (-) TimerEvent: {}
+[31.326496] (-) TimerEvent: {}
+[31.427022] (-) TimerEvent: {}
+[31.527499] (-) TimerEvent: {}
+[31.627887] (-) TimerEvent: {}
+[31.728313] (-) TimerEvent: {}
+[31.828725] (-) TimerEvent: {}
+[31.929088] (-) TimerEvent: {}
+[32.029457] (-) TimerEvent: {}
+[32.129810] (-) TimerEvent: {}
+[32.230150] (-) TimerEvent: {}
+[32.330478] (-) TimerEvent: {}
+[32.359043] (six_dof) StdoutLine: {'line': b'[100%] Built target test_node\n'}
+[32.390355] (six_dof) CommandEnded: {'returncode': 0}
+[32.430593] (-) TimerEvent: {}
+[32.445384] (six_dof) JobProgress: {'identifier': 'six_dof', 'progress': 'install'}
+[32.456205] (six_dof) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/adi/hum_rob_ws/build/six_dof'], 'cwd': '/home/adi/hum_rob_ws/build/six_dof', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adi'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64::/usr/local/lib'), ('HOME', '/home/adi'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1651'), ('SYSTEMD_EXEC_PID', '1976'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2627'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('COLCON_PREFIX_PATH', '/home/adi/hum_rob_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'adi'), ('JOURNAL_STREAM', '8:25569'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'adi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda/bin:/home/adi/anaconda3/condabin:/home/adi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/Memory:@/tmp/.ICE-unix/1957,unix/Memory:/tmp/.ICE-unix/1957'), ('INVOCATION_ID', '37cd5f2e92c841c194eeeae66c1c07c4'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3b17749a21.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '99'), ('AMENT_PREFIX_PATH', '/home/adi/hum_rob_ws/install/six_dof:/home/adi/hum_rob_ws/install/four_dof_bringup:/home/adi/hum_rob_ws/install/four_dof:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/adi/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/adi/hum_rob_ws/build/six_dof'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/adi/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/adi/hum_rob_ws/install/six_dof:/home/adi/hum_rob_ws/install/four_dof_bringup:/home/adi/hum_rob_ws/install/four_dof:/opt/ros/humble')]), 'shell': False}
+[32.464852] (six_dof) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[32.465212] (six_dof) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[32.465441] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf/6_dof_col_simplified.urdf\n'}
+[32.465712] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf/6dof_from_foot.urdf\n'}
+[32.465971] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf/6dof_from_hip.urdf\n'}
+[32.466211] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf/6dof_test.urdf\n'}
+[32.466368] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//rviz/six_dof.rviz\n'}
+[32.466493] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//rviz/six_dof_fixed.rviz\n'}
+[32.466683] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//launch/urdf_vis.launch.py\n'}
+[32.466902] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/chassisv2.stl\n'}
+[32.467101] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/foot_fixedv2.stl\n'}
+[32.467263] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/footfixedv3.stl\n'}
+[32.467335] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/leftfootfixed.stl\n'}
+[32.467392] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/leftthighfixedv1.stl\n'}
+[32.467454] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightshinfixedv2.stl\n'}
+[32.467513] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightshinv3.stl\n'}
+[32.467600] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightthighfixedv2.stl\n'}
+[32.467655] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/Chassis.stl\n'}
+[32.467716] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftfoot.stl\n'}
+[32.467776] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftshin.stl\n'}
+[32.467836] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftthighv3.stl\n'}
+[32.467897] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftthighv4.stl\n'}
+[32.467957] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftthighv5.stl\n'}
+[32.468018] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftthighv6.stl\n'}
+[32.468127] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightfoot.stl\n'}
+[32.468187] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightshinv4.stl\n'}
+[32.468267] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighfixedv1.stl\n'}
+[32.468348] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv3.stl\n'}
+[32.468404] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv4.stl\n'}
+[32.468476] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv5.stl\n'}
+[32.468557] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv7.stl\n'}
+[32.468612] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv8.stl\n'}
+[32.468684] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/lib/six_dof//test_node\n'}
+[32.468741] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/package_run_dependencies/six_dof\n'}
+[32.468826] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/parent_prefix_path/six_dof\n'}
+[32.468941] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/ament_prefix_path.sh\n'}
+[32.469049] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/ament_prefix_path.dsv\n'}
+[32.469185] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/path.sh\n'}
+[32.469295] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/path.dsv\n'}
+[32.469424] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.bash\n'}
+[32.469539] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.sh\n'}
+[32.469654] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.zsh\n'}
+[32.469768] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.dsv\n'}
+[32.469847] (six_dof) StdoutLine: {'line': b'-- Symlinking: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/package.dsv\n'}
+[32.491902] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/packages/six_dof\n'}
+[32.492352] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/cmake/six_dofConfig.cmake\n'}
+[32.492675] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/cmake/six_dofConfig-version.cmake\n'}
+[32.492828] (six_dof) StdoutLine: {'line': b'-- Up-to-date symlink: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/package.xml\n'}
+[32.494624] (six_dof) CommandEnded: {'returncode': 0}
+[32.530772] (-) TimerEvent: {}
+[32.631079] (-) TimerEvent: {}
+[32.731599] (-) TimerEvent: {}
+[32.750164] (six_dof) JobEnded: {'identifier': 'six_dof', 'rc': 0}
+[32.751201] (-) EventReactorShutdown: {}

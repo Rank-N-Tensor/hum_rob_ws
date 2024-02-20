@@ -1,0 +1,68 @@
+[0.089s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16
+[0.171s] [35m[1mConsolidate compiler generated dependencies of target test_node[0m
+[0.249s] [ 50%] [32mBuilding CXX object CMakeFiles/test_node.dir/src/IK_test.cpp.o[0m
+[3.705s] [01m[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.706s] [01m[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:17:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.706s]    17 | int main([01;35m[Kint argc[m[K, char *argv[]) {
+[3.706s]       |          [01;35m[K~~~~^~~~[m[K
+[3.706s] [01m[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:17:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.707s]    17 | int main(int argc, [01;35m[Kchar *argv[][m[K) {
+[3.707s]       |                    [01;35m[K~~~~~~^~~~~~[m[K
+[24.752s] [100%] [32m[1mLinking CXX executable test_node[0m
+[25.835s] [100%] Built target test_node
+[25.865s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16
+[25.953s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/six_dof
+[25.969s] -- Install configuration: ""
+[25.969s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf
+[25.969s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf/6dof_from_foot.urdf
+[25.969s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf/6_dof_col_simplified.urdf
+[25.970s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf/6dof_from_hip.urdf
+[25.970s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf/6dof_test.urdf
+[25.970s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//rviz
+[25.970s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//rviz/six_dof_fixed.rviz
+[25.971s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//rviz/six_dof.rviz
+[25.971s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//launch
+[25.971s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//launch/urdf_vis.launch.py
+[25.972s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes
+[25.972s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightthighfixedv2.stl
+[25.972s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/leftfootfixed.stl
+[25.972s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightshinv3.stl
+[25.972s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/footfixedv3.stl
+[25.973s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/rightshinfixedv2.stl
+[25.973s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/foot_fixedv2.stl
+[25.973s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/chassisv2.stl
+[25.973s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused
+[25.973s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftfoot.stl
+[25.974s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv5.stl
+[25.974s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightfoot.stl
+[25.974s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftthighv5.stl
+[25.974s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftthighv6.stl
+[25.974s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftshin.stl
+[25.974s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv3.stl
+[25.975s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/Chassis.stl
+[25.975s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightshinv4.stl
+[25.975s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv8.stl
+[25.975s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftthighv3.stl
+[25.975s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv7.stl
+[25.975s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/leftthighv4.stl
+[25.976s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighv4.stl
+[25.976s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused/rightthighfixedv1.stl
+[25.976s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/leftthighfixedv1.stl
+[25.976s] -- Installing: /home/adi/hum_rob_ws/install/six_dof/lib/six_dof/test_node
+[26.002s] -- Set runtime path of "/home/adi/hum_rob_ws/install/six_dof/lib/six_dof/test_node" to ""
+[26.002s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/package_run_dependencies/six_dof
+[26.003s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/parent_prefix_path/six_dof
+[26.003s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/ament_prefix_path.sh
+[26.003s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/ament_prefix_path.dsv
+[26.003s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/path.sh
+[26.003s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/environment/path.dsv
+[26.003s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.bash
+[26.004s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.sh
+[26.004s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.zsh
+[26.004s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/local_setup.dsv
+[26.004s] -- Installing: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/package.dsv
+[26.004s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/ament_index/resource_index/packages/six_dof
+[26.005s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/cmake/six_dofConfig.cmake
+[26.005s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/cmake/six_dofConfig-version.cmake
+[26.005s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/package.xml
+[26.007s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/six_dof

@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/home/adi/hum_rob_ws/build/six_dof/ament_cmake_environment_hooks/path.dsv

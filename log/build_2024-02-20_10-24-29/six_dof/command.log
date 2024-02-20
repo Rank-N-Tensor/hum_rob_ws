@@ -1,0 +1,2 @@
+Invoking command in '/home/adi/hum_rob_ws/build/six_dof': /usr/bin/cmake /home/adi/hum_rob_ws/src/six_dof -DCMAKE_INSTALL_PREFIX=/home/adi/hum_rob_ws/install/six_dof
+Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '1': /usr/bin/cmake /home/adi/hum_rob_ws/src/six_dof -DCMAKE_INSTALL_PREFIX=/home/adi/hum_rob_ws/install/six_dof

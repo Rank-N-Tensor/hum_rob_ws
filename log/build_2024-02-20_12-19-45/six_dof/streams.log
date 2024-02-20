@@ -1,0 +1,98 @@
+[0.117s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/adi/hum_rob_ws/src/six_dof -DCMAKE_INSTALL_PREFIX=/home/adi/hum_rob_ws/install/six_dof
+[0.272s] -- The C compiler identification is GNU 11.4.0
+[0.391s] -- The CXX compiler identification is GNU 11.4.0
+[0.405s] -- Detecting C compiler ABI info
+[0.546s] -- Detecting C compiler ABI info - done
+[0.566s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.567s] -- Detecting C compile features
+[0.568s] -- Detecting C compile features - done
+[0.576s] -- Detecting CXX compiler ABI info
+[0.754s] -- Detecting CXX compiler ABI info - done
+[0.767s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.767s] -- Detecting CXX compile features
+[0.768s] -- Detecting CXX compile features - done
+[0.774s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.701s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[1.895s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[1.965s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.973s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.986s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.006s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.036s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.142s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.147s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.351s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.415s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.507s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.528s] -- Looking for pthread.h
+[2.654s] -- Looking for pthread.h - found
+[2.654s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.803s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.806s] -- Found Threads: TRUE  
+[3.040s] -- Found rclpy: 3.3.11 (/opt/ros/humble/share/rclpy/cmake)
+[3.041s] -- pinocchio FOUND. pinocchio at /opt/ros/humble/lib/x86_64-linux-gnu/libpinocchio.so
+[3.042s] -- boost_filesystem FOUND. boost_filesystem at /lib/x86_64-linux-gnu/libboost_filesystem.so
+[3.042s] -- boost_serialization FOUND. boost_serialization at /lib/x86_64-linux-gnu/libboost_serialization.so
+[3.043s] -- boost_system FOUND. boost_system at /lib/x86_64-linux-gnu/libboost_system.so
+[3.146s] -- Found Boost: /usr/include (found version "1.74.0") found components: filesystem serialization system 
+[3.148s] -- eigenpy FOUND. eigenpy at /opt/ros/humble/lib/x86_64-linux-gnu/libeigenpy.so
+[3.869s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter Development.Module NumPy 
+[3.870s] -- PythonLibraryDirs: 
+[3.870s] -- PythonLibVersionString: 3.10.12
+[3.989s] -- Python site lib: lib/python3.10/dist-packages
+[3.989s] -- Python include dirs: /usr/include/python3.10
+[4.216s] -- Checking for NumPy
+[4.423s] --   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include
+[4.613s] --   NUMPY_VERSION=1.21.5
+[4.614s] -- NumPy include dir: /usr/lib/python3/dist-packages/numpy/core/include
+[4.625s] [33mCMake Warning at /usr/share/cmake-3.22/Modules/FindBoost.cmake:2201 (message):
+[4.625s]   No header defined for python310; skipping header check (note: header-only
+[4.625s]   libraries have no designated component)
+[4.625s] Call Stack (most recent call first):
+[4.626s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/boost.cmake:144 (find_package)
+[4.626s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/eigenpyConfig.cmake:149 (SEARCH_FOR_BOOST_PYTHON)
+[4.626s]   /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)
+[4.626s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:160 (find_dependency)
+[4.626s]   CMakeLists.txt:12 (find_package)
+[4.626s] 
+[4.627s] [0m
+[4.636s] -- Found Boost: /usr/include (found version "1.74.0") found components: python310 
+[4.637s] -- Boost_PYTHON_LIBRARY: /usr/lib/x86_64-linux-gnu/libboost_python310.so
+[5.146s] -- Default C++ standard: 201703
+[5.146s] -- Minimal C++ standard upgraded to 11
+[5.146s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[5.146s] -- CMAKE_CXX_STANDARD was not set: automatically set to currently defined standard 17
+[5.147s] -- hpp-fcl FOUND. hpp-fcl at /opt/ros/humble/lib/x86_64-linux-gnu/libhpp-fcl.so
+[5.162s] -- Found Boost: /usr/include (found version "1.74.0") found components: chrono serialization 
+[5.165s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[5.165s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[5.169s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.380s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.380s] -- Configured cppcheck include dirs: 
+[5.381s] -- Configured cppcheck exclude dirs and/or files: 
+[5.382s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.385s] -- Added test 'lint_cmake' to check CMake code style
+[5.386s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.393s] -- Added test 'uncrustify' to check C / C++ code style
+[5.393s] -- Configured uncrustify additional arguments: 
+[5.395s] -- Added test 'xmllint' to check XML markup files
+[5.398s] -- Configuring done
+[5.416s] -- Generating done
+[5.419s] -- Build files have been written to: /home/adi/hum_rob_ws/build/six_dof
+[5.434s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/adi/hum_rob_ws/src/six_dof -DCMAKE_INSTALL_PREFIX=/home/adi/hum_rob_ws/install/six_dof
+[5.437s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16
+[5.581s] [ 50%] [32mBuilding CXX object CMakeFiles/test_node.dir/src/IK_test.cpp.o[0m
+[9.594s] [01m[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[9.594s] [01m[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:96:5:[m[K [01;31m[Kerror: [m[K‘[01m[KcomputeCollisions[m[K’ was not declared in this scope
+[9.594s]    96 |     [01;31m[KcomputeCollisions[m[K(model,data,collision_model,collision_data,q,false);
+[9.595s]       |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[9.611s] [01m[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:17:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[9.611s]    17 | int main([01;35m[Kint argc[m[K, char *argv[]) {
+[9.611s]       |          [01;35m[K~~~~^~~~[m[K
+[9.611s] [01m[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:17:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[9.611s]    17 | int main(int argc, [01;35m[Kchar *argv[][m[K) {
+[9.611s]       |                    [01;35m[K~~~~~~^~~~~~[m[K
+[22.087s] gmake[2]: *** [CMakeFiles/test_node.dir/build.make:76: CMakeFiles/test_node.dir/src/IK_test.cpp.o] Error 1
+[22.087s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_node.dir/all] Error 2
+[22.088s] gmake: *** [Makefile:146: all] Error 2
+[22.093s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16

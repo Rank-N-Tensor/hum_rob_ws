@@ -1,2 +1,1 @@
-source;share/six_dof/environment/ament_prefix_path.sh
-source;share/six_dof/environment/path.sh
+/home/adi/hum_rob_ws/build/six_dof/ament_cmake_environment_hooks/local_setup.dsv

@@ -1,0 +1,20 @@
+[0.074s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16
+[0.169s] [35m[1mConsolidate compiler generated dependencies of target test_node[0m
+[0.227s] [ 50%] [32mBuilding CXX object CMakeFiles/test_node.dir/src/IK_test.cpp.o[0m
+[3.626s] [01m[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.626s] [01m[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:96:41:[m[K [01;31m[Kerror: [m[K‘[01m[KcomputeCollisions[m[K’ is not a member of ‘[01m[Kpinocchio[m[K’
+[3.626s]    96 |     bool collision_detected= pinocchio::[01;31m[KcomputeCollisions[m[K(model,data,collision_model,collision_data,q,false);
+[3.626s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[3.634s] [01m[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:96:10:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcollision_detected[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[3.634s]    96 |     bool [01;35m[Kcollision_detected[m[K= pinocchio::computeCollisions(model,data,collision_model,collision_data,q,false);
+[3.634s]       |          [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[3.643s] [01m[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:17:14:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.643s]    17 | int main([01;35m[Kint argc[m[K, char *argv[]) {
+[3.643s]       |          [01;35m[K~~~~^~~~[m[K
+[3.644s] [01m[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:17:26:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kargv[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.644s]    17 | int main(int argc, [01;35m[Kchar *argv[][m[K) {
+[3.644s]       |                    [01;35m[K~~~~~~^~~~~~[m[K
+[15.929s] gmake[2]: *** [CMakeFiles/test_node.dir/build.make:76: CMakeFiles/test_node.dir/src/IK_test.cpp.o] Error 1
+[15.929s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_node.dir/all] Error 2
+[15.930s] gmake: *** [Makefile:146: all] Error 2
+[15.935s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16

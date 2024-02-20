@@ -1,0 +1,10 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/test_node.dir/src/IK_test.cpp.o[0m
+In file included from [01m[K/opt/ros/humble/include/pinocchio/fwd.hpp:23[m[K,
+                 from [01m[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/pinocchio/utils/cast.hpp:8:10:[m[K [01;31m[Kfatal error: [m[KEigen/Core: No such file or directory
+    8 | #include [01;31m[K<Eigen/Core>[m[K
+      |          [01;31m[K^~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_node.dir/build.make:76: CMakeFiles/test_node.dir/src/IK_test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

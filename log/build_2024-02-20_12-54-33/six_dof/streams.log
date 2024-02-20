@@ -1,0 +1,15 @@
+[0.118s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16
+[0.229s] [35m[1mConsolidate compiler generated dependencies of target test_node[0m
+[0.317s] [ 50%] [32mBuilding CXX object CMakeFiles/test_node.dir/src/IK_test.cpp.o[0m
+[28.102s] [100%] [32m[1mLinking CXX executable test_node[0m
+[29.226s] [100%] Built target test_node
+[29.243s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16
+[29.324s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/six_dof
+[29.345s] -- Install configuration: ""
+[29.345s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//urdf
+[29.345s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//rviz
+[29.346s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//launch
+[29.346s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes
+[29.346s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof/share/six_dof//meshes/unused
+[29.346s] -- Installing: /home/adi/hum_rob_ws/install/six_dof/share/six_dof/package.dsv
+[29.352s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/six_dof

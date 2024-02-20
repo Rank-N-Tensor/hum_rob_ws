@@ -1,0 +1,4 @@
+Invoking command in '/home/adi/hum_rob_ws/build/six_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adi/hum_rob_ws/src/six_dof -DCMAKE_INSTALL_PREFIX=/home/adi/hum_rob_ws/install/six_dof
+Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adi/hum_rob_ws/src/six_dof -DCMAKE_INSTALL_PREFIX=/home/adi/hum_rob_ws/install/six_dof
+Invoking command in '/home/adi/hum_rob_ws/build/six_dof': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16
+Invoked command in '/home/adi/hum_rob_ws/build/six_dof' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof -- -j16 -l16

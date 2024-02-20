@@ -1,0 +1,286 @@
+[0.000000] (-) TimerEvent: {}
+[0.000492] (-) JobUnselected: {'identifier': 'four_dof'}
+[0.000531] (-) JobUnselected: {'identifier': 'four_dof_bringup'}
+[0.000560] (six_dof) JobQueued: {'identifier': 'six_dof', 'dependencies': OrderedDict()}
+[0.000855] (six_dof) JobStarted: {'identifier': 'six_dof'}
+[0.072513] (six_dof) JobProgress: {'identifier': 'six_dof', 'progress': 'cmake'}
+[0.073462] (six_dof) JobProgress: {'identifier': 'six_dof', 'progress': 'build'}
+[0.074078] (six_dof) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/adi/hum_rob_ws/build/six_dof', '--', '-j16', '-l16'], 'cwd': '/home/adi/hum_rob_ws/build/six_dof', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adi'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64::/home/adi/Dev/Pangolin/build:/home/adi/Dev/Pangolin/build:/usr/local/lib'), ('HOME', '/home/adi'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1666'), ('SYSTEMD_EXEC_PID', '1995'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2861'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'adi'), ('JOURNAL_STREAM', '8:1642'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'adi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda/bin:/home/adi/anaconda3/condabin:/home/adi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/openrobots/bin'), ('SESSION_MANAGER', 'local/Memory:@/tmp/.ICE-unix/1972,unix/Memory:/tmp/.ICE-unix/1972'), ('INVOCATION_ID', 'b017926f60d4482f9dc6fd80aa9ff9d3'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3b17749a21.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '99'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/adi/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/adi/hum_rob_ws/build/six_dof'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/adi/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.100064] (-) TimerEvent: {}
+[0.141597] (six_dof) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.200211] (-) TimerEvent: {}
+[0.300504] (-) TimerEvent: {}
+[0.364451] (six_dof) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.400615] (-) TimerEvent: {}
+[0.446771] (six_dof) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.462020] (six_dof) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.498781] (six_dof) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.500663] (-) TimerEvent: {}
+[0.501694] (six_dof) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.508693] (six_dof) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.523121] (six_dof) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.538971] (six_dof) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.594668] (six_dof) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.596463] (six_dof) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600758] (-) TimerEvent: {}
+[0.701073] (-) TimerEvent: {}
+[0.745026] (six_dof) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.801191] (-) TimerEvent: {}
+[0.889870] (six_dof) StdoutLine: {'line': b'-- Found rclpy: 3.3.11 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.890625] (six_dof) StdoutLine: {'line': b'-- pinocchio FOUND. pinocchio at /opt/ros/humble/lib/x86_64-linux-gnu/libpinocchio.so\n'}
+[0.891313] (six_dof) StdoutLine: {'line': b'-- boost_filesystem FOUND. boost_filesystem at /lib/x86_64-linux-gnu/libboost_filesystem.so\n'}
+[0.891806] (six_dof) StdoutLine: {'line': b'-- boost_serialization FOUND. boost_serialization at /lib/x86_64-linux-gnu/libboost_serialization.so\n'}
+[0.892277] (six_dof) StdoutLine: {'line': b'-- boost_system FOUND. boost_system at /lib/x86_64-linux-gnu/libboost_system.so\n'}
+[0.901219] (six_dof) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.74.0") found components: filesystem serialization system \n'}
+[0.901536] (-) TimerEvent: {}
+[0.902640] (six_dof) StdoutLine: {'line': b'-- eigenpy FOUND. eigenpy at /opt/ros/humble/lib/x86_64-linux-gnu/libeigenpy.so\n'}
+[1.001611] (-) TimerEvent: {}
+[1.101869] (-) TimerEvent: {}
+[1.202176] (-) TimerEvent: {}
+[1.302444] (-) TimerEvent: {}
+[1.402760] (-) TimerEvent: {}
+[1.453448] (six_dof) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter Development.Module NumPy \n'}
+[1.453974] (six_dof) StdoutLine: {'line': b'-- PythonLibraryDirs: \n'}
+[1.454246] (six_dof) StdoutLine: {'line': b'-- PythonLibVersionString: 3.10.12\n'}
+[1.502906] (-) TimerEvent: {}
+[1.513275] (six_dof) StdoutLine: {'line': b'-- Python site lib: lib/python3.10/dist-packages\n'}
+[1.513591] (six_dof) StdoutLine: {'line': b'-- Python include dirs: /usr/include/python3.10\n'}
+[1.603054] (-) TimerEvent: {}
+[1.660239] (six_dof) StdoutLine: {'line': b'-- Checking for NumPy\n'}
+[1.703201] (-) TimerEvent: {}
+[1.803576] (-) TimerEvent: {}
+[1.806214] (six_dof) StdoutLine: {'line': b'--   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include\n'}
+[1.903688] (-) TimerEvent: {}
+[1.959381] (six_dof) StdoutLine: {'line': b'--   NUMPY_VERSION=1.21.5\n'}
+[1.959673] (six_dof) StdoutLine: {'line': b'-- NumPy include dir: /usr/lib/python3/dist-packages/numpy/core/include\n'}
+[1.968695] (six_dof) StderrLine: {'line': b'\x1b[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindBoost.cmake:2201 (message):\n'}
+[1.968981] (six_dof) StderrLine: {'line': b'  No header defined for python310; skipping header check (note: header-only\n'}
+[1.969151] (six_dof) StderrLine: {'line': b'  libraries have no designated component)\n'}
+[1.969306] (six_dof) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.969456] (six_dof) StderrLine: {'line': b'  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/boost.cmake:144 (find_package)\n'}
+[1.969621] (six_dof) StderrLine: {'line': b'  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/eigenpyConfig.cmake:149 (SEARCH_FOR_BOOST_PYTHON)\n'}
+[1.969785] (six_dof) StderrLine: {'line': b'  /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)\n'}
+[1.970041] (six_dof) StderrLine: {'line': b'  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:160 (find_dependency)\n'}
+[1.970217] (six_dof) StderrLine: {'line': b'  CMakeLists.txt:12 (find_package)\n'}
+[1.970368] (six_dof) StderrLine: {'line': b'\n'}
+[1.970532] (six_dof) StderrLine: {'line': b'\x1b[0m\n'}
+[1.970692] (six_dof) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.74.0") found components: python310 \n'}
+[1.970894] (six_dof) StdoutLine: {'line': b'-- Boost_PYTHON_LIBRARY: /usr/lib/x86_64-linux-gnu/libboost_python310.so\n'}
+[2.003822] (-) TimerEvent: {}
+[2.104213] (-) TimerEvent: {}
+[2.204549] (-) TimerEvent: {}
+[2.305043] (-) TimerEvent: {}
+[2.358590] (six_dof) StdoutLine: {'line': b'-- Default C++ standard: 201703\n'}
+[2.358850] (six_dof) StdoutLine: {'line': b'-- C++ standard sufficient: Minimal required 11, currently defined: 17\n'}
+[2.358974] (six_dof) StdoutLine: {'line': b'-- CMAKE_CXX_STANDARD was not set: automatically set to currently defined standard 17\n'}
+[2.360621] (six_dof) StdoutLine: {'line': b'-- hpp-fcl FOUND. hpp-fcl at /opt/ros/humble/lib/x86_64-linux-gnu/libhpp-fcl.so\n'}
+[2.374071] (six_dof) StdoutLine: {'line': b'-- Found Boost: /usr/include (found version "1.74.0") found components: chrono serialization \n'}
+[2.377648] (six_dof) StdoutLine: {'line': b'-- C++ standard sufficient: Minimal required 11, currently defined: 17\n'}
+[2.378706] (six_dof) StdoutLine: {'line': b'-- C++ standard sufficient: Minimal required 11, currently defined: 17\n'}
+[2.379453] (six_dof) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.405106] (-) TimerEvent: {}
+[2.478144] (six_dof) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.478492] (six_dof) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.478652] (six_dof) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.479021] (six_dof) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.479809] (six_dof) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.480296] (six_dof) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.482500] (six_dof) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.482686] (six_dof) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.483085] (six_dof) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.484331] (six_dof) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.497519] (six_dof) StdoutLine: {'line': b'-- Generating done\n'}
+[2.498989] (six_dof) StdoutLine: {'line': b'-- Build files have been written to: /home/adi/hum_rob_ws/build/six_dof\n'}
+[2.505181] (-) TimerEvent: {}
+[2.540841] (six_dof) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_node\x1b[0m\n'}
+[2.595741] (six_dof) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/test_node.dir/src/IK_test.cpp.o\x1b[0m\n'}
+[2.605264] (-) TimerEvent: {}
+[2.705601] (-) TimerEvent: {}
+[2.805943] (-) TimerEvent: {}
+[2.906241] (-) TimerEvent: {}
+[3.006719] (-) TimerEvent: {}
+[3.107028] (-) TimerEvent: {}
+[3.207469] (-) TimerEvent: {}
+[3.307802] (-) TimerEvent: {}
+[3.408121] (-) TimerEvent: {}
+[3.508416] (-) TimerEvent: {}
+[3.608748] (-) TimerEvent: {}
+[3.709176] (-) TimerEvent: {}
+[3.809802] (-) TimerEvent: {}
+[3.910199] (-) TimerEvent: {}
+[4.010524] (-) TimerEvent: {}
+[4.110875] (-) TimerEvent: {}
+[4.211224] (-) TimerEvent: {}
+[4.311550] (-) TimerEvent: {}
+[4.411872] (-) TimerEvent: {}
+[4.512178] (-) TimerEvent: {}
+[4.612479] (-) TimerEvent: {}
+[4.712794] (-) TimerEvent: {}
+[4.813105] (-) TimerEvent: {}
+[4.913390] (-) TimerEvent: {}
+[5.013700] (-) TimerEvent: {}
+[5.114069] (-) TimerEvent: {}
+[5.214403] (-) TimerEvent: {}
+[5.314729] (-) TimerEvent: {}
+[5.415049] (-) TimerEvent: {}
+[5.515441] (-) TimerEvent: {}
+[5.615907] (-) TimerEvent: {}
+[5.716394] (-) TimerEvent: {}
+[5.816700] (-) TimerEvent: {}
+[5.917006] (-) TimerEvent: {}
+[6.017658] (-) TimerEvent: {}
+[6.118006] (-) TimerEvent: {}
+[6.218320] (-) TimerEvent: {}
+[6.318657] (-) TimerEvent: {}
+[6.418989] (-) TimerEvent: {}
+[6.519340] (-) TimerEvent: {}
+[6.619669] (-) TimerEvent: {}
+[6.639438] (six_dof) StderrLine: {'line': b'\x1b[01m\x1b[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.639776] (six_dof) StderrLine: {'line': b'\x1b[01m\x1b[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:96:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcomputeCollisions\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.639972] (six_dof) StderrLine: {'line': b'   96 |     bool collision_detected= \x1b[01;31m\x1b[KcomputeCollisions\x1b[m\x1b[K(model,data,collision_model,collision_data,q,false);\n'}
+[6.640160] (six_dof) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.648667] (six_dof) StderrLine: {'line': b'\x1b[01m\x1b[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:96:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kcollision_detected\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.648920] (six_dof) StderrLine: {'line': b'   96 |     bool \x1b[01;35m\x1b[Kcollision_detected\x1b[m\x1b[K= computeCollisions(model,data,collision_model,collision_data,q,false);\n'}
+[6.649046] (six_dof) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.658956] (six_dof) StderrLine: {'line': b'\x1b[01m\x1b[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:17:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.659204] (six_dof) StderrLine: {'line': b'   17 | int main(\x1b[01;35m\x1b[Kint argc\x1b[m\x1b[K, char *argv[]) {\n'}
+[6.659328] (six_dof) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[6.659439] (six_dof) StderrLine: {'line': b'\x1b[01m\x1b[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:17:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[6.659557] (six_dof) StderrLine: {'line': b'   17 | int main(int argc, \x1b[01;35m\x1b[Kchar *argv[]\x1b[m\x1b[K) {\n'}
+[6.659667] (six_dof) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[6.719775] (-) TimerEvent: {}
+[6.820115] (-) TimerEvent: {}
+[6.920446] (-) TimerEvent: {}
+[7.020786] (-) TimerEvent: {}
+[7.121123] (-) TimerEvent: {}
+[7.221465] (-) TimerEvent: {}
+[7.321804] (-) TimerEvent: {}
+[7.422186] (-) TimerEvent: {}
+[7.522523] (-) TimerEvent: {}
+[7.622855] (-) TimerEvent: {}
+[7.723206] (-) TimerEvent: {}
+[7.823904] (-) TimerEvent: {}
+[7.924236] (-) TimerEvent: {}
+[8.024604] (-) TimerEvent: {}
+[8.124944] (-) TimerEvent: {}
+[8.225583] (-) TimerEvent: {}
+[8.326250] (-) TimerEvent: {}
+[8.426581] (-) TimerEvent: {}
+[8.526918] (-) TimerEvent: {}
+[8.627258] (-) TimerEvent: {}
+[8.727586] (-) TimerEvent: {}
+[8.828211] (-) TimerEvent: {}
+[8.928551] (-) TimerEvent: {}
+[9.029198] (-) TimerEvent: {}
+[9.129513] (-) TimerEvent: {}
+[9.229848] (-) TimerEvent: {}
+[9.330234] (-) TimerEvent: {}
+[9.430612] (-) TimerEvent: {}
+[9.530973] (-) TimerEvent: {}
+[9.631372] (-) TimerEvent: {}
+[9.731728] (-) TimerEvent: {}
+[9.832092] (-) TimerEvent: {}
+[9.932903] (-) TimerEvent: {}
+[10.033260] (-) TimerEvent: {}
+[10.133586] (-) TimerEvent: {}
+[10.233925] (-) TimerEvent: {}
+[10.334268] (-) TimerEvent: {}
+[10.434598] (-) TimerEvent: {}
+[10.534945] (-) TimerEvent: {}
+[10.635290] (-) TimerEvent: {}
+[10.735649] (-) TimerEvent: {}
+[10.836298] (-) TimerEvent: {}
+[10.936629] (-) TimerEvent: {}
+[11.037069] (-) TimerEvent: {}
+[11.137545] (-) TimerEvent: {}
+[11.238063] (-) TimerEvent: {}
+[11.338454] (-) TimerEvent: {}
+[11.438781] (-) TimerEvent: {}
+[11.539119] (-) TimerEvent: {}
+[11.639463] (-) TimerEvent: {}
+[11.739808] (-) TimerEvent: {}
+[11.840205] (-) TimerEvent: {}
+[11.940526] (-) TimerEvent: {}
+[12.040875] (-) TimerEvent: {}
+[12.141221] (-) TimerEvent: {}
+[12.241564] (-) TimerEvent: {}
+[12.341934] (-) TimerEvent: {}
+[12.442325] (-) TimerEvent: {}
+[12.542660] (-) TimerEvent: {}
+[12.643008] (-) TimerEvent: {}
+[12.743360] (-) TimerEvent: {}
+[12.843706] (-) TimerEvent: {}
+[12.944050] (-) TimerEvent: {}
+[13.044468] (-) TimerEvent: {}
+[13.144835] (-) TimerEvent: {}
+[13.245187] (-) TimerEvent: {}
+[13.345537] (-) TimerEvent: {}
+[13.445888] (-) TimerEvent: {}
+[13.546268] (-) TimerEvent: {}
+[13.646612] (-) TimerEvent: {}
+[13.746959] (-) TimerEvent: {}
+[13.847314] (-) TimerEvent: {}
+[13.947668] (-) TimerEvent: {}
+[14.048016] (-) TimerEvent: {}
+[14.148363] (-) TimerEvent: {}
+[14.248723] (-) TimerEvent: {}
+[14.349069] (-) TimerEvent: {}
+[14.449423] (-) TimerEvent: {}
+[14.549770] (-) TimerEvent: {}
+[14.650468] (-) TimerEvent: {}
+[14.750883] (-) TimerEvent: {}
+[14.851305] (-) TimerEvent: {}
+[14.951712] (-) TimerEvent: {}
+[15.052119] (-) TimerEvent: {}
+[15.152527] (-) TimerEvent: {}
+[15.252930] (-) TimerEvent: {}
+[15.353336] (-) TimerEvent: {}
+[15.453746] (-) TimerEvent: {}
+[15.554184] (-) TimerEvent: {}
+[15.654587] (-) TimerEvent: {}
+[15.754993] (-) TimerEvent: {}
+[15.855470] (-) TimerEvent: {}
+[15.955949] (-) TimerEvent: {}
+[16.056381] (-) TimerEvent: {}
+[16.156788] (-) TimerEvent: {}
+[16.257194] (-) TimerEvent: {}
+[16.357601] (-) TimerEvent: {}
+[16.458022] (-) TimerEvent: {}
+[16.558448] (-) TimerEvent: {}
+[16.658851] (-) TimerEvent: {}
+[16.759259] (-) TimerEvent: {}
+[16.859665] (-) TimerEvent: {}
+[16.960019] (-) TimerEvent: {}
+[17.060442] (-) TimerEvent: {}
+[17.160857] (-) TimerEvent: {}
+[17.261225] (-) TimerEvent: {}
+[17.361638] (-) TimerEvent: {}
+[17.462011] (-) TimerEvent: {}
+[17.562427] (-) TimerEvent: {}
+[17.662838] (-) TimerEvent: {}
+[17.763250] (-) TimerEvent: {}
+[17.863619] (-) TimerEvent: {}
+[17.964029] (-) TimerEvent: {}
+[18.064397] (-) TimerEvent: {}
+[18.164655] (-) TimerEvent: {}
+[18.264882] (-) TimerEvent: {}
+[18.365226] (-) TimerEvent: {}
+[18.465538] (-) TimerEvent: {}
+[18.565879] (-) TimerEvent: {}
+[18.666185] (-) TimerEvent: {}
+[18.766516] (-) TimerEvent: {}
+[18.866861] (-) TimerEvent: {}
+[18.967190] (-) TimerEvent: {}
+[19.067533] (-) TimerEvent: {}
+[19.167893] (-) TimerEvent: {}
+[19.268148] (-) TimerEvent: {}
+[19.368438] (-) TimerEvent: {}
+[19.468835] (-) TimerEvent: {}
+[19.528456] (six_dof) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_node.dir/build.make:76: CMakeFiles/test_node.dir/src/IK_test.cpp.o] Error 1\n'}
+[19.529313] (six_dof) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_node.dir/all] Error 2\n'}
+[19.529736] (six_dof) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[19.534009] (six_dof) CommandEnded: {'returncode': 2}
+[19.569133] (-) TimerEvent: {}
+[19.668129] (six_dof) JobEnded: {'identifier': 'six_dof', 'rc': 2}
+[19.669217] (-) TimerEvent: {}
+[19.678947] (-) EventReactorShutdown: {}

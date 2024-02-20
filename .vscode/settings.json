@@ -7,9 +7,10 @@
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
     ],
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "files.associations": {
         "chrono": "cpp"
     },
-    "ros.distro": "humble"
+    "ros.distro": "humble",
+    "cmake.configureOnOpen": false
 }

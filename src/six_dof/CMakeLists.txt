@@ -10,9 +10,18 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(pinocchio REQUIRED)
+
+message(STATUS "Pinocchio found at: ${PINOCCHIO_INCLUDE_DIRS}")
+
+
 find_package(Eigen3 REQUIRED)
 
-include_directories(${EIGEN3_INCLUDE_DIR})
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
+
+
 
 
 if(BUILD_TESTING)
@@ -32,6 +41,13 @@ endif()
 add_executable(test_node src/IK_test.cpp)
 ament_target_dependencies(test_node rclcpp pinocchio)
 
+# target_include_directories(test_node PRIVATE
+#   ${EIGEN3_INCLUDE_DIR}
+#   ${PINOCCHIO_INCLUDE_DIRS}
+# )
+
+target_link_libraries(test_node pinocchio::pinocchio)
+
 
 install(
   DIRECTORY
@@ -41,6 +57,12 @@ install(
     meshes
   DESTINATION
     share/${PROJECT_NAME}/
+)
+
+install(TARGETS 
+test_node
+DESTINATION
+lib/${PROJECT_NAME}/
 )
 
 ament_package()

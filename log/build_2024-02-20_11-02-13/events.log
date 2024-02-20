@@ -1,0 +1,187 @@
+[0.000000] (-) TimerEvent: {}
+[0.000540] (-) JobUnselected: {'identifier': 'four_dof'}
+[0.000664] (-) JobUnselected: {'identifier': 'four_dof_bringup'}
+[0.000817] (six_dof) JobQueued: {'identifier': 'six_dof', 'dependencies': OrderedDict()}
+[0.000870] (six_dof) JobStarted: {'identifier': 'six_dof'}
+[0.072335] (six_dof) JobProgress: {'identifier': 'six_dof', 'progress': 'cmake'}
+[0.073473] (six_dof) JobProgress: {'identifier': 'six_dof', 'progress': 'build'}
+[0.073653] (six_dof) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/adi/hum_rob_ws/build/six_dof', '--', '-j16', '-l16'], 'cwd': '/home/adi/hum_rob_ws/build/six_dof', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'adi'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64::/home/adi/Dev/Pangolin/build:/home/adi/Dev/Pangolin/build:/usr/local/lib'), ('HOME', '/home/adi'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '0'), ('TERM_PROGRAM_VERSION', '1.86.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1666'), ('SYSTEMD_EXEC_PID', '1995'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2861'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'adi'), ('JOURNAL_STREAM', '8:1642'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'adi'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '1'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/cuda/bin:/home/adi/anaconda3/condabin:/home/adi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/openrobots/bin'), ('SESSION_MANAGER', 'local/Memory:@/tmp/.ICE-unix/1972,unix/Memory:/tmp/.ICE-unix/1972'), ('INVOCATION_ID', 'b017926f60d4482f9dc6fd80aa9ff9d3'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-3b17749a21.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '99'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/adi/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/adi/hum_rob_ws/build/six_dof'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/adi/anaconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099037] (-) TimerEvent: {}
+[0.179185] (six_dof) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_node\x1b[0m\n'}
+[0.199140] (-) TimerEvent: {}
+[0.239453] (six_dof) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/test_node.dir/src/IK_test.cpp.o\x1b[0m\n'}
+[0.299261] (-) TimerEvent: {}
+[0.399631] (-) TimerEvent: {}
+[0.500031] (-) TimerEvent: {}
+[0.600432] (-) TimerEvent: {}
+[0.700776] (-) TimerEvent: {}
+[0.801184] (-) TimerEvent: {}
+[0.901508] (-) TimerEvent: {}
+[1.001895] (-) TimerEvent: {}
+[1.102332] (-) TimerEvent: {}
+[1.202740] (-) TimerEvent: {}
+[1.303168] (-) TimerEvent: {}
+[1.403590] (-) TimerEvent: {}
+[1.504024] (-) TimerEvent: {}
+[1.604462] (-) TimerEvent: {}
+[1.704899] (-) TimerEvent: {}
+[1.805574] (-) TimerEvent: {}
+[1.906040] (-) TimerEvent: {}
+[2.006480] (-) TimerEvent: {}
+[2.106922] (-) TimerEvent: {}
+[2.207361] (-) TimerEvent: {}
+[2.307799] (-) TimerEvent: {}
+[2.408234] (-) TimerEvent: {}
+[2.508670] (-) TimerEvent: {}
+[2.609109] (-) TimerEvent: {}
+[2.709546] (-) TimerEvent: {}
+[2.810140] (-) TimerEvent: {}
+[2.910581] (-) TimerEvent: {}
+[3.011019] (-) TimerEvent: {}
+[3.111451] (-) TimerEvent: {}
+[3.211889] (-) TimerEvent: {}
+[3.312331] (-) TimerEvent: {}
+[3.412741] (-) TimerEvent: {}
+[3.513187] (-) TimerEvent: {}
+[3.613626] (-) TimerEvent: {}
+[3.652894] (six_dof) StderrLine: {'line': b'\x1b[01m\x1b[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.653249] (six_dof) StderrLine: {'line': b'\x1b[01m\x1b[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:96:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KcomputeCollisions\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[3.653426] (six_dof) StderrLine: {'line': b'   96 |     \x1b[01;31m\x1b[KcomputeCollisions\x1b[m\x1b[K(model,data,collision_model,collision_data,q,false);\n'}
+[3.653586] (six_dof) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.670269] (six_dof) StderrLine: {'line': b'\x1b[01m\x1b[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:17:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.670591] (six_dof) StderrLine: {'line': b'   17 | int main(\x1b[01;35m\x1b[Kint argc\x1b[m\x1b[K, char *argv[]) {\n'}
+[3.670764] (six_dof) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[3.670943] (six_dof) StderrLine: {'line': b'\x1b[01m\x1b[K/home/adi/hum_rob_ws/src/six_dof/src/IK_test.cpp:17:26:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.671104] (six_dof) StderrLine: {'line': b'   17 | int main(int argc, \x1b[01;35m\x1b[Kchar *argv[]\x1b[m\x1b[K) {\n'}
+[3.671261] (six_dof) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~^~~~~~\x1b[m\x1b[K\n'}
+[3.713757] (-) TimerEvent: {}
+[3.814216] (-) TimerEvent: {}
+[3.914651] (-) TimerEvent: {}
+[4.015085] (-) TimerEvent: {}
+[4.115514] (-) TimerEvent: {}
+[4.215939] (-) TimerEvent: {}
+[4.316367] (-) TimerEvent: {}
+[4.416770] (-) TimerEvent: {}
+[4.517202] (-) TimerEvent: {}
+[4.617638] (-) TimerEvent: {}
+[4.718151] (-) TimerEvent: {}
+[4.818558] (-) TimerEvent: {}
+[4.919000] (-) TimerEvent: {}
+[5.019432] (-) TimerEvent: {}
+[5.119873] (-) TimerEvent: {}
+[5.220312] (-) TimerEvent: {}
+[5.320752] (-) TimerEvent: {}
+[5.421186] (-) TimerEvent: {}
+[5.521621] (-) TimerEvent: {}
+[5.622081] (-) TimerEvent: {}
+[5.722524] (-) TimerEvent: {}
+[5.823147] (-) TimerEvent: {}
+[5.923574] (-) TimerEvent: {}
+[6.024011] (-) TimerEvent: {}
+[6.124446] (-) TimerEvent: {}
+[6.224881] (-) TimerEvent: {}
+[6.325314] (-) TimerEvent: {}
+[6.425740] (-) TimerEvent: {}
+[6.526193] (-) TimerEvent: {}
+[6.626623] (-) TimerEvent: {}
+[6.727054] (-) TimerEvent: {}
+[6.827493] (-) TimerEvent: {}
+[6.927929] (-) TimerEvent: {}
+[7.028365] (-) TimerEvent: {}
+[7.128799] (-) TimerEvent: {}
+[7.229223] (-) TimerEvent: {}
+[7.329652] (-) TimerEvent: {}
+[7.430116] (-) TimerEvent: {}
+[7.530546] (-) TimerEvent: {}
+[7.630986] (-) TimerEvent: {}
+[7.731409] (-) TimerEvent: {}
+[7.831840] (-) TimerEvent: {}
+[7.932270] (-) TimerEvent: {}
+[8.032694] (-) TimerEvent: {}
+[8.133128] (-) TimerEvent: {}
+[8.233554] (-) TimerEvent: {}
+[8.334193] (-) TimerEvent: {}
+[8.434619] (-) TimerEvent: {}
+[8.535046] (-) TimerEvent: {}
+[8.635469] (-) TimerEvent: {}
+[8.736134] (-) TimerEvent: {}
+[8.836596] (-) TimerEvent: {}
+[8.937031] (-) TimerEvent: {}
+[9.037462] (-) TimerEvent: {}
+[9.137900] (-) TimerEvent: {}
+[9.238334] (-) TimerEvent: {}
+[9.338735] (-) TimerEvent: {}
+[9.439162] (-) TimerEvent: {}
+[9.539589] (-) TimerEvent: {}
+[9.640018] (-) TimerEvent: {}
+[9.740832] (-) TimerEvent: {}
+[9.841263] (-) TimerEvent: {}
+[9.941691] (-) TimerEvent: {}
+[10.042156] (-) TimerEvent: {}
+[10.142561] (-) TimerEvent: {}
+[10.243037] (-) TimerEvent: {}
+[10.343467] (-) TimerEvent: {}
+[10.443894] (-) TimerEvent: {}
+[10.544319] (-) TimerEvent: {}
+[10.644753] (-) TimerEvent: {}
+[10.745183] (-) TimerEvent: {}
+[10.845686] (-) TimerEvent: {}
+[10.946120] (-) TimerEvent: {}
+[11.046548] (-) TimerEvent: {}
+[11.146974] (-) TimerEvent: {}
+[11.247419] (-) TimerEvent: {}
+[11.347849] (-) TimerEvent: {}
+[11.448342] (-) TimerEvent: {}
+[11.548770] (-) TimerEvent: {}
+[11.649199] (-) TimerEvent: {}
+[11.749626] (-) TimerEvent: {}
+[11.850080] (-) TimerEvent: {}
+[11.950488] (-) TimerEvent: {}
+[12.050910] (-) TimerEvent: {}
+[12.151314] (-) TimerEvent: {}
+[12.251739] (-) TimerEvent: {}
+[12.352167] (-) TimerEvent: {}
+[12.452594] (-) TimerEvent: {}
+[12.553018] (-) TimerEvent: {}
+[12.653436] (-) TimerEvent: {}
+[12.753873] (-) TimerEvent: {}
+[12.854298] (-) TimerEvent: {}
+[12.954705] (-) TimerEvent: {}
+[13.055139] (-) TimerEvent: {}
+[13.155570] (-) TimerEvent: {}
+[13.256003] (-) TimerEvent: {}
+[13.356435] (-) TimerEvent: {}
+[13.456857] (-) TimerEvent: {}
+[13.557287] (-) TimerEvent: {}
+[13.657982] (-) TimerEvent: {}
+[13.758393] (-) TimerEvent: {}
+[13.858819] (-) TimerEvent: {}
+[13.959305] (-) TimerEvent: {}
+[14.059727] (-) TimerEvent: {}
+[14.160166] (-) TimerEvent: {}
+[14.260612] (-) TimerEvent: {}
+[14.361047] (-) TimerEvent: {}
+[14.461740] (-) TimerEvent: {}
+[14.562195] (-) TimerEvent: {}
+[14.662619] (-) TimerEvent: {}
+[14.763057] (-) TimerEvent: {}
+[14.863496] (-) TimerEvent: {}
+[14.963955] (-) TimerEvent: {}
+[15.064383] (-) TimerEvent: {}
+[15.164818] (-) TimerEvent: {}
+[15.265249] (-) TimerEvent: {}
+[15.365679] (-) TimerEvent: {}
+[15.466284] (-) TimerEvent: {}
+[15.566686] (-) TimerEvent: {}
+[15.667113] (-) TimerEvent: {}
+[15.767536] (-) TimerEvent: {}
+[15.867967] (-) TimerEvent: {}
+[15.968398] (-) TimerEvent: {}
+[15.997150] (six_dof) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_node.dir/build.make:76: CMakeFiles/test_node.dir/src/IK_test.cpp.o] Error 1\n'}
+[15.997733] (six_dof) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/test_node.dir/all] Error 2\n'}
+[15.998334] (six_dof) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[16.000733] (six_dof) CommandEnded: {'returncode': 2}
+[16.068720] (-) TimerEvent: {}
+[16.170018] (-) TimerEvent: {}
+[16.182551] (six_dof) JobEnded: {'identifier': 'six_dof', 'rc': 2}
+[16.193470] (-) EventReactorShutdown: {}
