@@ -1,0 +1,28 @@
+[33mCMake Warning at /usr/share/cmake-3.22/Modules/FindBoost.cmake:2201 (message):
+  No header defined for python310; skipping header check (note: header-only
+  libraries have no designated component)
+Call Stack (most recent call first):
+  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/boost.cmake:144 (find_package)
+  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/eigenpyConfig.cmake:149 (SEARCH_FOR_BOOST_PYTHON)
+  /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)
+  /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:160 (find_dependency)
+  CMakeLists.txt:12 (find_package)
+
+[0m
+[33mCMake Warning at CMakeLists.txt:41 (add_executable):
+  Cannot generate a safe runtime search path for target test_node because
+  files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [liburdfdom_sensor.so.3.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/humble/lib/x86_64-linux-gnu
+    runtime library [liburdfdom_model_state.so.3.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/humble/lib/x86_64-linux-gnu
+    runtime library [liburdfdom_model.so.3.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/humble/lib/x86_64-linux-gnu
+    runtime library [liburdfdom_world.so.3.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /opt/ros/humble/lib/x86_64-linux-gnu
+
+  Some of these libraries may not be found correctly.
+
+[0m

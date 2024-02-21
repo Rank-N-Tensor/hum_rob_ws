@@ -39,14 +39,15 @@ endif()
 
 
 add_executable(test_node src/IK_test.cpp)
-ament_target_dependencies(test_node rclcpp pinocchio)
+ament_target_dependencies(test_node rclcpp)
+target_link_libraries(test_node pinocchio::pinocchio) #modern cmake namespace call
 
 # target_include_directories(test_node PRIVATE
 #   ${EIGEN3_INCLUDE_DIR}
 #   ${PINOCCHIO_INCLUDE_DIRS}
 # )
 
-target_link_libraries(test_node pinocchio::pinocchio)
+
 
 
 install(

@@ -1,7 +1,7 @@
 #include "pinocchio/fwd.hpp"
-#include "pinocchio/algorithm/geometry.hpp"
 #include "pinocchio/algorithm/jacobian.hpp"
 #include "pinocchio/algorithm/joint-configuration.hpp"
+#include "pinocchio/algorithm/geometry.hpp"
 #include "pinocchio/algorithm/kinematics.hpp"
 #include "pinocchio/parsers/urdf.hpp"
 #include "pinocchio/spatial/explog.hpp"
@@ -11,7 +11,6 @@
 #include <string>
 
 using namespace pinocchio;
-
 double rad2deg(double radians) { return radians * (180.0 / M_PI); }
 
 int main() {
