@@ -161,13 +161,13 @@
     </link>
 
 
-    <joint name="right_shin_foot" type="revolute">
+    <joint name="right_shin_foot" type="fixed">
         <parent link="right_shin"/>
         <child link="right_foot"/>
 
         <origin xyz="-0.02 -0.130 0.0" rpy="0 0 0"/>
-        <axis  xyz = " 1 0 0"/>
-        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+        <!-- <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/> -->
     </joint>
 
     <joint name="right_thigh_shin" type="revolute">
@@ -195,7 +195,7 @@
     </joint>
 
     <joint name="base_body" type="fixed">
-        <origin xyz="0.0 0.050 0.3095" rpy="1.57 0.0 0.0"/>
+        <origin xyz="0.0 0.0 0.0" rpy="1.57 0.0 0.0"/>
         <parent link="base_link"/>
         <child link="body"/>
     </joint>
@@ -224,12 +224,12 @@
         <limit effort="35.0" lower="-1.04" upper="1.04" velocity="0.1"/>
     </joint>
 
-    <joint name="left_shin_foot" type="revolute">
+    <joint name="left_shin_foot" type="fixed">
         <parent link="left_shin"/>
         <child link="left_foot"/>
         <origin xyz="-0.02 -0.130 0" rpy="0 0 0"/>
-        <axis  xyz = " 1 0 0"/>
-        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+        <!-- <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/> -->
     </joint>
 
 

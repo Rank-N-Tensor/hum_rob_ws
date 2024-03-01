@@ -1,0 +1,136 @@
+[0.070s] Invoking command in '/home/adi/hum_rob_ws/src/six_dof/build/six_dof': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/src/six_dof/build/six_dof -- -j16 -l16
+[0.140s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.396s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.493s] -- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)
+[0.527s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.529s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.536s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.547s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.563s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.622s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.624s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.779s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.920s] -- Found rclpy: 3.3.11 (/opt/ros/humble/share/rclpy/cmake)
+[0.921s] -- pinocchio FOUND. pinocchio at /opt/ros/humble/lib/x86_64-linux-gnu/libpinocchio.so
+[0.921s] -- boost_filesystem FOUND. boost_filesystem at /lib/x86_64-linux-gnu/libboost_filesystem.so
+[0.922s] -- boost_serialization FOUND. boost_serialization at /lib/x86_64-linux-gnu/libboost_serialization.so
+[0.922s] -- boost_system FOUND. boost_system at /lib/x86_64-linux-gnu/libboost_system.so
+[0.931s] -- Found Boost: /usr/include (found version "1.74.0") found components: filesystem serialization system 
+[0.932s] -- eigenpy FOUND. eigenpy at /opt/ros/humble/lib/x86_64-linux-gnu/libeigenpy.so
+[1.511s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter Development.Module NumPy 
+[1.512s] -- PythonLibraryDirs: 
+[1.512s] -- PythonLibVersionString: 3.10.12
+[1.602s] -- Python site lib: lib/python3.10/dist-packages
+[1.603s] -- Python include dirs: /usr/include/python3.10
+[1.781s] -- Checking for NumPy
+[1.934s] --   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include
+[2.052s] --   NUMPY_VERSION=1.21.5
+[2.052s] -- NumPy include dir: /usr/lib/python3/dist-packages/numpy/core/include
+[2.062s] [33mCMake Warning at /usr/share/cmake-3.22/Modules/FindBoost.cmake:2201 (message):
+[2.062s]   No header defined for python310; skipping header check (note: header-only
+[2.062s]   libraries have no designated component)
+[2.062s] Call Stack (most recent call first):
+[2.062s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/boost.cmake:144 (find_package)
+[2.063s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/eigenpyConfig.cmake:149 (SEARCH_FOR_BOOST_PYTHON)
+[2.063s]   /usr/share/cmake-3.22/Modules/CMakeFindDependencyMacro.cmake:47 (find_package)
+[2.063s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:160 (find_dependency)
+[2.063s]   CMakeLists.txt:12 (find_package)
+[2.063s] 
+[2.063s] [0m
+[2.064s] -- Found Boost: /usr/include (found version "1.74.0") found components: python310 
+[2.064s] -- Boost_PYTHON_LIBRARY: /usr/lib/x86_64-linux-gnu/libboost_python310.so
+[2.440s] -- Default C++ standard: 201703
+[2.440s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[2.440s] -- CMAKE_CXX_STANDARD was not set: automatically set to currently defined standard 17
+[2.442s] -- hpp-fcl FOUND. hpp-fcl at /opt/ros/humble/lib/x86_64-linux-gnu/libhpp-fcl.so
+[2.453s] -- Found Boost: /usr/include (found version "1.74.0") found components: chrono serialization 
+[2.457s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[2.458s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[2.458s] -- Pinocchio found at: /opt/ros/humble/include
+[2.459s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.573s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.573s] -- Configured cppcheck include dirs: 
+[2.573s] -- Configured cppcheck exclude dirs and/or files: 
+[2.575s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.580s] -- Added test 'lint_cmake' to check CMake code style
+[2.582s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.598s] -- Added test 'uncrustify' to check C / C++ code style
+[2.598s] -- Configured uncrustify additional arguments: 
+[2.600s] -- Added test 'xmllint' to check XML markup files
+[2.602s] -- Configuring done
+[2.615s] [33mCMake Warning at CMakeLists.txt:41 (add_executable):
+[2.615s]   Cannot generate a safe runtime search path for target test_node because
+[2.615s]   files in some directories may conflict with libraries in implicit
+[2.615s]   directories:
+[2.615s] 
+[2.615s]     runtime library [liburdfdom_sensor.so.3.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[2.615s]       /opt/ros/humble/lib/x86_64-linux-gnu
+[2.616s]     runtime library [liburdfdom_model_state.so.3.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[2.616s]       /opt/ros/humble/lib/x86_64-linux-gnu
+[2.616s]     runtime library [liburdfdom_model.so.3.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[2.616s]       /opt/ros/humble/lib/x86_64-linux-gnu
+[2.616s]     runtime library [liburdfdom_world.so.3.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+[2.616s]       /opt/ros/humble/lib/x86_64-linux-gnu
+[2.616s] 
+[2.616s]   Some of these libraries may not be found correctly.
+[2.616s] 
+[2.616s] [0m
+[2.617s] -- Generating done
+[2.619s] -- Build files have been written to: /home/adi/hum_rob_ws/src/six_dof/build/six_dof
+[2.653s] [35m[1mConsolidate compiler generated dependencies of target test_node[0m
+[2.720s] [100%] Built target test_node
+[2.738s] Invoked command in '/home/adi/hum_rob_ws/src/six_dof/build/six_dof' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/src/six_dof/build/six_dof -- -j16 -l16
+[2.801s] Invoking command in '/home/adi/hum_rob_ws/src/six_dof/build/six_dof': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/src/six_dof/build/six_dof
+[2.810s] -- Install configuration: ""
+[2.810s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//urdf
+[2.810s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//urdf/6dof_from_foot.urdf
+[2.811s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//urdf/6_dof_col_simplified.urdf
+[2.811s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//urdf/6dof_from_hip.urdf
+[2.811s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//urdf/6dof_test.urdf
+[2.811s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//rviz
+[2.811s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//rviz/six_dof_fixed.rviz
+[2.812s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//rviz/six_dof.rviz
+[2.812s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//launch
+[2.812s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//launch/urdf_vis.launch.py
+[2.812s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes
+[2.812s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/rightthighfixedv2.stl
+[2.813s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/leftfootfixed.stl
+[2.813s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/rightshinv3.stl
+[2.813s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/footfixedv3.stl
+[2.813s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/rightshinfixedv2.stl
+[2.813s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/foot_fixedv2.stl
+[2.813s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/chassisv2.stl
+[2.814s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused
+[2.814s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/leftfoot.stl
+[2.814s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/rightthighv5.stl
+[2.814s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/rightfoot.stl
+[2.815s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/leftthighv5.stl
+[2.815s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/leftthighv6.stl
+[2.816s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/leftshin.stl
+[2.816s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/rightthighv3.stl
+[2.816s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/Chassis.stl
+[2.816s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/rightshinv4.stl
+[2.817s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/rightthighv8.stl
+[2.817s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/leftthighv3.stl
+[2.818s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/rightthighv7.stl
+[2.819s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/leftthighv4.stl
+[2.819s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/rightthighv4.stl
+[2.820s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/unused/rightthighfixedv1.stl
+[2.822s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof//meshes/leftthighfixedv1.stl
+[2.823s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/lib/six_dof/test_node
+[2.824s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/ament_index/resource_index/package_run_dependencies/six_dof
+[2.825s] -- Installing: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/ament_index/resource_index/parent_prefix_path/six_dof
+[2.826s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof/environment/ament_prefix_path.sh
+[2.826s] -- Installing: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof/environment/ament_prefix_path.dsv
+[2.827s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof/environment/path.sh
+[2.828s] -- Installing: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof/environment/path.dsv
+[2.829s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof/local_setup.bash
+[2.830s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof/local_setup.sh
+[2.830s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof/local_setup.zsh
+[2.831s] -- Installing: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof/local_setup.dsv
+[2.831s] -- Installing: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof/package.dsv
+[2.832s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/ament_index/resource_index/packages/six_dof
+[2.833s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof/cmake/six_dofConfig.cmake
+[2.833s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof/cmake/six_dofConfig-version.cmake
+[2.833s] -- Up-to-date: /home/adi/hum_rob_ws/src/six_dof/install/six_dof/share/six_dof/package.xml
+[2.834s] Invoked command in '/home/adi/hum_rob_ws/src/six_dof/build/six_dof' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/src/six_dof/build/six_dof
