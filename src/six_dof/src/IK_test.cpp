@@ -93,8 +93,8 @@ int main() {
 
     // // collision modeling
      updateGeometryPlacements(model, data, collision_model, collision_data, q);
-     bool is_collision =
-         computeCollisions(model, data, collision_model, collision_data, q,true);
+    //  bool is_collision =
+    //      computeCollisions(model, data, collision_model, collision_data, q,true);
     //std::cout << "collision status= " << is_collision << std::endl;
 
     std::cout<<"normalized error is: "<<err.norm()<<std::endl;

@@ -1,0 +1,6 @@
+[0.000000] (-) TimerEvent: {}
+[0.000455] (-) JobUnselected: {'identifier': 'four_dof'}
+[0.000524] (-) JobUnselected: {'identifier': 'four_dof_bringup'}
+[0.000574] (-) JobUnselected: {'identifier': 'six_dof'}
+[0.000619] (-) JobUnselected: {'identifier': 'six_dof_bringup'}
+[0.000663] (-) EventReactorShutdown: {}

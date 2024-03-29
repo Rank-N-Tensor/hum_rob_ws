@@ -1,0 +1,6 @@
+Invoking command in '/home/adi/hum_rob_ws/build/four_dof_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/adi/hum_rob_ws/src/four_dof_bringup -DCMAKE_INSTALL_PREFIX=/home/adi/hum_rob_ws/install/four_dof_bringup
+Invoked command in '/home/adi/hum_rob_ws/build/four_dof_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/adi/hum_rob_ws/src/four_dof_bringup -DCMAKE_INSTALL_PREFIX=/home/adi/hum_rob_ws/install/four_dof_bringup
+Invoking command in '/home/adi/hum_rob_ws/build/four_dof_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/four_dof_bringup -- -j16 -l16
+Invoked command in '/home/adi/hum_rob_ws/build/four_dof_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/four_dof_bringup -- -j16 -l16
+Invoking command in '/home/adi/hum_rob_ws/build/four_dof_bringup': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/four_dof_bringup
+Invoked command in '/home/adi/hum_rob_ws/build/four_dof_bringup' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/four_dof_bringup

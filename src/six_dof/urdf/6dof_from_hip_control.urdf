@@ -1,0 +1,474 @@
+<robot name="6dof">
+
+    <material name="red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+        <!-- Red color, fully opaque -->
+    </material>
+
+    <material name="green">
+        <color rgba="0.0 1.0 0.0 1.0"/>
+        <!-- Green color, fully opaque -->
+    </material>
+
+    <material name="blue">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+        <!-- Blue color, fully opaque -->
+    </material>
+
+    <material name="yellow">
+        <color rgba="1.0 1.0 0.0 1.0"/>
+        <!-- Yellow color, fully opaque -->
+    </material>
+
+    <material name="cyan">
+        <color rgba="0.0 1.0 1.0 1.0"/>
+        <!-- Cyan color, fully opaque -->
+    </material>
+
+    <material name="magenta">
+        <color rgba="1.0 0.0 1.0 1.0"/>
+        <!-- Magenta color, fully opaque -->
+    </material>
+
+
+    <link name="base_link"/>
+
+    <link name="left_thigh">
+        <inertial>
+            <origin xyz="-0.020539 -0.11748 -0.000178" rpy="0.0 0.0 0.0"/>
+            <mass value="0.067626"/>
+            <inertia ixx="0.00015608" ixy="3.582166e-06" ixz="8.9159e-08" iyy="1.3413745e-05" iyz="1.56296e-07" izz="0.00015954"/>
+        </inertial>
+
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/leftthighfixedv1.stl" scale="0.001 0.001 0.001"/>
+                <!--leftthighv5-->
+            </geometry>
+            <material name="cyan"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/leftthighfixedv1.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <link name="left_shin">
+
+        <inertial>
+            <origin xyz="-0.02279 -0.05995 -0.00007" rpy="0.0 0.0 0.0"/>
+            <mass value="0.014172"/>
+            <inertia ixx="0.00246083" ixy="-1.653e-05" ixz="1.2e-07" iyy="0.00028524" iyz="2.3e-07" izz="0.00272029"/>
+        </inertial>
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/rightshinv3.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="yellow"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/rightshinv3.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+
+    <link name="left_foot">
+
+        <inertial>
+            <origin xyz="-0.003 -0.011919 -0.000098" rpy="0.0 0.0 0.0"/>
+            <mass value="0.022566"/>
+            <inertia ixx="9.65458e-06" ixy="0.0" ixz="3e-12" iyy="9.700124e-06" iyz="7.70208e-07" izz="1.471179e-06"/>
+        </inertial>
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/footfixedv3.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="green"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/footfixedv3.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+
+        <gazebo reference="left_foot">
+
+            <mu>0.55</mu>          <!-- Friction coefficient -->
+            <mu2>0.5</mu2>          <!-- Secondary friction coefficient -->
+        </gazebo>
+    </link>
+
+
+    <link name="body">
+        <inertial>
+            <origin xyz="0.0708 0.022 -0.0043" rpy="0.0 0.0 0.0"/>
+            <mass value="0.9"/>
+            <inertia ixx="0.0014852" ixy="-1.005508e-06" ixz="-2.9e-11" iyy="0.002456" iyz="2.4015e-08" izz="0.0019017"/>
+        </inertial>
+
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/chassisv2.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/chassisv2.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name='intermediate_link'>
+        <inertial>
+            <mass value="0.0001" />
+            <inertia ixx="1e-10" iyy="1e-10" izz="1e-10" ixy="0" ixz="0" iyz="0" />
+        </inertial>
+    </link>
+
+    <link name="intermediate_link_2">
+        <inertial>
+            <mass value="0.0001" />
+            <inertia ixx="1e-10" iyy="1e-10" izz="1e-10" ixy="0" ixz="0" iyz="0" />
+        </inertial>
+    </link>
+
+    <!-- <link name="imu_link">
+        <inertial>
+            <mass value="0.000001" />
+            <inertia ixx="1e-10" iyy="1e-10" izz="1e-10" ixy="0" ixz="0" iyz="0" />
+        </inertial>
+    </link> -->
+
+    <link name="right_thigh">
+        <inertial>
+            <origin xyz="-0.020621 -0.116163 0.000182" rpy="0.0 0.0 0.0"/>
+            <mass value="0.067538"/>
+            <inertia ixx="0.00015198" ixy="3.331401e-06" ixz="-8.9149e-08" iyy="1.2751654e-05" iyz="-1.42267e-07" izz="0.00015488"/>
+        </inertial>
+
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/rightthighfixedv2.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="cyan"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/rightthighfixedv2.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="right_shin">
+        <inertial>
+            <origin xyz="-0.02279 -0.05995 -0.00007" rpy="0.0 0.0 0.0"/>
+            <mass value="0.014172"/>
+            <inertia ixx="0.00246083" ixy="-1.653e-05" ixz="1.2e-07" iyy="0.00028524" iyz="2.3e-07" izz="0.00272029"/>
+        </inertial>
+
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/rightshinfixedv2.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="yellow"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/rightshinfixedv2.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="right_foot">
+        <inertial>
+            <origin xyz="-0.003 -0.011919 -0.000098" rpy="0.0 0.0 0.0"/>
+            <mass value="0.022566"/>
+            <inertia ixx="9.65458e-06" ixy="0.0" ixz="3e-12" iyy="9.700124e-06" iyz="7.70208e-07" izz="1.471179e-06"/>
+        </inertial>
+        <visual>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/footfixedv3.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="green"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://six_dof/meshes/footfixedv3.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+        </collision>
+
+        <gazebo reference="right_foot">
+
+            <mu>0.55</mu>          <!-- Friction coefficient -->
+            <mu2>0.5</mu2>          <!-- Secondary friction coefficient -->
+        </gazebo>
+    </link>
+
+
+    <joint name="right_shin_foot" type="revolute">
+        <parent link="right_shin"/>
+        <child link="right_foot"/>
+
+        <origin xyz="-0.02 -0.130 0.0" rpy="0 0 0"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="1.77" lower="-0.52" upper="0.52" velocity="5.5"/>
+        <dynamics damping="0.7" friction="1.0"/>
+    </joint>
+
+    <joint name="right_thigh_shin" type="revolute">
+        <parent link="right_thigh"/>
+        <child link="right_shin"/>
+        <origin xyz="0.0025 -0.160 0" rpy="0 0 0"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="1.77" lower="-1.04" upper="1.04" velocity="5.5"/>
+        <dynamics damping="0.5" friction="0.7"/>
+    </joint>
+
+    <joint name="right_body_thigh" type="revolute">
+        <parent link="intermediate_link"/>
+        <child link="right_thigh"/>
+        <origin xyz="0.041 0 0" rpy="0 0 0"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="1.77" lower="-1.57" upper="0.78" velocity="5.5"/>
+        <dynamics damping="0.5" friction="0.7"/>
+    </joint>
+
+    <joint name="right_body_thigh_lateral" type="revolute">
+        <parent link="body"/>
+        <child link="intermediate_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis  xyz = " 0 0 1"/>
+        <limit effort="1.77" lower="-0.26" upper="0.26" velocity="5.5"/>
+        <dynamics damping="0.5" friction="0.7"/>
+    </joint>
+
+    <joint name="base_body" type="fixed">
+        <origin xyz="0.0 0.050 0.3095" rpy="1.57 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="body"/>
+    </joint>
+
+    <joint name="body_left_thigh_lateral" type="revolute">
+        <parent link="body"/>
+        <child link="intermediate_link_2"/>
+        <origin xyz="0.100 0 0" rpy="0 3.14 0"/>
+        <axis  xyz = " 0 0 1"/>
+        <limit effort="1.77" lower="-0.26" upper="0.26" velocity="5.5"/>
+        <dynamics damping="0.5" friction="0.7"/>
+    </joint>
+
+    <!-- <joint name="body_to_imu" type="fixed">
+        <origin xyz="0.07 -0.02 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="body"/>
+        <child link="imu_link"/>
+
+    </joint> -->
+
+    <joint name="body_left_thigh" type="revolute">
+        <parent link="intermediate_link_2"/>
+        <child link="left_thigh"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="1.77" lower="-0.78" upper="1.57" velocity="5.5"/>
+        <dynamics damping="0.5" friction="0.7"/>
+    </joint>
+
+    <joint name="left_thigh_shin" type="revolute">
+        <parent link="left_thigh"/>
+        <child link="left_shin"/>
+        <origin xyz="-0.0425 -0.160 0" rpy="0 3.14 0"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="1.77" lower="-1.04" upper="1.04" velocity="5.5"/>
+        <dynamics damping="0.5" friction="0.7"/>
+    </joint>
+
+    <joint name="left_shin_foot" type="revolute">
+        <parent link="left_shin"/>
+        <child link="left_foot"/>
+        <origin xyz="-0.02 -0.130 0" rpy="0 0 0"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="1.77" lower="-0.52" upper="0.52" velocity="5.5"/>
+        <dynamics damping="0.7" friction="1.0"/>
+    </joint>
+
+    <!-- dynamics for joints in gazebo, dont think its being used  -->
+
+    <gazebo reference="right_shin_foot">
+        <joint>
+            <dynamics damping="0.7" friction="1.0"/>
+        </joint>
+    </gazebo>
+
+    <gazebo reference="left_shin_foot">
+        <joint>
+            <dynamics damping="0.7" friction="1.0"/>
+        </joint>
+    </gazebo>
+
+    <gazebo reference="right_thigh_shin">
+        <joint>
+            <dynamics damping="0.5" friction="0.7"/>
+        </joint>
+    </gazebo>
+
+    <gazebo reference="left_thigh_shin">
+        <joint>
+            <dynamics damping="0.5" friction="0.7"/>
+        </joint>
+    </gazebo>
+
+    <gazebo reference="right_thigh_shin">
+        <joint>
+            <dynamics damping="0.5" friction="0.7"/>
+        </joint>
+    </gazebo>
+
+    <gazebo reference="right_body_thigh">
+        <joint>
+            <dynamics damping="0.5" friction="0.7"/>
+        </joint>
+    </gazebo>
+
+    <gazebo reference="right_body_thigh_lateral">
+        <joint>
+            <dynamics damping="0.5" friction="0.7"/>
+        </joint>
+    </gazebo>
+
+    <gazebo reference="body_left_thigh">
+        <joint>
+            <dynamics damping="0.5" friction="0.7"/>
+        </joint>
+    </gazebo>
+
+    <gazebo reference="body_left_thigh_lateral">
+        <joint>
+            <dynamics damping="0.5" friction="0.7"/>
+        </joint>
+    </gazebo>
+    <!-- it will be ign_ros2_control for gazebo fortress and gz_ros2_control from iron onwards for garden and harmonic -->
+    <ros2_control name="IgnitionSystem" type="system">
+        <hardware>            <!--bridge bwtween controllers and hardware, here its a bridge to sim-->
+            <plugin>ign_ros2_control/IgnitionSystem</plugin>
+        </hardware>
+        <joint name="right_body_thigh">
+            <command_interface name="position">                <!--  this is the state that will be actively controlled -->
+                <param name="min">-1.57</param>
+                <param name="max">0.78</param>
+            </command_interface>
+            <state_interface name="position">                <!--"sensor" data, will read current-->
+                <param name="initial_value">0.0</param>
+            </state_interface>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+
+        <joint name="body_left_thigh">
+            <command_interface name="position">                <!--  this is the state that will be actively controlled -->
+                <param name="min">-0.78</param>
+                <param name="max">1.57</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">0.0</param>
+            </state_interface>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+
+        <joint name="right_body_thigh_lateral">
+            <command_interface name="position">                <!--  this is the state that will be actively controlled -->
+                <param name="min">-0.26</param>
+                <param name="max">0.26</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">0.0</param>
+            </state_interface>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+
+        <joint name="body_left_thigh_lateral">
+            <command_interface name="position">                <!--  this is the state that will be actively controlled -->
+                <param name="min">-0.26</param>
+                <param name="max">0.26</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">0.0</param>
+            </state_interface>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+
+        <joint name="left_thigh_shin">
+            <command_interface name="position">                <!--  this is the state that will be actively controlled -->
+                <param name="min">-1.04</param>
+                <param name="max">1.04</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">0.0</param>
+            </state_interface>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+
+        <joint name="right_thigh_shin">
+            <command_interface name="position">                <!--  this is the state that will be actively controlled -->
+                <param name="min">-0.52</param>
+                <param name="max">0.52</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">0.0</param>
+            </state_interface>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+
+        <joint name="right_shin_foot">
+            <command_interface name="position">                <!--  this is the state that will be actively controlled -->
+                <param name="min">-0.52</param>
+                <param name="max">0.52</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">0.0</param>
+            </state_interface>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+
+        <joint name="left_shin_foot">
+            <command_interface name="position">                <!--  this is the state that will be actively controlled -->
+                <param name="min">-1.04</param>
+                <param name="max">1.04</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">0.0</param>
+            </state_interface>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+    </ros2_control>
+
+    <gazebo>
+        <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+            <robot_param>robot_description</robot_param>
+            <robot_param_node>robot_state_publisher</robot_param_node>
+            <parameters>/home/adi/hum_rob_ws/src/six_dof_bringup/config/controller_config.yaml</parameters>            <!--add your pkg to find pkg -->
+        </plugin>
+    </gazebo>
+
+
+</robot>
+

@@ -1,0 +1,13 @@
+[0.025s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof_bringup -- -j16 -l16
+[0.072s] [35m[1mConsolidate compiler generated dependencies of target pos_control_node[0m
+[0.093s] [ 50%] [32mBuilding CXX object CMakeFiles/pos_control_node.dir/src/pos_control.cpp.o[0m
+[1.951s] [01m[K/home/adi/hum_rob_ws/src/six_dof_bringup/src/pos_control.cpp:38:42:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[Kdouble deg_to_rad(double)[m[K’
+[1.951s]    38 |   double left_thigh_lateral_ = [01;31m[Kdeg_to_rad()[m[K;
+[1.951s]       |                                [01;31m[K~~~~~~~~~~^~[m[K
+[1.951s] [01m[K/home/adi/hum_rob_ws/src/six_dof_bringup/src/pos_control.cpp:11:8:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.951s]    11 | double [01;36m[Kdeg_to_rad[m[K(double degree) { return degree * M_PI / 180; }
+[1.951s]       |        [01;36m[K^~~~~~~~~~[m[K
+[2.609s] gmake[2]: *** [CMakeFiles/pos_control_node.dir/build.make:76: CMakeFiles/pos_control_node.dir/src/pos_control.cpp.o] Error 1
+[2.609s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pos_control_node.dir/all] Error 2
+[2.610s] gmake: *** [Makefile:146: all] Error 2
+[2.615s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof_bringup' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof_bringup -- -j16 -l16

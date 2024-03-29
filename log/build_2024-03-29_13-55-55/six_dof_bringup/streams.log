@@ -1,0 +1,30 @@
+[0.023s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof_bringup -- -j16 -l16
+[0.076s] [35m[1mConsolidate compiler generated dependencies of target pos_control_node[0m
+[0.099s] [ 50%] [32mBuilding CXX object CMakeFiles/pos_control_node.dir/src/pos_control.cpp.o[0m
+[3.572s] [100%] [32m[1mLinking CXX executable pos_control_node[0m
+[3.805s] [100%] Built target pos_control_node
+[3.830s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adi/hum_rob_ws/build/six_dof_bringup -- -j16 -l16
+[3.890s] Invoking command in '/home/adi/hum_rob_ws/build/six_dof_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/six_dof_bringup
+[3.902s] -- Install configuration: ""
+[3.902s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup//launch
+[3.902s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup//launch/pos_control.launch.py
+[3.902s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup//config
+[3.902s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup//config/controller_config.yaml
+[3.902s] -- Installing: /home/adi/hum_rob_ws/install/six_dof_bringup/lib/six_dof_bringup/pos_control_node
+[3.904s] -- Set runtime path of "/home/adi/hum_rob_ws/install/six_dof_bringup/lib/six_dof_bringup/pos_control_node" to ""
+[3.904s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/ament_index/resource_index/package_run_dependencies/six_dof_bringup
+[3.904s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/ament_index/resource_index/parent_prefix_path/six_dof_bringup
+[3.905s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup/environment/ament_prefix_path.sh
+[3.905s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup/environment/ament_prefix_path.dsv
+[3.905s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup/environment/path.sh
+[3.905s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup/environment/path.dsv
+[3.905s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup/local_setup.bash
+[3.905s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup/local_setup.sh
+[3.905s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup/local_setup.zsh
+[3.905s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup/local_setup.dsv
+[3.905s] -- Installing: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup/package.dsv
+[3.905s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/ament_index/resource_index/packages/six_dof_bringup
+[3.905s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup/cmake/six_dof_bringupConfig.cmake
+[3.906s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup/cmake/six_dof_bringupConfig-version.cmake
+[3.906s] -- Up-to-date: /home/adi/hum_rob_ws/install/six_dof_bringup/share/six_dof_bringup/package.xml
+[3.908s] Invoked command in '/home/adi/hum_rob_ws/build/six_dof_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adi/hum_rob_ws/build/six_dof_bringup
