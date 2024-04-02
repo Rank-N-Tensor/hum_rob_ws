@@ -101,8 +101,8 @@
 
         <gazebo reference="left_foot">
 
-            <mu>0.55</mu>          <!-- Friction coefficient -->
-            <mu2>0.5</mu2>          <!-- Secondary friction coefficient -->
+            <mu>0.45</mu>            <!-- Friction coefficient -->
+            <mu2>0.4</mu2>            <!-- Secondary friction coefficient -->
         </gazebo>
     </link>
 
@@ -142,12 +142,12 @@
         </inertial>
     </link>
 
-    <!-- <link name="imu_link">
+    <link name="imu_link">
         <inertial>
             <mass value="0.000001" />
             <inertia ixx="1e-10" iyy="1e-10" izz="1e-10" ixy="0" ixz="0" iyz="0" />
         </inertial>
-    </link> -->
+    </link>
 
     <link name="right_thigh">
         <inertial>
@@ -212,8 +212,8 @@
 
         <gazebo reference="right_foot">
 
-            <mu>0.55</mu>          <!-- Friction coefficient -->
-            <mu2>0.5</mu2>          <!-- Secondary friction coefficient -->
+            <mu>0.45</mu>            <!-- Friction coefficient -->
+            <mu2>0.4</mu2>            <!-- Secondary friction coefficient -->
         </gazebo>
     </link>
 
@@ -270,12 +270,12 @@
         <dynamics damping="0.5" friction="0.7"/>
     </joint>
 
-    <!-- <joint name="body_to_imu" type="fixed">
-        <origin xyz="0.07 -0.02 0.0" rpy="0.0 0.0 0.0"/>
+    <joint name="body_to_imu" type="fixed">
+        <origin xyz="0.065 -0.0 -0.047" rpy="0.0 -1.57 -1.57"/>
         <parent link="body"/>
         <child link="imu_link"/>
 
-    </joint> -->
+    </joint>
 
     <joint name="body_left_thigh" type="revolute">
         <parent link="intermediate_link_2"/>
@@ -359,6 +359,69 @@
             <dynamics damping="0.5" friction="0.7"/>
         </joint>
     </gazebo>
+
+    <gazebo reference="imu_link">
+        <sensor name='imu_sensor' type='imu'>
+
+            <always_on>1</always_on>
+            <update_rate>100</update_rate>
+            <visualize>true</visualize>
+            <topic>imu</topic>
+
+            <imu>
+                <angular_velocity>
+                    <x>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                        </noise>
+                    </x>
+                    <y>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                        </noise>
+                    </y>
+                    <z>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                        </noise>
+                    </z>
+                </angular_velocity>
+                <linear_acceleration>
+                    <x>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                        </noise>
+                    </x>
+                    <y>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                        </noise>
+                    </y>
+                    <z>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                        </noise>
+                    </z>
+                </linear_acceleration>
+            </imu>
+
+            <plugin filename="libignition-gazebo-imu-system.so" name="ignition::gazebo::systems::Imu">
+                <!-- <ros>
+                    <namespace>imu</namespace>
+                    <remapping>~/out:=data</remapping>
+                </ros> -->
+            </plugin>
+
+        </sensor>
+    </gazebo>
+
+
     <!-- it will be ign_ros2_control for gazebo fortress and gz_ros2_control from iron onwards for garden and harmonic -->
     <ros2_control name="IgnitionSystem" type="system">
         <hardware>            <!--bridge bwtween controllers and hardware, here its a bridge to sim-->

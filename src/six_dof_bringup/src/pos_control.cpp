@@ -3,6 +3,7 @@
 #include "trajectory_msgs/msg/joint_trajectory_point.hpp"
 #include <chrono>
 #include <string>
+#include <vector>
 
 using namespace std::chrono_literals;
 
@@ -22,20 +23,20 @@ public:
     pub_ = this->create_publisher<trajectory_msgs::msg::JointTrajectory>(
         "/joint_trajectory_controller/joint_trajectory", 10);
     timer_ = this->create_wall_timer(
-        440ms, std::bind(&Position_controller::timer_callback, this));
+        445ms, std::bind(&Position_controller::timer_callback, this));
   }
 
 private:
   rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr pub_;
   rclcpp::TimerBase::SharedPtr timer_;
-  double right_thigh_ = -0.2; //-0.1
-  double left_thigh_ = 0.2;   // 0.1
-  double right_knee_ = 0.4;   // 0.2
-  double left_knee_ = 0.4;    // 0.2
-  double right_foot_ = -0.2;  //-0.1
-  double left_foot_ = -0.2;   //-0.1
-  double right_thigh_lateral_ = 0.0;
-  double left_thigh_lateral_ = 0.0;
+  double right_thigh_ = -deg_to_rad(22); //-0.1
+  double left_thigh_ = -right_thigh_;    // 0.1
+  double right_knee_ = deg_to_rad(40);   // 0.2
+  double left_knee_ = right_knee_;       // 0.2
+  double right_foot_ = -0.35;            //-0.1
+  double left_foot_ = -0.35;             //-0.1
+  double right_thigh_lateral_ = deg_to_rad(5.5);
+  double left_thigh_lateral_ = deg_to_rad(5.5);
 
   uint32_t delivery_time = 110'000'000;
 
@@ -43,28 +44,31 @@ private:
   // for right invert= left= -0.1 and right =0.1
 
   void timer_callback() {
-    trajectory_msgs::msg::JointTrajectory msg =
+    trajectory_msgs::msg::JointTrajectory forward_msg =
         trajectory_msgs::msg::JointTrajectory(); // Directly instantiate the
                                                  // message object
 
     // msg.header.stamp = this->get_clock()->now();
-    msg.joint_names = {"body_left_thigh",  "body_left_thigh_lateral",
-                       "right_body_thigh", "right_body_thigh_lateral",
-                       "right_thigh_shin", "left_thigh_shin",
-                       "right_shin_foot",  "left_shin_foot"};
-    msg.header.frame_id = "";
+    forward_msg.joint_names = {"body_left_thigh",  "body_left_thigh_lateral",
+                               "right_body_thigh", "right_body_thigh_lateral",
+                               "right_thigh_shin", "left_thigh_shin",
+                               "right_shin_foot",  "left_shin_foot"};
+    forward_msg.header.frame_id = "";
 
-    trajectory_msgs::msg::JointTrajectoryPoint point1, point2, point3, point4;
-    // left lift and righ shift
-    point1.positions = {left_thigh_, -left_thigh_lateral_,
-                        0.0,         right_thigh_lateral_, // right -ve
-                        0.0,         left_knee_,
-                        0.0,         left_foot_};
+    trajectory_msgs::msg::JointTrajectoryPoint point1, point2, point3, point4,
+        point5, point6;
+
+    // left lift and righ shift(-left ,+ve right. both input values are
+    // positive)
+    point1.positions = {0.0, -left_thigh_lateral_,
+                        0.0, right_thigh_lateral_, // right -ve
+                        0.0, 0.0,
+                        0.0, 0.0};
     // Using nanoseconds for specifying the time_from_start
 
-    point1.time_from_start = rclcpp::Duration(0, delivery_time);
+    point1.time_from_start = rclcpp::Duration(0, 60'000'000);
 
-    point2.positions = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+    point2.positions = {left_thigh_, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
     point2.time_from_start = rclcpp::Duration(0, 2 * delivery_time);
 
     // right lift and left shift
@@ -77,14 +81,28 @@ private:
     point4.positions = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
     point4.time_from_start = rclcpp::Duration(0, 4 * delivery_time);
 
+    std::vector<double> v1,v2,v3,v4;
+    
+
+
     // Add points to the message
-    msg.points.push_back(point1);
-    msg.points.push_back(point2);
-    msg.points.push_back(point3);
-    msg.points.push_back(point4);
+    forward_msg.points.push_back(point1);
+    forward_msg.points.push_back(point2);
+    forward_msg.points.push_back(point3);
+    forward_msg.points.push_back(point4);
 
     // Publish the message
-    pub_->publish(msg); // Note: No need to dereference msg here
+    pub_->publish(forward_msg); // Note: No need to dereference msg here
+  }
+
+  void set_trajectory_points(trajectory_msgs::msg::JointTrajectoryPoint &point,
+                             uint32_t duration,
+                             std::vector<double> &archit_vector,
+                             double left_foot, double right_foot) {
+    point.positions = {archit_vector[0], archit_vector[4], archit_vector[2],
+                       archit_vector[5], archit_vector[3], archit_vector[1],
+                       right_foot,       left_foot};
+    point.time_from_start = rclcpp::Duration(0, duration);
   }
 };
 
