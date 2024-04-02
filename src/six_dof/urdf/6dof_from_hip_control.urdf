@@ -101,9 +101,24 @@
 
         <gazebo reference="left_foot">
 
-            <mu>0.45</mu>            <!-- Friction coefficient -->
-            <mu2>0.4</mu2>            <!-- Secondary friction coefficient -->
+            <sensor name='left_foot_contact_sensor' type='contact'>
+
+                <contact>
+                    <collision>left_foot</collision>
+                    <topic>left_contact</topic>
+                </contact>
+                <always_on>1</always_on>
+                <update_rate>1000</update_rate>
+                <visualize>true</visualize>
+                <plugin filename="libignition-gazebo-contact-system.so" name="ignition::gazebo::systems::Contact">
+                </plugin>
+            </sensor>
+
+            <mu>0.5</mu>            <!-- Friction coefficient -->
+            <mu2>0.45</mu2>            <!-- Secondary friction coefficient -->
         </gazebo>
+
+
     </link>
 
 
@@ -144,7 +159,7 @@
 
     <link name="imu_link">
         <inertial>
-            <mass value="0.000001" />
+            <mass value="0.0001" />
             <inertia ixx="1e-10" iyy="1e-10" izz="1e-10" ixy="0" ixz="0" iyz="0" />
         </inertial>
     </link>
@@ -210,11 +225,24 @@
             </geometry>
         </collision>
 
-        <gazebo reference="right_foot">
 
-            <mu>0.45</mu>            <!-- Friction coefficient -->
-            <mu2>0.4</mu2>            <!-- Secondary friction coefficient -->
+        <gazebo reference="right_foot">
+            <sensor name='right_foot_contact_sensor' type='contact'>
+
+                <contact>
+                    <collision>right_foot</collision>
+                    <topic>right_contact</topic>
+                </contact>
+                <always_on>1</always_on>
+                <update_rate>1000</update_rate>
+                <visualize>true</visualize>
+                <plugin filename="libignition-gazebo-contact-system.so" name="ignition::gazebo::systems::Contact">
+                </plugin>
+            </sensor>
+            <mu>0.5</mu>            <!-- Friction coefficient -->
+            <mu2>0.45</mu2>            <!-- Secondary friction coefficient -->
         </gazebo>
+
     </link>
 
 
@@ -360,11 +388,13 @@
         </joint>
     </gazebo>
 
+    <!-- SENSORS -->
+
     <gazebo reference="imu_link">
         <sensor name='imu_sensor' type='imu'>
-
+            <ignition_frame_id>body_to_imu</ignition_frame_id>
             <always_on>1</always_on>
-            <update_rate>100</update_rate>
+            <update_rate>1000</update_rate>
             <visualize>true</visualize>
             <topic>imu</topic>
 
@@ -412,14 +442,13 @@
             </imu>
 
             <plugin filename="libignition-gazebo-imu-system.so" name="ignition::gazebo::systems::Imu">
-                <!-- <ros>
-                    <namespace>imu</namespace>
-                    <remapping>~/out:=data</remapping>
-                </ros> -->
             </plugin>
 
         </sensor>
     </gazebo>
+
+
+
 
 
     <!-- it will be ign_ros2_control for gazebo fortress and gz_ros2_control from iron onwards for garden and harmonic -->
