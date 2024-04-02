@@ -110,6 +110,7 @@ def generate_launch_description():
         arguments=[
             "/clock@rosgraph_msgs/msg/Clock[ignition.msgs.Clock",
             "/joint_trajectory_controller/joint_trajectory@trajectory_msgs/msg/JointTrajectory@ignition.msgs.JointTrajectory",
+            "/imu@sensor_msgs/msg/Imu@ignition.msgs.IMU"
         ],
         output="screen",
     )
