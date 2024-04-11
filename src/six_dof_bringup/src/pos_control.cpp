@@ -30,13 +30,13 @@ private:
   rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr pub_;
   rclcpp::TimerBase::SharedPtr timer_;
   double right_thigh_ = -0.2; //-0.1
-  double left_thigh_ = 0.2;
-  double right_knee_ = 0.4; // 0.2
-  double left_knee_ = 0.4;
-  double right_foot_ = -0.2;
-  double left_foot_ = -0.2;
-  double right_thigh_lateral_ = deg_to_rad(2);
-  double left_thigh_lateral_ = deg_to_rad(2);
+  double left_thigh_ = -right_thigh_;
+  double right_knee_ = 2* left_thigh_; // 0.2
+  double left_knee_ = 2* left_thigh_;
+  double right_foot_ = -0.32;
+  double left_foot_ = -0.32;
+  double right_thigh_lateral_ = deg_to_rad(1);
+  double left_thigh_lateral_ = deg_to_rad(1);
 
   uint32_t delivery_time = 110'000'000;
 

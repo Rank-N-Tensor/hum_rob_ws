@@ -111,8 +111,8 @@ def generate_launch_description():
             "/clock@rosgraph_msgs/msg/Clock[ignition.msgs.Clock",
             "/joint_trajectory_controller/joint_trajectory@trajectory_msgs/msg/JointTrajectory@ignition.msgs.JointTrajectory",
             "/imu@sensor_msgs/msg/Imu@ignition.msgs.IMU",
-            "/left_contact@ros_gz_interfaces/msg/Contacts[ignition.msgs.Contacts",
-            "/right_contact@ros_gz_interfaces/msg/Contacts[ignition.msgs.Contacts"
+            "/left_contact@ros_gz_interfaces/msg/Contacts@ignition.msgs.Contacts",
+            "/right_contact@ros_gz_interfaces/msg/Contacts@ignition.msgs.Contacts"
         ],
         output="screen",
     )
