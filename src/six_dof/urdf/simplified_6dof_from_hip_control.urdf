@@ -1,3 +1,4 @@
+
 <robot name="6dof">
 
     <material name="red">
@@ -42,7 +43,7 @@
 
         <visual>
             <geometry>
-                <mesh filename="package://six_dof/meshes/leftthighfixedv1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://six_dof/meshes/convex_hull_stl/leftthighfixedv1.stl" scale="0.0001 0.0001 0.0001"/>
                 <!--leftthighv5-->
             </geometry>
             <material name="cyan"/>
@@ -50,7 +51,7 @@
 
         <collision>
             <geometry>
-                <mesh filename="package://six_dof/meshes/leftthighfixedv1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://six_dof/meshes/convex_hull_stl/leftthighfixedv1.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
         </collision>
     </link>
@@ -65,14 +66,14 @@
         </inertial>
         <visual>
             <geometry>
-                <mesh filename="package://six_dof/meshes/rightshinv3.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://six_dof/meshes/convex_hull_stl/rightshinv3.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
             <material name="yellow"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://six_dof/meshes/rightshinv3.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://six_dof/meshes/convex_hull_stl/rightshinv3.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
         </collision>
     </link>
@@ -88,14 +89,14 @@
         </inertial>
         <visual>
             <geometry>
-                <mesh filename="package://six_dof/meshes/footfixedv3.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://six_dof/meshes/convex_hull_stl/footfixedv3.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
             <material name="green"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://six_dof/meshes/footfixedv3.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://six_dof/meshes/convex_hull_stl/footfixedv3.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
         </collision>
 
@@ -173,14 +174,14 @@
 
         <visual>
             <geometry>
-                <mesh filename="package://six_dof/meshes/rightthighfixedv2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://six_dof/meshes/convex_hull_stl/rightthighfixedv2.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
             <material name="cyan"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://six_dof/meshes/rightthighfixedv2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://six_dof/meshes/convex_hull_stl/rightthighfixedv2.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
         </collision>
     </link>
@@ -194,14 +195,14 @@
 
         <visual>
             <geometry>
-                <mesh filename="package://six_dof/meshes/rightshinfixedv2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://six_dof/meshes/convex_hull_stl/rightshinfixedv2.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
             <material name="yellow"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://six_dof/meshes/rightshinfixedv2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://six_dof/meshes/convex_hull_stl/rightshinfixedv2.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
         </collision>
     </link>
@@ -214,14 +215,14 @@
         </inertial>
         <visual>
             <geometry>
-                <mesh filename="package://six_dof/meshes/footfixedv3.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://six_dof/meshes/convex_hull_stl/footfixedv3.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
             <material name="green"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://six_dof/meshes/footfixedv3.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://six_dof/meshes/convex_hull_stl/footfixedv3.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
         </collision>
 
