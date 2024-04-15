@@ -8,9 +8,9 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(urdf REQUIRED)
-find_package(xacro REQUIRED)
 find_package(robot_state_publisher REQUIRED)
 find_package(trajectory_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -27,6 +27,9 @@ endif()
 add_executable(pos_control_node src/pos_control.cpp)
 ament_target_dependencies(pos_control_node rclcpp trajectory_msgs)
 
+add_executable(lean_node src/forward_step.cpp)
+ament_target_dependencies(lean_node rclcpp trajectory_msgs sensor_msgs)
+
 install(
   DIRECTORY
     launch
@@ -37,6 +40,7 @@ install(
 
 install(TARGETS
   pos_control_node
+  lean_node
   DESTINATION
   lib/${PROJECT_NAME}/
   )
