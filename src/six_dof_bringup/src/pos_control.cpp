@@ -23,24 +23,24 @@ public:
     pub_ = this->create_publisher<trajectory_msgs::msg::JointTrajectory>(
         "/joint_trajectory_controller/joint_trajectory", 10);
     timer_ = this->create_wall_timer(
-        445ms, std::bind(&Position_controller::timer_callback, this));
+        885ms, std::bind(&Position_controller::timer_callback, this));
   }
 
 private:
   rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr pub_;
   rclcpp::TimerBase::SharedPtr timer_;
-  double right_thigh_ = -0.22; //-0.1
+  double right_thigh_ = -0.2; //-0.1
   double left_thigh_ = -right_thigh_;
   double right_knee_ = 2* left_thigh_; // 0.2
   double left_knee_ = 2* left_thigh_;
-  double right_foot_ = -0.4; //w
-  double left_foot_ = -0.4;
+  double right_foot_ = -0.3; //w
+  double left_foot_ = -0.3;
   double right_thigh_lateral_ = deg_to_rad(2);
   double left_thigh_lateral_ = deg_to_rad(2);
-  double turn_thigh=0.05;
+  double turn_thigh=0.025;
   double turn_knee=turn_thigh*2;
 
-  uint32_t delivery_time = 110'000'000;
+  uint32_t delivery_time = 220'000'000;
 
   // for lateral - left shift its left=0.1 and right =-0.1
   // for right invert= left= -0.1 and right =0.1
@@ -62,7 +62,7 @@ private:
     // left lift and righ shift(-left ,+ve right. both input values are
     // positive)
     point1.positions = {
-        left_thigh_, -left_thigh_lateral_, 0.0, right_thigh_lateral_,
+        left_thigh_ , -left_thigh_lateral_, 0.0, right_thigh_lateral_,
         0.0,         left_knee_,           0.0, left_foot_};
     // Using nanoseconds for specifying the time_from_start
 
@@ -73,8 +73,8 @@ private:
 
     // right lift and left shift
     point3.positions = {0.0,          left_thigh_lateral_,
-                        right_thigh_, -right_thigh_lateral_,
-                        right_knee_,  0.0,
+                        right_thigh_ -0.1 , -right_thigh_lateral_,
+                        right_knee_ ,  0.0,
                         right_foot_,  0.0};
     point3.time_from_start = rclcpp::Duration(0, 3 * delivery_time);
 

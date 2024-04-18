@@ -1,0 +1,247 @@
+<robot name="8dof">
+
+    <material name="red">
+        <color rgba="1.0 0.0 0.0 1.0"/>
+        <!-- Red color, fully opaque -->
+    </material>
+
+    <material name="green">
+        <color rgba="0.0 1.0 0.0 1.0"/>
+        <!-- Green color, fully opaque -->
+    </material>
+
+    <material name="blue">
+        <color rgba="0.0 0.0 1.0 1.0"/>
+        <!-- Blue color, fully opaque -->
+    </material>
+
+    <material name="yellow">
+        <color rgba="1.0 1.0 0.0 1.0"/>
+        <!-- Yellow color, fully opaque -->
+    </material>
+
+    <material name="cyan">
+        <color rgba="0.0 1.0 1.0 1.0"/>
+        <!-- Cyan color, fully opaque -->
+    </material>
+
+    <material name="magenta">
+        <color rgba="1.0 0.0 1.0 1.0"/>
+        <!-- Magenta color, fully opaque -->
+    </material>
+
+
+
+    <link name="base_link"/>
+
+    <link name="body">
+
+        <visual>
+            <geometry>
+                <mesh filename="package://eight_dof/meshes/chassisv3.stl" scale="0.0001 0.0001 0.0001"/>
+            </geometry>
+            <material name="magenta"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://eight_dof/meshes/chassisv3.stl" scale="0.0001 0.0001 0.0001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name='left_intermediate_link'>
+        <inertial>
+            <mass value="0.0001" />
+            <inertia ixx="1e-10" iyy="1e-10" izz="1e-10" ixy="0" ixz="0" iyz="0" />
+        </inertial>
+    </link>
+
+    <link name="right_intermediate_link">
+        <inertial>
+            <mass value="0.0001" />
+            <inertia ixx="1e-10" iyy="1e-10" izz="1e-10" ixy="0" ixz="0" iyz="0" />
+        </inertial>
+    </link>
+
+    <link name="left_thigh">
+        <visual>
+            <geometry>
+                <mesh filename="package://eight_dof/meshes/thigh.stl" scale="0.0001 0.0001 0.0001"/>
+            </geometry>
+            <material name="cyan"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://eight_dof/meshes/thigh.stl" scale="0.0001 0.0001 0.0001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="right_thigh">
+        <visual>
+            <geometry>
+                <mesh filename="package://eight_dof/meshes/thigh.stl" scale="0.0001 0.0001 0.0001"/>
+            </geometry>
+            <material name="cyan"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://eight_dof/meshes/thigh.stl" scale="0.0001 0.0001 0.0001"/>
+            </geometry>
+        </collision>
+    </link>
+
+    
+    
+    <link name="left_shin">
+        <visual>
+            <geometry>
+                <mesh filename="package://eight_dof/meshes/shin.stl" scale="0.0001 0.0001 0.0001"/>
+            </geometry>
+            <material name="yellow"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://eight_dof/meshes/shin.stl" scale="0.0001 0.0001 0.0001"/>
+            </geometry>
+        </collision>
+    </link>
+
+      <link name="right_shin">
+        <visual>
+            <geometry>
+                <mesh filename="package://eight_dof/meshes/shin.stl" scale="0.0001 0.0001 0.0001"/>
+            </geometry>
+            <material name="yellow"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://eight_dof/meshes/shin.stl" scale="0.0001 0.0001 0.0001"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <link name="left_foot">
+        <visual>
+            <geometry>
+                <mesh filename="package://eight_dof/meshes/foot.stl" scale="0.0001 0.0001 0.0001"/>
+            </geometry>
+            <material name="green"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://eight_dof/meshes/foot.stl" scale="0.0001 0.0001 0.0001"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <link name="right_foot">
+        <visual>
+            <geometry>
+                <mesh filename="package://eight_dof/meshes/foot.stl" scale="0.0001 0.0001 0.0001"/>
+            </geometry>
+            <material name="green"/>
+        </visual>
+
+        <collision>
+            <geometry>
+                <mesh filename="package://eight_dof/meshes/foot.stl" scale="0.0001 0.0001 0.0001"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+
+    <joint name="base_body" type="fixed">
+        <origin xyz="0.0 0.0 0.575" rpy="1.57 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="body"/>
+    </joint>
+    
+    <joint name="body_left_lateral" type="revolute">
+        <origin xyz="0.0897 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="body"/>
+        <child link="left_intermediate_link"/>
+        <axis  xyz = " 0 0 1"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+    </joint>
+
+    <joint name="body_right_lateral" type="revolute">
+        <origin xyz="-0.0897 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="body"/>
+        <child link="right_intermediate_link"/>
+        <axis  xyz = " 0 0 1"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+    </joint>
+
+
+    <joint name="left_intermediate_thigh" type="revolute">
+        <origin xyz="0.01 0.0 0.044" rpy="0.0 0.0 0.0"/>
+        <parent link="left_intermediate_link"/>
+        <child link="left_thigh"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+    </joint>
+
+
+    <joint name="right_intermediate_thigh" type="revolute">
+        <origin xyz="-0.01 0.0 0.044" rpy="0.0 -3.14 0.0"/>
+        <parent link="right_intermediate_link"/>
+        <child link="right_thigh"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+    </joint>
+
+
+ <joint name="body_right_thigh" type="revolute">
+        <origin xyz="-0.1 0.0 0.0" rpy="0.0 -3.14 0.0"/>
+        <parent link="body"/>
+        <child link="right_thigh"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+    </joint>
+
+
+ <joint name="left_knee" type="revolute">
+        <origin xyz="0.02 -0.262 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="left_thigh"/>
+        <child link="left_shin"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+    </joint>
+
+     <joint name="right_knee" type="revolute">
+        <origin xyz="0.02 -0.262 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="right_thigh"/>
+        <child link="right_shin"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+    </joint>
+
+
+    <joint name="right_ankle" type="revolute">
+        <origin xyz="0.02 -0.244 0.0" rpy="0.0 -3.14 0.0"/>
+        <parent link="right_shin"/>
+        <child link="right_foot"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+    </joint>
+
+
+    <joint name="left_ankle" type="revolute">
+        <origin xyz="0.02 -0.244 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="left_shin"/>
+        <child link="left_foot"/>
+        <axis  xyz = " 1 0 0"/>
+        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+    </joint>
+
+</robot>

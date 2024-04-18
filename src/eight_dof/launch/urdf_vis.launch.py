@@ -7,8 +7,8 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     # urdf_file = "simplified_6dof_from_hip_control.urdf"
-    urdf_file = "6dof_from_hip.urdf"
-    package_description = "six_dof"
+    urdf_file = "8dof_from_hip.urdf"
+    package_description = "eight_dof"
     print("Fetching URDF ==>")
 
     robot_desc_path = os.path.join(
@@ -34,7 +34,7 @@ def generate_launch_description():
     rviz_config_dir = os.path.join(
         get_package_share_directory(package_description),
         "rviz",
-        "six_dof_from_hip.rviz",
+        "eight_dof_from_hip.rviz",
     )
 
     rviz2_node = Node(
