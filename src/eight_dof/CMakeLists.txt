@@ -9,6 +9,8 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
+find_package(trajectory_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -22,6 +24,9 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+add_executable(pos_control_node src/pos_control.cpp)
+ament_target_dependencies(pos_control_node rclcpp trajectory_msgs)
+
 install(
   DIRECTORY
     urdf
@@ -30,6 +35,12 @@ install(
     meshes
   DESTINATION
     share/${PROJECT_NAME}/
+)
+
+install(TARGETS 
+pos_control_node
+DESTINATION
+lib/${PROJECT_NAME}/
 )
 
 

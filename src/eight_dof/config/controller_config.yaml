@@ -16,25 +16,26 @@ controller_manager:
 joint_trajectory_controller:
   ros__parameters:
     joints:
-      - hip_left_lateral
-      - hip_right_lateral
       - hip_left
+      - hip_left_lateral
       - hip_right
+      - hip_right_lateral   
+      - right_knee  
       - left_knee
-      - right_knee
-      - left_ankle
       - right_ankle
+      - left_ankle
+      
       
 
     command_interfaces:
       - position
       - velocity
-      - effort
+      # - effort
 
     state_interfaces:
       - position
       - velocity
-      - effort
+      # - effort
 
     allow_partial_joints_goal: false # Defaults to false
     open_loop_control: true
