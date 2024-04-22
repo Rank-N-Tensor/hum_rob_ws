@@ -35,7 +35,11 @@
     <link name="base_link"/>
 
     <link name="body">
-
+        <inertial>
+            <origin xyz="-0.00024 0.045113 0.000271" rpy="0 0 0"/>
+            <mass value="2.343632"/>
+            <inertia ixx="0.0001915" ixy="0.0000036085" ixz="-0.0000067277" iyy="0.0001821" iyz="0.00002106" izz="0.0002199"/>
+        </inertial>
         <visual>
             <geometry>
                 <mesh filename="package://eight_dof/meshes/chassisv3.stl" scale="0.0001 0.0001 0.0001"/>
@@ -65,6 +69,13 @@
     </link>
 
     <link name="left_thigh">
+
+        <inertial>
+            <origin xyz="0.043859 -0.040381 -0.000925" rpy="0 0 0"/>
+            <mass value="0.65958"/>
+            <inertia ixx="0.004912" ixy="-0.0004527" ixz="0.00004645" iyy="0.000444" iyz="0.00024837" izz="0.004897"/>
+        </inertial>
+
         <visual>
             <geometry>
                 <mesh filename="package://eight_dof/meshes/thigh.stl" scale="0.0001 0.0001 0.0001"/>
@@ -80,6 +91,12 @@
     </link>
 
     <link name="right_thigh">
+        <inertial>
+            <origin xyz="0.043859 -0.040381 -0.000925" rpy="0 0 0"/>
+            <mass value="0.65958"/>
+            <inertia ixx="0.004912" ixy="-0.0004527" ixz="0.00004645" iyy="0.000444" iyz="0.00024837" izz="0.004897"/>
+        </inertial>
+
         <visual>
             <geometry>
                 <mesh filename="package://eight_dof/meshes/thigh.stl" scale="0.0001 0.0001 0.0001"/>
@@ -94,9 +111,15 @@
         </collision>
     </link>
 
-    
-    
+
+
     <link name="left_shin">
+        <inertial>
+            <origin xyz="0.02872 -0.029086 0.00038" rpy="0 0 0"/>
+            <mass value="1.507647"/>
+            <inertia ixx="0.004765" ixy="-0.0005518" ixz="-0.0001707" iyy="0.0009838" iyz="0.0003056" izz="0.004705"/>
+        </inertial>
+
         <visual>
             <geometry>
                 <mesh filename="package://eight_dof/meshes/shin.stl" scale="0.0001 0.0001 0.0001"/>
@@ -111,7 +134,13 @@
         </collision>
     </link>
 
-      <link name="right_shin">
+    <link name="right_shin">
+        <inertial>
+            <origin xyz="0.02872 -0.029086 0.00038" rpy="0 0 0"/>
+            <mass value="1.507647"/>
+            <inertia ixx="0.004765" ixy="-0.0005518" ixz="-0.0001707" iyy="0.0009838" iyz="0.0003056" izz="0.004705"/>
+        </inertial>
+
         <visual>
             <geometry>
                 <mesh filename="package://eight_dof/meshes/shin.stl" scale="0.0001 0.0001 0.0001"/>
@@ -128,9 +157,21 @@
 
 
     <link name="left_foot">
+        <!-- <inertial>
+            <origin xyz="0.000641 -0.048818 -0.006474" rpy="0 0 0"/>
+            <mass value="0.32797"/>
+            <inertia ixx="0.00005118" ixy="0.00002479" ixz="-0.00001312" iyy="0.00003165" iyz="-0.00038906" izz="0.00003385"/>
+        </inertial> -->
+
+        <inertial>
+            <origin xyz="0.000506 -0.036975 -0.005117" rpy="0 0 0"/>
+            <mass value="0.414934"/>
+            <inertia ixx="0.0007126" ixy="0.000004968257" ixz="-0.000001027228" iyy="0.0003514" iyz="-0.000064051951" izz="0.0005356"/>
+        </inertial>
+
         <visual>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/foot.stl" scale="0.0001 0.0001 0.0001"/>
+                <mesh filename="package://eight_dof/meshes/footv2.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
             <material name="green"/>
         </visual>
@@ -144,9 +185,21 @@
 
 
     <link name="right_foot">
+        <!-- <inertial>
+            <origin xyz="0.000641 -0.048818 -0.006474" rpy="0 0 0"/>
+            <mass value="0.32797"/>
+            <inertia ixx="0.00005118" ixy="0.00002479" ixz="-0.00001312" iyy="0.00003165" iyz="-0.00038906" izz="0.00003385"/>
+        </inertial> -->
+
+        <inertial>
+            <origin xyz="0.000506 -0.036975 -0.005117" rpy="0 0 0"/>
+            <mass value="0.414934"/>
+            <inertia ixx="0.0007126" ixy="0.000004968257" ixz="-0.000001027228" iyy="0.0003514" iyz="-0.000064051951" izz="0.0005356"/>
+        </inertial>
+
         <visual>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/foot.stl" scale="0.0001 0.0001 0.0001"/>
+                <mesh filename="package://eight_dof/meshes/footv2.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
             <material name="green"/>
         </visual>
@@ -165,65 +218,57 @@
         <parent link="base_link"/>
         <child link="body"/>
     </joint>
-    
-    <joint name="body_left_lateral" type="revolute">
+
+    <joint name="hip_left_lateral" type="continuous">
         <origin xyz="0.0897 0.0 0.0" rpy="0.0 0.0 0.0"/>
         <parent link="body"/>
         <child link="left_intermediate_link"/>
         <axis  xyz = " 0 0 1"/>
-        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+        <limit effort="15.0" velocity="33.0"/>
     </joint>
 
-    <joint name="body_right_lateral" type="revolute">
+    <joint name="hip_right_lateral" type="continuous">
         <origin xyz="-0.0897 0.0 0.0" rpy="0.0 0.0 0.0"/>
         <parent link="body"/>
         <child link="right_intermediate_link"/>
         <axis  xyz = " 0 0 1"/>
-        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+        <limit effort="15.0" velocity="33.0"/>
     </joint>
 
 
-    <joint name="left_intermediate_thigh" type="revolute">
+    <joint name="hip_left" type="continuous">
         <origin xyz="0.01 0.0 0.044" rpy="0.0 0.0 0.0"/>
         <parent link="left_intermediate_link"/>
         <child link="left_thigh"/>
         <axis  xyz = " 1 0 0"/>
-        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+        <limit effort="15.0" velocity="33.0"/>
     </joint>
 
 
-    <joint name="right_intermediate_thigh" type="revolute">
+    <joint name="hip_right" type="continuous">
         <origin xyz="-0.01 0.0 0.044" rpy="0.0 -3.14 0.0"/>
         <parent link="right_intermediate_link"/>
         <child link="right_thigh"/>
         <axis  xyz = " 1 0 0"/>
-        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+        <limit effort="15.0" velocity="33.0"/>
     </joint>
 
 
- <joint name="body_right_thigh" type="revolute">
-        <origin xyz="-0.1 0.0 0.0" rpy="0.0 -3.14 0.0"/>
-        <parent link="body"/>
-        <child link="right_thigh"/>
-        <axis  xyz = " 1 0 0"/>
-        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
-    </joint>
 
-
- <joint name="left_knee" type="revolute">
+    <joint name="left_knee" type="continuous">
         <origin xyz="0.02 -0.262 0.0" rpy="0.0 0.0 0.0"/>
         <parent link="left_thigh"/>
         <child link="left_shin"/>
         <axis  xyz = " 1 0 0"/>
-        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+        <limit effort="15.0" velocity="33.0"/>
     </joint>
 
-     <joint name="right_knee" type="revolute">
+    <joint name="right_knee" type="continuous">
         <origin xyz="0.02 -0.262 0.0" rpy="0.0 0.0 0.0"/>
         <parent link="right_thigh"/>
         <child link="right_shin"/>
         <axis  xyz = " 1 0 0"/>
-        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+        <limit effort="15.0" velocity="33.0"/>
     </joint>
 
 
@@ -232,7 +277,7 @@
         <parent link="right_shin"/>
         <child link="right_foot"/>
         <axis  xyz = " 1 0 0"/>
-        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+        <limit effort="6.0" lower="-2.3" upper="2.3" velocity="8.0"/>
     </joint>
 
 
@@ -241,7 +286,191 @@
         <parent link="left_shin"/>
         <child link="left_foot"/>
         <axis  xyz = " 1 0 0"/>
-        <limit effort="35.0" lower="-0.52" upper="0.52" velocity="0.1"/>
+        <limit effort="6.5" lower="-2.3" upper="2.3" velocity="8.0"/>
     </joint>
+
+    <!-- ROS2 Control -->
+    <ros2_control name="8dof_System" type="system">
+        <hardware>
+            <plugin>ign_ros2_control/IgnitionSystem</plugin>            <!--gazebo for now, will be custom hardware interface later-->
+        </hardware>
+
+        <!-- joints -->
+        <joint name="hip_right_lateral">
+            <command_interface name="position">
+                <param name="initial_position" value="0.0"/>
+            </command_interface>
+
+            <command_interface name="velocity">
+                <param name="max">0.0</param>
+                <param name="min">33.0</param>
+            </command_interface>
+
+            <command_interface name="effot">
+                <param name="max">0.0</param>
+                <param name="min">15.0</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+
+        </joint>
+
+        <joint name="hip_left_lateral">
+            <command_interface name="position">
+                <param name="initial_position" value="0.0"/>
+            </command_interface>
+
+            <command_interface name="velocity">
+                <param name="max">0.0</param>
+                <param name="min">33.0</param>
+            </command_interface>
+
+            <command_interface name="effot">
+                <param name="max">0.0</param>
+                <param name="min">15.0</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+
+        </joint>
+
+
+
+        <joint name="hip_left">
+            <command_interface name="position">
+                <param name="initial_position" value="0.0"/>
+            </command_interface>
+
+            <command_interface name="velocity">
+                <param name="max">0.0</param>
+                <param name="min">33.0</param>
+            </command_interface>
+
+            <command_interface name="effot">
+                <param name="max">0.0</param>
+                <param name="min">15.0</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+
+        </joint>
+
+
+        <joint name="hip_right">
+            <command_interface name="position">
+                <param name="initial_position" value="0.0"/>
+            </command_interface>
+
+            <command_interface name="velocity">
+                <param name="max">0.0</param>
+                <param name="min">33.0</param>
+            </command_interface>
+
+            <command_interface name="effot">
+                <param name="max">0.0</param>
+                <param name="min">15.0</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+
+        </joint>
+
+
+        <joint name="left_knee">
+            <command_interface name="position">
+                <param name="initial_position" value="0.0"/>
+            </command_interface>
+
+            <command_interface name="velocity">
+                <param name="max">0.0</param>
+                <param name="min">33.0</param>
+            </command_interface>
+
+            <command_interface name="effot">
+                <param name="max">0.0</param>
+                <param name="min">15.0</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+        </joint>
+
+
+        <joint name="right_knee">
+            <command_interface name="position">
+                <param name="initial_position" value="0.0"/>
+            </command_interface>
+
+            <command_interface name="velocity">
+                <param name="max">0.0</param>
+                <param name="min">33.0</param>
+            </command_interface>
+
+            <command_interface name="effot">
+                <param name="max">0.0</param>
+                <param name="min">15.0</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+
+        </joint>
+
+        <joint name="right_ankle">
+            <command_interface name="position">
+                <param name="min">0.0</param>
+                <param name="max">4.71</param>
+            </command_interface>
+
+            <command_interface name="velocity">
+                <param name="max">0.0</param>
+                <param name="min">8.0</param>
+            </command_interface>
+
+            <command_interface name="effot">
+                <param name="max">0.0</param>
+                <param name="min">6.5</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+
+        </joint>
+
+        <joint name="left_ankle">
+            <command_interface name="position">
+                <param name="min">0.0</param>
+                <param name="max">4.71</param>
+            </command_interface>
+
+            <command_interface name="velocity">
+                <param name="max">0.0</param>
+                <param name="min">8.0</param>
+            </command_interface>
+
+            <command_interface name="effot">
+                <param name="max">0.0</param>
+                <param name="min">6.5</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+            <state_interface name="effort"/>
+
+        </joint>
+    </ros2_control>
+
+
+    <gazebo>
+        <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+            <robot_param>robot_description</robot_param>
+            <robot_param_node>robot_state_publisher</robot_param_node>
+            <parameters>/home/adi/hum_rob_ws/src/eight_dof/config/controller_config.yaml</parameters>            <!--add your pkg to find pkg -->
+        </plugin>
+    </gazebo>
+
 
 </robot>

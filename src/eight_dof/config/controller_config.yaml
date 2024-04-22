@@ -1,0 +1,44 @@
+# Controller manager configuration
+controller_manager:
+  ros__parameters:
+    update_rate: 1000  # Hz
+    use_sim_time: true
+
+    ### Controllers available
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    joint_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+
+### Properties of the controllers that we will use and definition of joints to use ###
+joint_trajectory_controller:
+  ros__parameters:
+    joints:
+      - hip_left_lateral
+      - hip_right_lateral
+      - hip_left
+      - hip_right
+      - left_knee
+      - right_knee
+      - left_ankle
+      - right_ankle
+      
+
+    command_interfaces:
+      - position
+      - velocity
+      - effort
+
+    state_interfaces:
+      - position
+      - velocity
+      - effort
+
+    allow_partial_joints_goal: false # Defaults to false
+    open_loop_control: true
+    allow_integration_in_goal_trajectories: false
+
+
+   
