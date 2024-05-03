@@ -35,21 +35,28 @@
     <link name="base_link"/>
 
     <link name="body">
-        <inertial>
+        <!-- <inertial>
             <origin xyz="-0.00024 0.045113 0.000271" rpy="0 0 0"/>
             <mass value="2.343632"/>
             <inertia ixx="0.0001915" ixy="0.0000036085" ixz="-0.0000067277" iyy="0.0001821" iyz="0.00002106" izz="0.0002199"/>
+        </inertial> -->
+        <inertial>
+            <origin xyz="-0.000265 0.012201 0.035361" rpy="0 0 0"/>
+            <mass value="3.101495"/>
+            <inertia ixx="0.01793" ixy="0.000030504" ixz="-0.000073523" iyy="0.02858" iyz="-0.001491" izz="0.01902"/>
         </inertial>
+
+
         <visual>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/convex_hull/body.stl" scale="0.0001 0.0001 0.0001"/>
+                <mesh filename="package://eight_dof/meshes/chassisv6.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
             <material name="magenta"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/convex_hull/body.stl" scale="0.0001 0.0001 0.0001"/>
+                <mesh filename="package://eight_dof/meshes/chassisv6.stl" scale="0.0001 0.0001 0.0001"/>
             </geometry>
         </collision>
     </link>
@@ -78,14 +85,14 @@
 
         <visual>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/convex_hull/thigh.stl" scale="0.00001 0.00001 0.00001"/>
+                <mesh filename="package://eight_dof/meshes/thighv3.stl" scale="0.000001 0.000001 0.000001"/>
             </geometry>
             <material name="cyan"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/convex_hull/thigh.stl" scale="0.00001 0.00001 0.00001"/>
+                <mesh filename="package://eight_dof/meshes/thighv3.stl" scale="0.000001 0.000001 0.000001"/>
             </geometry>
         </collision>
     </link>
@@ -99,14 +106,14 @@
 
         <visual>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/convex_hull/thigh.stl" scale="0.00001 0.00001 0.00001"/>
+                <mesh filename="package://eight_dof/meshes/thighv3.stl" scale="0.000001 0.000001 0.000001"/>
             </geometry>
             <material name="cyan"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/convex_hull/thigh.stl" scale="0.00001 0.00001 0.00001"/>
+                <mesh filename="package://eight_dof/meshes/thighv3.stl" scale="0.000001 0.000001 0.000001"/>
             </geometry>
         </collision>
     </link>
@@ -115,42 +122,44 @@
 
     <link name="left_shin">
         <inertial>
-            <origin xyz="0.02872 -0.029086 0.00038" rpy="0 0 0"/>
-            <mass value="1.507647"/>
-            <inertia ixx="0.004765" ixy="-0.0005518" ixz="-0.0001707" iyy="0.0009838" iyz="0.0003056" izz="0.004705"/>
+            <origin xyz="0.019938 -0.107187 0.000988" rpy="0 0 0"/>
+            <mass value="1.488501"/>
+            <inertia ixx="0.01795" ixy="0" ixz="0" iyy="0.0009275" iyz="0" izz="0.0181"/>
         </inertial>
+
 
         <visual>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/convex_hull/shin.stl" scale="0.00001 0.00001 0.00001"/>
+                <mesh filename="package://eight_dof/meshes/shinv4.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="yellow"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/convex_hull/shin.stl" scale="0.00001 0.00001 0.00001"/>
+                <mesh filename="package://eight_dof/meshes/shinv4.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
 
     <link name="right_shin">
         <inertial>
-            <origin xyz="0.02872 -0.029086 0.00038" rpy="0 0 0"/>
-            <mass value="1.507647"/>
-            <inertia ixx="0.004765" ixy="-0.0005518" ixz="-0.0001707" iyy="0.0009838" iyz="0.0003056" izz="0.004705"/>
+            <origin xyz="0.019938 -0.107187 0.000988" rpy="0 0 0"/>
+            <mass value="1.488501"/>
+            <inertia ixx="0.01795" ixy="0" ixz="0" iyy="0.0009275" iyz="0" izz="0.0181"/>
         </inertial>
+
 
         <visual>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/convex_hull/shin.stl" scale="0.00001 0.00001 0.00001"/>
+                <mesh filename="package://eight_dof/meshes/shinv4.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="yellow"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/convex_hull/shin.stl" scale="0.00001 0.00001 0.00001"/>
+                <mesh filename="package://eight_dof/meshes/shinv4.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -164,21 +173,22 @@
         </inertial> -->
 
         <inertial>
-            <origin xyz="0.000506 -0.036975 -0.005117" rpy="0 0 0"/>
-            <mass value="0.414934"/>
-            <inertia ixx="0.0007126" ixy="0.000004968257" ixz="-0.000001027228" iyy="0.0003514" iyz="-0.000064051951" izz="0.0005356"/>
+            <origin xyz="-0.000813 -0.004976 -0.000007" rpy="0 0 0"/>
+            <mass value="0.170956"/>
+            <inertia ixx="0.0002477" ixy="0" ixz="0" iyy="0.0002817" iyz="0" izz="0.000036794431"/>
         </inertial>
+
 
         <visual>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/convex_hull/foot.stl" scale="0.0001 0.0001 0.0001"/>
+                <mesh filename="package://eight_dof/meshes/footv6.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="green"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/convex_hull/foot.stl" scale="0.0001 0.0001 0.0001"/>
+                <mesh filename="package://eight_dof/meshes/footv6.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
 
@@ -209,21 +219,21 @@
         </inertial> -->
 
         <inertial>
-            <origin xyz="0.000506 -0.036975 -0.005117" rpy="0 0 0"/>
-            <mass value="0.414934"/>
-            <inertia ixx="0.0007126" ixy="0.000004968257" ixz="-0.000001027228" iyy="0.0003514" iyz="-0.000064051951" izz="0.0005356"/>
+            <origin xyz="-0.000813 -0.004976 -0.000007" rpy="0 0 0"/>
+            <mass value="0.170956"/>
+            <inertia ixx="0.0002477" ixy="0" ixz="0" iyy="0.0002817" iyz="0" izz="0.000036794431"/>
         </inertial>
 
         <visual>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/convex_hull/foot.stl" scale="0.0001 0.0001 0.0001"/>
+                <mesh filename="package://eight_dof/meshes/footv6.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="green"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/convex_hull/foot.stl" scale="0.0001 0.0001 0.0001"/>
+                <mesh filename="package://eight_dof/meshes/footv6.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
 
@@ -313,7 +323,7 @@
 
 
     <joint name="right_ankle" type="revolute">
-        <origin xyz="0.02 -0.244 0.0" rpy="0.0 -3.14 0.0"/>
+        <origin xyz="0.02 -0.315 0.0" rpy="0.0 -3.14 0.0"/>
         <parent link="right_shin"/>
         <child link="right_foot"/>
         <axis  xyz = " 1 0 0"/>
@@ -323,7 +333,7 @@
 
 
     <joint name="left_ankle" type="revolute">
-        <origin xyz="0.02 -0.244 0.0" rpy="0.0 0.0 0.0"/>
+        <origin xyz="0.02 -0.315 0.0" rpy="0.0 0.0 0.0"/>
         <parent link="left_shin"/>
         <child link="left_foot"/>
         <axis  xyz = " 1 0 0"/>
@@ -333,31 +343,31 @@
 
     <!-- Gazebo -->
 
-     <gazebo reference="hip_left">
+    <gazebo reference="hip_left">
         <joint>
             <dynamics damping="0.7" friction="0.9"/>
         </joint>
     </gazebo>
 
-     <gazebo reference="hip_right">
+    <gazebo reference="hip_right">
         <joint>
             <dynamics damping="0.7" friction="0.9"/>
         </joint>
     </gazebo>
 
-     <gazebo reference="hip_left_lateral">
+    <gazebo reference="hip_left_lateral">
         <joint>
             <dynamics damping="0.7" friction="0.9"/>
         </joint>
     </gazebo>
 
-     <gazebo reference="hip_right_lateral">
+    <gazebo reference="hip_right_lateral">
         <joint>
             <dynamics damping="0.7" friction="0.9"/>
         </joint>
     </gazebo>
 
-     <gazebo reference="left_knee">
+    <gazebo reference="left_knee">
         <joint>
             <dynamics damping="0.7" friction="0.9"/>
         </joint>
