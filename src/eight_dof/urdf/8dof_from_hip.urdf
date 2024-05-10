@@ -209,7 +209,8 @@
             <mu2>0.45</mu2>            <!-- Secondary friction coefficient -->
         </gazebo>
     </link>
-
+    
+     
 
     <link name="right_foot">
         <!-- <inertial>
@@ -323,7 +324,7 @@
 
 
     <joint name="right_ankle" type="revolute">
-        <origin xyz="0.02 -0.315 0.0" rpy="0.0 -3.14 0.0"/>
+        <origin xyz="0.02 -0.317 0.0" rpy="0.0 -3.14 0.0"/>
         <parent link="right_shin"/>
         <child link="right_foot"/>
         <axis  xyz = " 1 0 0"/>
@@ -333,7 +334,7 @@
 
 
     <joint name="left_ankle" type="revolute">
-        <origin xyz="0.02 -0.315 0.0" rpy="0.0 0.0 0.0"/>
+        <origin xyz="0.02 -0.317 0.0" rpy="0.0 0.0 0.0"/>
         <parent link="left_shin"/>
         <child link="left_foot"/>
         <axis  xyz = " 1 0 0"/>

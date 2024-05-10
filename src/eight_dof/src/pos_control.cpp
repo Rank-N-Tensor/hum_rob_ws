@@ -29,12 +29,12 @@ public:
 private:
   rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr pub_;
   rclcpp::TimerBase::SharedPtr timer_;
-  double right_thigh_ = 0.1; 
+  double right_thigh_ = 0.3; 
   double left_thigh_ = -right_thigh_;
-  double right_knee_ = -0.2; 
+  double right_knee_ = -0.35; 
   double left_knee_ = - right_knee_;
-  double right_foot_ = 0; 
-  double left_foot_ = 0;
+  double right_foot_ = -0.2; 
+  double left_foot_ = -0.2;
   double right_thigh_lateral_ = deg_to_rad(0);
   double left_thigh_lateral_ = deg_to_rad(0);
   double turn_thigh=0.025;

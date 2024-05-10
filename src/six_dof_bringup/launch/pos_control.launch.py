@@ -37,7 +37,7 @@ def generate_launch_description():
 
     pkg_path = os.path.join(get_package_share_directory("six_dof"))
 
-    urdf_file = os.path.join(pkg_path, "urdf", "simplified_6dof_from_hip_control.urdf")
+    urdf_file = os.path.join(pkg_path, "urdf", "6dof_from_hip_control.urdf")
 
     with open(urdf_file, "r") as inf:
         robot_description_content = inf.read()

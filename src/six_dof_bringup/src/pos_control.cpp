@@ -23,7 +23,7 @@ public:
     pub_ = this->create_publisher<trajectory_msgs::msg::JointTrajectory>(
         "/joint_trajectory_controller/joint_trajectory", 10);
     timer_ = this->create_wall_timer(
-        885ms, std::bind(&Position_controller::timer_callback, this));
+        445ms, std::bind(&Position_controller::timer_callback, this));
   }
 
 private:
@@ -33,14 +33,13 @@ private:
   double left_thigh_ = -right_thigh_;
   double right_knee_ = 2* left_thigh_; // 0.2
   double left_knee_ = 2* left_thigh_;
-  double right_foot_ = -0.3; //w
-  double left_foot_ = -0.3;
+  double right_foot_ = -0.2; //w
+  double left_foot_ = -0.2;
   double right_thigh_lateral_ = deg_to_rad(2);
   double left_thigh_lateral_ = deg_to_rad(2);
-  double turn_thigh=0.025;
-  double turn_knee=turn_thigh*2;
+ 
 
-  uint32_t delivery_time = 220'000'000;
+  uint32_t delivery_time = 110'000'000;
 
   // for lateral - left shift its left=0.1 and right =-0.1
   // for right invert= left= -0.1 and right =0.1
@@ -73,7 +72,7 @@ private:
 
     // right lift and left shift
     point3.positions = {0.0,          left_thigh_lateral_,
-                        right_thigh_ -0.1 , -right_thigh_lateral_,
+                        right_thigh_ , -right_thigh_lateral_,
                         right_knee_ ,  0.0,
                         right_foot_,  0.0};
     point3.time_from_start = rclcpp::Duration(0, 3 * delivery_time);
@@ -93,15 +92,7 @@ private:
     pub_->publish(forward_msg); // Note: No need to dereference msg here
   }
 
-  void set_trajectory_points(trajectory_msgs::msg::JointTrajectoryPoint &point,
-                             uint32_t duration,
-                             std::vector<double> &archit_vector,
-                             double left_foot, double right_foot) {
-    point.positions = {archit_vector[0], archit_vector[4], archit_vector[2],
-                       archit_vector[5], archit_vector[3], archit_vector[1],
-                       right_foot,       left_foot};
-    point.time_from_start = rclcpp::Duration(0, duration);
-  }
+  
 };
 
 int main(int argc, char *argv[]) {
