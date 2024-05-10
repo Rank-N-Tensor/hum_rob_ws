@@ -40,23 +40,31 @@
             <mass value="2.343632"/>
             <inertia ixx="0.0001915" ixy="0.0000036085" ixz="-0.0000067277" iyy="0.0001821" iyz="0.00002106" izz="0.0002199"/>
         </inertial> -->
-        <inertial>
+        <!-- <inertial>
             <origin xyz="-0.000265 0.012201 0.035361" rpy="0 0 0"/>
             <mass value="3.101495"/>
             <inertia ixx="0.01793" ixy="0.000030504" ixz="-0.000073523" iyy="0.02858" iyz="-0.001491" izz="0.01902"/>
+        </inertial> -->
+
+        <inertial>
+            <origin xyz="0.000188 0.014911 0.024611" rpy="0 0 0"/>
+            <mass value="1.900281"/>
+            <inertia ixx="0.01012" ixy="0.000038096" ixz="-0.000079858" iyy="0.0185" iyz="-0.001408" izz="0.01433"/>
         </inertial>
+
 
 
         <visual>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/chassisv6.stl" scale="0.0001 0.0001 0.0001"/>
+                <!-- <mesh filename="package://eight_dof/meshes/chassisv6.stl" scale="0.0001 0.0001 0.0001"/> -->
+                <mesh filename="package://eight_dof/meshes/chassis_no_batt.stl" scale="0.001 0.001 0.001"/>
             </geometry>
             <material name="magenta"/>
         </visual>
 
         <collision>
             <geometry>
-                <mesh filename="package://eight_dof/meshes/chassisv6.stl" scale="0.0001 0.0001 0.0001"/>
+                <mesh filename="package://eight_dof/meshes/chassisv6.stl" scale="0.001 0.001 0.001"/>
             </geometry>
         </collision>
     </link>
@@ -209,8 +217,8 @@
             <mu2>0.45</mu2>            <!-- Secondary friction coefficient -->
         </gazebo>
     </link>
-    
-     
+
+
 
     <link name="right_foot">
         <!-- <inertial>

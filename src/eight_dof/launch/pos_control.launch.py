@@ -71,7 +71,7 @@ def generate_launch_description():
             "-y",
             "0",  # Y position in meters
             "-z",
-            "0.03",  # Z position in meters (adjust this to bring the robot to the ground)
+            "0.1",  # Z position in meters (adjust this to bring the robot to the ground)
             "-R",
             "0",  # Roll in radians
             "-P",
